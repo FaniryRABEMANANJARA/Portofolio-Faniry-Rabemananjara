@@ -9,17 +9,17 @@
     <meta name="author" content="Faniry Rabemananjara">
     <title>Faniry Rabemananjara - Développeur Web et Mobile</title>
 
-    <!-- CSS de base pour la mise en page -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Google Fonts & Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
-    <!-- CSS de Bootstrap pour la mise en page -->
+    <!-- CSS de base pour la mise en page -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- CSS pour l'animation et le design -->
+    <!-- CSS personnalisé -->
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Poppins', sans-serif;
             background-color: #f7f7f7;
             margin: 0;
             padding: 0;
@@ -31,18 +31,20 @@
             z-index: 100;
             background-color: #333;
             color: #fff;
-            padding: 15px 0;
+            padding: 20px 0;
         }
         
         header .navbar-brand {
-            font-size: 24px;
-            font-weight: bold;
+            font-size: 28px;
+            font-weight: 600;
+            color: #fff;
         }
         
         header .navbar-nav .nav-link {
             color: #fff;
             font-size: 18px;
-            margin-right: 20px;
+            margin-right: 25px;
+            font-weight: 500;
             transition: color 0.3s ease;
         }
         
@@ -51,27 +53,56 @@
         }
         
         section {
-            padding: 60px 0;
+            padding: 80px 0;
             text-align: center;
         }
+        /* Section Hero */
         
         .hero-section {
             background: url('https://via.placeholder.com/1500x800') no-repeat center center;
             background-size: cover;
             color: #fff;
-            padding: 120px 0;
+            padding: 100px 0;
+            position: relative;
+        }
+        
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
         }
         
         .hero-section h1 {
-            font-size: 50px;
+            font-size: 60px;
             margin-bottom: 20px;
             animation: fadeInUp 2s ease;
+            font-weight: 700;
         }
         
         .hero-section p {
-            font-size: 20px;
+            font-size: 22px;
+            margin-bottom: 40px;
             animation: fadeInUp 2s ease;
             animation-delay: 0.5s;
+        }
+        
+        .btn-primary {
+            background-color: #ff8a00;
+            color: #fff;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #e87b00;
+            transform: scale(1.1);
         }
         
         @keyframes fadeInUp {
@@ -84,52 +115,99 @@
                 transform: translateY(0);
             }
         }
+        /* About Section */
         
-        .btn-primary {
-            background-color: #ff8a00;
-            color: #fff;
-            padding: 10px 30px;
-            border-radius: 30px;
-            transition: background-color 0.3s ease;
+        #about {
+            background-color: #fff;
+            padding: 80px 0;
         }
         
-        .btn-primary:hover {
-            background-color: #e87b00;
+        #about h2 {
+            font-size: 40px;
+            font-weight: 600;
+            margin-bottom: 40px;
         }
+        
+        #about p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+        /* Projects Section */
         
         .projects-section {
-            background-color: #fff;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            padding: 60px 30px;
-        }
-        
-        .projects-section .project-card {
-            border: none;
-            margin-bottom: 30px;
             background-color: #f9f9f9;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 80px 0;
         }
         
-        .projects-section .project-card img {
+        .projects-section h2 {
+            font-size: 40px;
+            font-weight: 600;
+            margin-bottom: 50px;
+        }
+        
+        .project-card {
+            border: none;
+            background-color: #fff;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .project-card img {
             width: 100%;
-            height: 200px;
+            height: 250px;
             object-fit: cover;
         }
         
-        .projects-section .project-card h5 {
-            margin-top: 15px;
+        .project-card h5 {
+            margin-top: 20px;
+            font-size: 22px;
+            font-weight: 600;
+            color: #333;
         }
+        
+        .project-card p {
+            font-size: 16px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .project-card .btn {
+            background-color: #ff8a00;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 600;
+            border-radius: 50px;
+            padding: 10px 25px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .project-card .btn:hover {
+            background-color: #e87b00;
+        }
+        /* Footer */
         
         footer {
             background-color: #333;
             color: #fff;
-            padding: 20px;
+            padding: 40px 0;
             text-align: center;
         }
         
+        footer p {
+            margin-bottom: 20px;
+        }
+        
         footer .social-icons i {
-            margin: 0 15px;
-            font-size: 24px;
+            margin: 0 20px;
+            font-size: 28px;
             color: #fff;
             transition: color 0.3s ease;
         }
@@ -138,12 +216,11 @@
             color: #ff8a00;
         }
     </style>
-
 </head>
 
 <body>
 
-    <!-- Header - Navbar Sticky -->
+    <!-- Header (Navbar Sticky) -->
     <header>
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark">
@@ -154,13 +231,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#home">Home</a>
+                            <a class="nav-link" href="#home">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
+                            <a class="nav-link" href="#about">À propos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
+                            <a class="nav-link" href="#projects">Projets</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
@@ -173,7 +250,7 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero-section">
-        <div class="container">
+        <div class="container text-center">
             <h1>Bienvenue sur mon Portfolio</h1>
             <p>Développeur Web et Mobile - Création d'applications modernes et performantes</p>
             <a href="#contact" class="btn btn-primary">Contactez-moi</a>
@@ -182,41 +259,45 @@
 
     <!-- About Section -->
     <section id="about">
-        <div class="container">
+        <div class="container text-center">
             <h2>À propos de moi</h2>
-            <p>Je suis Faniry Rabemananjara, un développeur passionné par la technologie et le développement d'applications mobiles et web. Avec plusieurs années d'expérience, je crée des solutions performantes et innovantes pour mes clients.</p>
+            <p>Je suis un développeur passionné par la création d'applications web et mobiles innovantes. J'ai travaillé sur une variété de projets, alliant expertise technique et approche créative pour offrir des solutions optimales à mes clients. Mon objectif
+                est de toujours pousser les limites de la technologie pour créer des expériences utilisateurs exceptionnelles.</p>
         </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects-section">
-        <div class="container">
+        <div class="container text-center">
             <h2>Mes Projets</h2>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card project-card">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Project 1">
+                        <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Project 1">
                         <div class="card-body">
                             <h5 class="card-title">Projet 1</h5>
-                            <p class="card-text">Description du projet 1. Une application mobile responsive.</p>
+                            <p class="card-text">Description courte du projet 1.</p>
+                            <a href="#" class="btn">Voir le projet</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card project-card">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Project 2">
+                        <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Project 2">
                         <div class="card-body">
                             <h5 class="card-title">Projet 2</h5>
-                            <p class="card-text">Description du projet 2. Développement web avec React et Node.js.</p>
+                            <p class="card-text">Description courte du projet 2.</p>
+                            <a href="#" class="btn">Voir le projet</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card project-card">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Project 3">
+                        <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Project 3">
                         <div class="card-body">
                             <h5 class="card-title">Projet 3</h5>
-                            <p class="card-text">Description du projet 3. Application de gestion de tâches en temps réel.</p>
+                            <p class="card-text">Description courte du projet 3.</p>
+                            <a href="#" class="btn">Voir le projet</a>
                         </div>
                     </div>
                 </div>
@@ -224,20 +305,24 @@
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2025 Faniry Rabemananjara. Tous droits réservés.</p>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/faniry-zo-rabemananjara" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/faniry" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="mailto:faniry.zo.rabemananjara@example.com"><i class="fas fa-envelope"></i></a>
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container text-center">
+            <p>&copy; 2025 Faniry Rabemananjara - Tous droits réservés</p>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+            </div>
         </div>
     </footer>
 
-    <!-- Scripts pour Bootstrap et GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <!-- JS (Bootstrap et GSAP) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
     <script>
+        // Animation de l'apparition des éléments de la section Hero
         gsap.from(".hero-section h1", {
             opacity: 0,
             y: -100,
