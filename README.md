@@ -100,11 +100,4 @@ For any collaboration, freelance mission, or question:
 
 ---
 
-## 📝 Credits
-
-- Template based on [iPortfolio BootstrapMade](https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/)
-- Thanks to all open-source libraries used.
-
----
-
 © Faniry Rabemananjara. All rights reserved.
