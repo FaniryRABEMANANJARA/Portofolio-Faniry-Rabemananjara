@@ -116,6 +116,11 @@
             position: relative;
             z-index: 1;
         }
+        
+        /* Transition smooth pour le changement de couleur du header */
+        #header.header {
+            transition: background 1s ease-in-out;
+        }
     </style>
     
     <!-- Structured Data (JSON-LD) -->
@@ -190,13 +195,13 @@
         <section id="hero" class="hero section dark-background">
 
             <div class="hero-slider">
-                <div class="hero-slide active">
+                <div class="hero-slide active" data-bg-color="#17242D">
                     <img src="assets/img/hero-bg.jpg" alt="Background image for Faniry Rabemananjara portfolio hero section" class="hero-bg-image">
                 </div>
-                <div class="hero-slide">
+                <div class="hero-slide" data-bg-color="#242B3B">
                     <img src="assets/img/vue3.png" alt="Vue3 framework background" class="hero-bg-image">
                 </div>
-                <div class="hero-slide">
+                <div class="hero-slide" data-bg-color="#410600">
                     <img src="assets/img/flutterflow.jpg" alt="Flutter Flow platform background" class="hero-bg-image">
                 </div>
             </div>
@@ -995,6 +1000,76 @@
         document.getElementById('customModal').onclick = function(e) {
             if (e.target === this) this.style.display = 'none';
         };
+    </script>
+    
+    <!-- Hero Slider Header Background Color Sync Script -->
+    <script>
+        (function() {
+            const header = document.getElementById('header');
+            if (!header) return;
+            
+            const slides = document.querySelectorAll('.hero-slide');
+            const colors = ['#17242D', '#242B3B', '#410600']; // hero-bg, vue3, flutterflow
+            
+            // Fonction pour créer un gradient à partir d'une couleur
+            function createGradient(color) {
+                // Convertir hex en RGB pour créer des variations
+                const r = parseInt(color.slice(1, 3), 16);
+                const g = parseInt(color.slice(3, 5), 16);
+                const b = parseInt(color.slice(5, 7), 16);
+                
+                // Créer des variations plus claires et plus foncées
+                const lighterR = Math.min(255, r + 20);
+                const lighterG = Math.min(255, g + 20);
+                const lighterB = Math.min(255, b + 20);
+                
+                const darkerR = Math.max(0, r - 15);
+                const darkerG = Math.max(0, g - 15);
+                const darkerB = Math.max(0, b - 15);
+                
+                const lighterColor = `rgb(${lighterR}, ${lighterG}, ${lighterB})`;
+                const darkerColor = `rgb(${darkerR}, ${darkerG}, ${darkerB})`;
+                
+                // Créer un gradient linéaire vertical
+                return `linear-gradient(135deg, ${darkerColor} 0%, ${color} 50%, ${lighterColor} 100%)`;
+            }
+            
+            // Fonction pour changer la couleur du header avec gradient
+            function updateHeaderColor(color) {
+                if (header && color) {
+                    header.style.background = createGradient(color);
+                }
+            }
+            
+            // Initialiser avec la première couleur
+            updateHeaderColor(colors[0]);
+            
+            // Observer les changements d'opacité pour une synchronisation plus précise
+            const checkActiveSlide = function() {
+                slides.forEach((slide, index) => {
+                    const computedStyle = window.getComputedStyle(slide);
+                    const opacity = parseFloat(computedStyle.opacity);
+                    
+                    // Si l'opacité est proche de 1, c'est l'image active
+                    if (opacity > 0.5) {
+                        const bgColor = slide.getAttribute('data-bg-color');
+                        if (bgColor && header) {
+                            updateHeaderColor(bgColor);
+                        }
+                    }
+                });
+            };
+            
+            // Vérifier toutes les 500ms pour une synchronisation précise
+            setInterval(checkActiveSlide, 500);
+            
+            // Changer la couleur toutes les 5 secondes (synchronisé avec l'animation CSS de 15s)
+            let currentIndex = 0;
+            setInterval(function() {
+                currentIndex = (currentIndex + 1) % colors.length;
+                updateHeaderColor(colors[currentIndex]);
+            }, 5000);
+        })();
     </script>
 </body>
 
