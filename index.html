@@ -1,12 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Portofolio-Faniry-Rabemananjara</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <title>Faniry Rabemananjara - Full-Stack Developer | Web & Mobile App Development</title>
+    <meta name="description" content="Full-Stack Developer spécialisé en Vue3, NestJS, Flutter, et PostgreSQL. Développement d'applications web et mobiles, migration de systèmes, et solutions AI. Basé à Canton, Chine. Disponible en freelance.">
+    <meta name="keywords" content="Full-Stack Developer, Web Developer, Mobile Developer, Vue3, NestJS, Flutter, PostgreSQL, Freelance Developer, Application Development, Canton China, Faniry Rabemananjara">
+    <meta name="author" content="Faniry Rabemananjara">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://faniryrabemananjara.github.io/Portofolio-Faniry-Rabemananjara/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://faniryrabemananjara.github.io/Portofolio-Faniry-Rabemananjara/">
+    <meta property="og:title" content="Faniry Rabemananjara - Full-Stack Developer">
+    <meta property="og:description" content="Full-Stack Developer spécialisé en Vue3, NestJS, Flutter, et PostgreSQL. Développement d'applications web et mobiles.">
+    <meta property="og:image" content="https://faniryrabemananjara.github.io/Portofolio-Faniry-Rabemananjara/assets/img/my-profile-img.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://faniryrabemananjara.github.io/Portofolio-Faniry-Rabemananjara/">
+    <meta property="twitter:title" content="Faniry Rabemananjara - Full-Stack Developer">
+    <meta property="twitter:description" content="Full-Stack Developer spécialisé en Vue3, NestJS, Flutter, et PostgreSQL. Développement d'applications web et mobiles.">
+    <meta property="twitter:image" content="https://faniryrabemananjara.github.io/Portofolio-Faniry-Rabemananjara/assets/img/my-profile-img.jpg">
 
     <!-- Favicons -->
     <link href="assets/img/favicon.jpg" rel="icon">
@@ -27,6 +44,110 @@
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
+    
+    <!-- Hero Slider Styles -->
+    <style>
+        .hero-slider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            overflow: hidden;
+        }
+        
+        .hero-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            animation: slideShow 15s infinite;
+        }
+        
+        .hero-slide.active {
+            opacity: 1;
+        }
+        
+        .hero-slide:nth-child(1) {
+            animation-delay: 0s;
+        }
+        
+        .hero-slide:nth-child(2) {
+            animation-delay: 5s;
+        }
+        
+        .hero-slide:nth-child(3) {
+            animation-delay: 10s;
+        }
+        
+        .hero-bg-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        
+        @keyframes slideShow {
+            0% {
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            33.33% {
+                opacity: 1;
+            }
+            43.33% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        .hero.section {
+            position: relative;
+        }
+        
+        .hero.section .container {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Faniry Rabemananjara",
+      "jobTitle": "Full-Stack Developer",
+      "url": "https://faniryrabemananjara.github.io/Portofolio-Faniry-Rabemananjara/",
+      "image": "https://faniryrabemananjara.github.io/Portofolio-Faniry-Rabemananjara/assets/img/my-profile-img.jpg",
+      "email": "faniry.zo.rabemananjara@gmail.com",
+      "telephone": "+86 131 6832 8857",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "District de Haizhu",
+        "addressRegion": "Guangdong",
+        "addressCountry": "CN"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/faniry-zo-rabemananjara/",
+        "https://x.com/FaniryRabemana2",
+        "https://www.facebook.com/faniry.zo.rabemananjara/",
+        "https://www.instagram.com/faniry.___/"
+      ],
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "ESTIA Institute of Technology"
+      },
+      "knowsAbout": ["Vue3", "NestJS", "Flutter", "PostgreSQL", "Web Development", "Mobile Development", "Full-Stack Development"]
+    }
+    </script>
 
 </head>
 
@@ -36,7 +157,7 @@
         <i class="header-toggle d-xl-none bi bi-list"></i>
 
         <div class="profile-img">
-            <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+            <img src="assets/img/my-profile-img.jpg" alt="Faniry Rabemananjara - Full-Stack Developer Profile Photo" class="img-fluid rounded-circle">
         </div>
 
         <a href="index.html" class="logo d-flex align-items-center justify-content-center">
@@ -68,7 +189,17 @@
         <!-- Hero Section -->
         <section id="hero" class="hero section dark-background">
 
-            <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
+            <div class="hero-slider">
+                <div class="hero-slide active">
+                    <img src="assets/img/hero-bg.jpg" alt="Background image for Faniry Rabemananjara portfolio hero section" class="hero-bg-image">
+                </div>
+                <div class="hero-slide">
+                    <img src="assets/img/vue3.png" alt="Vue3 framework background" class="hero-bg-image">
+                </div>
+                <div class="hero-slide">
+                    <img src="assets/img/flutterflow.jpg" alt="Flutter Flow platform background" class="hero-bg-image">
+                </div>
+            </div>
 
             <div class="container" data-aos="fade-up" data-aos-delay="100">
                 <h2>Faniry Rabemananjara</h2>
@@ -94,7 +225,7 @@
 
                 <div class="row gy-4 justify-content-center">
                     <div class="col-lg-4">
-                        <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
+                        <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="Faniry Rabemananjara - Full-Stack Web and Mobile Developer">
                     </div>
                     <div class="col-lg-8 content">
                         <h2>Full-Stack Web Developer.</h2>
@@ -417,7 +548,7 @@
                         <!-- Business & E-commerce Applications -->
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
                             <div class="portfolio-content h-100">
-                                <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
+                                <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="FidMax - Loyalty program application for businesses and customers">
                                 <div class="portfolio-info">
                                     <h4>FidMax</h4>
                                     <p>A loyalty program application for businesses and customers.</p>
@@ -430,7 +561,7 @@
 
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
                             <div class="portfolio-content h-100">
-                                <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
+                                <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="NGOs CID - Dynamic showcase application for NGO projects and initiatives">
                                 <div class="portfolio-info">
                                     <h4>NGOs CID</h4>
                                     <p>This application will serve as a dynamic showcase for the NGO, enabling better interaction with the public and tracking of projects and initiatives.</p>
@@ -441,7 +572,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
                             <div class="portfolio-content h-100">
-                                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
+                                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="Health in Motion - Application for managing concentration times and yoga for health">
                                 <div class="portfolio-info">
                                     <h4>Health in Motion</h4>
                                     <p>This application consists of managing concentration times and doing yoga to manage health.</p>
@@ -452,7 +583,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
                             <div class="portfolio-content h-100">
-                                <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
+                                <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="Pizza House Free - Showcase website for a pizza restaurant">
                                 <div class="portfolio-info">
                                     <h4>Pizza House Free</h4>
                                     <p>This application consists of managing a showcase site for a restaurant specializing in pizza.</p>
@@ -463,7 +594,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
                             <div class="portfolio-content h-100">
-                                <img src="assets/img/portfolio/books-4.jpg" class="img-fluid" alt="">
+                                <img src="assets/img/portfolio/books-4.jpg" class="img-fluid" alt="Assurance decennale - Professional insurance application for Audit, Consulting and Expertise professions">
                                 <div class="portfolio-info">
                                     <h4>Assurance decennale</h4>
                                     <p>This application consists This application consists in covering your company with professional insurance adapted to the Audit, Consulting and Expertise professions.</p>
@@ -474,7 +605,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
                             <div class="portfolio-content h-100">
-                                <img src="assets/img/portfolio/neph.png" class="img-fluid" alt="">
+                                <img src="assets/img/portfolio/neph.png" class="img-fluid" alt="NEPH - Démarche Permis Rapide - Web application to help users obtain their NEPH code for driving license exams in France">
                                 <div class="portfolio-info">
                                     <h4>NEPH - Démarche Permis Rapide</h4>
                                     <p>Web application to help users obtain their NEPH code, an official identifier for driving license exams in France.</p>
@@ -485,7 +616,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
                             <div class="portfolio-content h-100">
-                                <img src="assets/img/portfolio/mydomii6l.png" class="img-fluid" alt="">
+                                <img src="assets/img/portfolio/mydomii6l.png" class="img-fluid" alt="MyDomii6L - Business domiciliation services platform in Île-de-France with strategic addresses and mail management">
                                 <div class="portfolio-info">
                                     <h4>MyDomii6L - Business Domiciliation</h4>
                                     <p>Web platform for business domiciliation services in Île-de-France, offering strategic addresses, mail management, and administrative services.</p>
@@ -496,7 +627,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
                             <div class="portfolio-content h-100">
-                                <img src="assets/img/portfolio/product-4.jpg" class="img-fluid" alt="">
+                                <img src="assets/img/portfolio/product-4.jpg" class="img-fluid" alt="CSR and Impact City - Platform for managing and monitoring company performance and CSR initiatives">
                                 <div class="portfolio-info">
                                     <h4>CSR and Impact City</h4>
                                     <p>CSR and Impact City is a platform for managing and monitoring the performance of a company.</p>
@@ -506,21 +637,9 @@
                             </div>
                         </div>
                         <!-- End Portfolio Item -->
-
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
                             <div class="portfolio-content h-100">
-                                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
-                                <div class="portfolio-info">
-                                    <h4>Remus</h4>
-                                    <p>This application connects self-employed educators with social workers.</p>
-                                    <a href="assets/img/portfolio/app-1.jpg" title="DashTech" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                                    <a href="https://play.google.com/store/apps/details?id=com.mycompany.appremuseducateur&pcampaignid=web_share" title="More Details" class="details-link open-popup"><i class="bi bi-link-45deg"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                            <div class="portfolio-content h-100">
-                                <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
+                                <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="Prytane - Mobile application for parish community management">
                                 <div class="portfolio-info">
                                     <h4>Prytane</h4>
                                     <p>Prytane, a mobile application for parish community management.</p>
@@ -531,7 +650,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
                             <div class="portfolio-content h-100">
-                                <img src="assets/img/portfolio/app-4.jpg" class="img-fluid" alt="">
+                                <img src="assets/img/portfolio/app-4.jpg" class="img-fluid" alt="Tiresias - Mobile application for trading and commerce">
                                 <div class="portfolio-info">
                                     <h4>Tiresias</h4>
                                     <p>Tiresias, a mobile application for trading.</p>
@@ -545,7 +664,7 @@
                         <!-- AI & Data-Driven Solutions -->
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
                             <div class="portfolio-content h-100">
-                                <img src="assets/img/portfolio/wildfire.jpg" class="img-fluid" alt="">
+                                <img src="assets/img/portfolio/wildfire.jpg" class="img-fluid" alt="Wildfire Alert System - AI-powered environmental monitoring system for wildfire prevention">
                                 <div class="portfolio-info">
                                     <h4>Wildfire Alert System</h4>
                                     <p>An AI-powered environmental monitoring system for wildfire prevention.</p>
@@ -557,7 +676,7 @@
                         <!-- AI & Data-Driven Solutions -->
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
                             <div class="portfolio-content h-100">
-                                <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
+                                <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="OpenMyst - 3D visualization platform with reliable data on the life of Jesus">
                                 <div class="portfolio-info">
                                     <h4>OpenMyst</h4>
                                     <p>Open Myst is a 3D visualization platform that brings together the most reliable data available on the life of Jesus.</p>
@@ -568,7 +687,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
                             <div class="portfolio-content h-100">
-                                <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
+                                <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="FidMax - Loyalty program application interface for businesses and customers">
                                 <div class="portfolio-info">
                                     <h4>FidMax</h4>
                                     <p>A loyalty program application for businesses and customers.</p>
@@ -580,7 +699,7 @@
                         <!-- Web & Mobile Development for NGOs & Public Sector -->
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
                             <div class="portfolio-content h-100">
-                                <img src="assets/img/portfolio/remus.jpg" class="img-fluid" alt="">
+                                <img src="assets/img/portfolio/remus.jpg" class="img-fluid" alt="Remus mobile application - Connecting educators with social workers platform">
                                 <div class="portfolio-info">
                                     <h4>Remus</h4>
                                     <p>This application connects self-employed educators with social workers.</p>
@@ -591,7 +710,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
                             <div class="portfolio-content h-100">
-                                <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
+                                <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="DashTech - Business dashboard application for real-time performance tracking">
                                 <div class="portfolio-info">
                                     <h4>DashTech</h4>
                                     <p>A business dashboard application for real-time performance tracking.
