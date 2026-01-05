@@ -177,15 +177,17 @@ a:hover {
   left: 0;
   bottom: 0;
   width: 280px;
-  background: var(--surface-color);
+  background: var(--background-color);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-right: 1px solid rgba(255, 255, 255, 0.1);
-  padding: var(--spacing-md);
+  padding: var(--spacing-sm);
   z-index: 997;
-  overflow-y: auto;
+  overflow-y: hidden;
   transition: all var(--transition-base);
   box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
 }
 
 .header::-webkit-scrollbar {
@@ -204,15 +206,15 @@ a:hover {
 /* Profile Image */
 .header .profile-img {
   text-align: center;
-  margin-bottom: var(--spacing-md);
-  padding-top: var(--spacing-sm);
+  margin-bottom: var(--spacing-xs);
+  padding-top: var(--spacing-xs);
 }
 
 .header .profile-img img {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   border-radius: var(--radius-full);
-  border: 4px solid var(--accent-color);
+  border: 3px solid var(--accent-color);
   box-shadow: var(--shadow-glow);
   transition: all var(--transition-base);
   object-fit: cover;
@@ -226,37 +228,38 @@ a:hover {
 /* Logo */
 .header .logo {
   text-align: center;
-  margin-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-xs);
 }
 
 .header .logo h1 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   background: var(--primary-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin: 0;
+  line-height: 1.3;
 }
 
 /* Social Links */
 .header .social-links {
   display: flex;
   justify-content: center;
-  gap: var(--spacing-xs);
-  margin-bottom: var(--spacing-md);
+  gap: 6px;
+  margin-bottom: var(--spacing-xs);
   flex-wrap: wrap;
 }
 
 .header .social-links a {
-  width: 44px;
-  height: 44px;
+  width: 36px;
+  height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: var(--card-bg);
   border-radius: var(--radius-md);
   color: var(--default-color);
-  font-size: 18px;
+  font-size: 16px;
   transition: all var(--transition-base);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -269,6 +272,46 @@ a:hover {
   border-color: transparent;
 }
 
+/* Language Switcher */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: var(--spacing-xs);
+}
+
+.lang-btn {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--muted-color);
+  padding: 4px 12px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  font-family: var(--nav-font);
+}
+
+.lang-btn:hover {
+  color: var(--heading-color);
+  border-color: var(--accent-color);
+  background: var(--accent-light);
+}
+
+.lang-btn.active {
+  background: var(--accent-gradient);
+  color: white;
+  border-color: transparent;
+  box-shadow: var(--shadow-md);
+}
+
+.lang-separator {
+  color: var(--muted-color);
+  font-weight: 300;
+}
+
 /* Navigation Menu */
 .navmenu ul {
   list-style: none;
@@ -279,13 +322,14 @@ a:hover {
 .navmenu a {
   display: flex;
   align-items: center;
-  padding: 14px 16px;
-  margin-bottom: 8px;
+  padding: 10px 12px;
+  margin-bottom: 4px;
   color: var(--muted-color);
   border-radius: var(--radius-md);
   transition: all var(--transition-base);
   font-family: var(--nav-font);
   font-weight: 500;
+  font-size: 0.9rem;
   position: relative;
   overflow: hidden;
 }
@@ -305,7 +349,7 @@ a:hover {
 .navmenu a.active {
   background: var(--accent-light);
   color: var(--heading-color);
-  padding-left: 20px;
+  padding-left: 16px;
 }
 
 .navmenu a:hover::before,
@@ -314,10 +358,30 @@ a:hover {
 }
 
 .navmenu a .navicon {
-  font-size: 20px;
-  margin-right: 12px;
-  width: 24px;
+  font-size: 18px;
+  margin-right: 10px;
+  width: 20px;
   text-align: center;
+  flex-shrink: 0;
+}
+
+.navmenu {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: var(--spacing-xs);
+}
+
+.navmenu::-webkit-scrollbar {
+  width: 4px;
+}
+
+.navmenu::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.navmenu::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: var(--radius-full);
 }
 
 /* Header Toggle */

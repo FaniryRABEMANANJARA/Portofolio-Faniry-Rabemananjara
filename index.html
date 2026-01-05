@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Faniry Rabemananjara - Full-Stack Developer | Web & Mobile App Development</title>
-    <meta name="description" content="Full-Stack Developer spécialisé en Vue3, NestJS, Flutter, et PostgreSQL. Développement d'applications web et mobiles, migration de systèmes, et solutions AI. Basé à Canton, Chine. Disponible en freelance.">
-    <meta name="keywords" content="Full-Stack Developer, Web Developer, Mobile Developer, Vue3, NestJS, Flutter, PostgreSQL, Freelance Developer, Application Development, Canton China, Faniry Rabemananjara">
+    <meta name="description" content="Remote Full Stack Web & Mobile Developer with 4+ years of experience delivering production-ready applications. Expert in Vue.js, Nuxt.js, Next.js, NestJS, Symfony, FlutterFlow, PostgreSQL, Prisma, Docker, and Firebase. Based in Antananarivo, Madagascar. Open to Remote & International Roles.">
+    <meta name="keywords" content="Full Stack Developer, Web Developer, Mobile Developer, Vue.js, Nuxt.js, Next.js, NestJS, Symfony, FlutterFlow, PostgreSQL, Prisma, Docker, Firebase, Remote Developer, Freelance Developer, Production Deployment, Antananarivo Madagascar, Faniry Rabemananjara">
     <meta name="author" content="Faniry Rabemananjara">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://faniryrabemananjara.github.io/Portofolio-Faniry-Rabemananjara/">
@@ -64,7 +64,7 @@
             width: 100%;
             height: 100%;
             opacity: 0;
-            animation: slideShow 15s infinite;
+            animation: slideShow 8s infinite;
         }
         
         .hero-slide.active {
@@ -76,11 +76,15 @@
         }
         
         .hero-slide:nth-child(2) {
-            animation-delay: 5s;
+            animation-delay: 2s;
         }
         
         .hero-slide:nth-child(3) {
-            animation-delay: 10s;
+            animation-delay: 4s;
+        }
+        
+        .hero-slide:nth-child(4) {
+            animation-delay: 6s;
         }
         
         .hero-bg-image {
@@ -94,13 +98,13 @@
             0% {
                 opacity: 0;
             }
-            10% {
+            2.5% {
                 opacity: 1;
             }
-            33.33% {
+            22.5% {
                 opacity: 1;
             }
-            43.33% {
+            25% {
                 opacity: 0;
             }
             100% {
@@ -117,10 +121,6 @@
             z-index: 1;
         }
         
-        /* Transition smooth pour le changement de couleur du header */
-        #header.header {
-            transition: background 1s ease-in-out;
-        }
     </style>
     
     <!-- Structured Data (JSON-LD) -->
@@ -129,16 +129,16 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Faniry Rabemananjara",
-      "jobTitle": "Full-Stack Developer",
+      "jobTitle": "Full Stack Web & Mobile Developer",
       "url": "https://faniryrabemananjara.github.io/Portofolio-Faniry-Rabemananjara/",
       "image": "https://faniryrabemananjara.github.io/Portofolio-Faniry-Rabemananjara/assets/img/my-profile-img.jpg",
       "email": "faniry.zo.rabemananjara@gmail.com",
-      "telephone": "+86 131 6832 8857",
+      "telephone": "+261 34 80 375 94",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "District de Haizhu",
-        "addressRegion": "Guangdong",
-        "addressCountry": "CN"
+        "addressLocality": "Antananarivo",
+        "addressRegion": "Antananarivo",
+        "addressCountry": "MG"
       },
       "sameAs": [
         "https://www.linkedin.com/in/faniry-zo-rabemananjara/",
@@ -150,7 +150,7 @@
         "@type": "EducationalOrganization",
         "name": "ESTIA Institute of Technology"
       },
-      "knowsAbout": ["Vue3", "NestJS", "Flutter", "PostgreSQL", "Web Development", "Mobile Development", "Full-Stack Development"]
+      "knowsAbout": ["Vue.js", "Nuxt.js", "Next.js", "NestJS", "Symfony", "Laravel", "FlutterFlow", "PostgreSQL", "Prisma", "Docker", "Firebase", "Web Development", "Mobile Development", "Full-Stack Development", "Production Deployment", "System Migration"]
     }
     </script>
 
@@ -175,14 +175,21 @@
             <a href="https://www.instagram.com/faniry.___/" class="instagram"><i class="bi bi-instagram"></i></a>
             <a href="https://www.linkedin.com/in/faniry-zo-rabemananjara/" class="linkedin"><i class="bi bi-linkedin"></i></a>
         </div>
+        
+        <!-- Language Switcher -->
+        <div class="lang-switcher text-center mb-3">
+            <button data-lang="fr" class="lang-btn active" title="Français">FR</button>
+            <span class="lang-separator">|</span>
+            <button data-lang="en" class="lang-btn" title="English">EN</button>
+        </div>
         <nav id="navmenu" class="navmenu">
             <ul>
-                <li data-i18n="title"><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-                <li data-i18n="title"><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-                <li data-i18n="title"><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-                <li data-i18n="title"><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-                <li data-i18n="title"><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
-                <li data-i18n="title"><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+                <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span data-i18n="nav.home">Home</span></a></li>
+                <li><a href="#about"><i class="bi bi-person navicon"></i><span data-i18n="nav.about">About</span></a></li>
+                <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span data-i18n="nav.resume">Resume</span></a></li>
+                <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span data-i18n="nav.portfolio">Portfolio</span></a></li>
+                <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span data-i18n="nav.services">Services</span></a></li>
+                <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span data-i18n="nav.contact">Contact</span></a></li>
             </ul>
         </nav>
 
@@ -194,16 +201,22 @@
         <section id="hero" class="hero section dark-background">
 
             <div class="hero-slider">
-                <div class="hero-slide active" data-bg-color="#17242D">
+                <div class="hero-slide active">
+                    <img src="assets/img/code.jpg" alt="Background image for Faniry Rabemananjara portfolio hero section" class="hero-bg-image">
+                </div>
+                <div class="hero-slide">
                     <img src="assets/img/hero-bg.jpg" alt="Background image for Faniry Rabemananjara portfolio hero section" class="hero-bg-image">
                 </div>
-                <div class="hero-slide" data-bg-color="#242B3B">
+                <div class="hero-slide">
                     <img src="assets/img/vue3.png" alt="Vue3 framework background" class="hero-bg-image">
+                </div>
+                <div class="hero-slide">
+                    <img src="assets/img/flutterflow.png" alt="Background image for Faniry Rabemananjara portfolio hero section" class="hero-bg-image">
                 </div>
             </div>
 
             <div class="container" data-aos="fade-up" data-aos-delay="100">
-                <h2 class="text-center">I'm <span class="typed" data-typed-items="Full-Stack Developer, Web Developer, Mobile Developer, Freelancer">Full-Stack Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink"
+                <h2 class="text-center"><span data-i18n="hero.title">I'm</span> <span class="typed" data-typed-items="Full-Stack Developer, Web Developer, Mobile Developer, Freelancer, Développeur Full-Stack, Développeur Web, Développeur Mobile, Freelance">Full-Stack Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink"
                         aria-hidden="true"></span></h2>
             </div>
 
@@ -215,9 +228,8 @@
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2>About</h2>
-                <p> Passionate about application development and holder of a Master of Science from the École Supérieure des des Technologies Industrielles Avancées (ESTIA) from the University of Bordeaux, in partnership with IT Univeristy. I have in-depth
-                    expertise in application design, development and deployment.</p>
+                <h2 data-i18n="about.title">About</h2>
+                <p data-i18n="about.description">Passionate about application development and holder of a Master of Science from the École Supérieure des des Technologies Industrielles Avancées (ESTIA) from the University of Bordeaux, in partnership with IT Univeristy. I have in-depth expertise in application design, development and deployment.</p>
             </div>
             <!-- End Section Title -->
 
@@ -226,22 +238,22 @@
                 <div class="row gy-4 justify-content-center">
                    
                     <div class="col-lg-8 content">
-                        <h2>Full-Stack Web Developer.</h2>
+                        <h2 data-i18n="about.subtitle">Full-Stack Web Developer.</h2>
                         <div class="row">
                             <div class="col-lg-6">
                                 <ul>
-                                    <li data-i18n="title"><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>13 November 1998</span></li>
-                                    <li data-i18n="title"><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span><a href="https://faniryrabemananjara.github.io/Portofolio-Faniry-Rabemananjara/">www.mywebsite.mg</a></span></li>
-                                    <li data-i18n="title"><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+86 131 6832 8857</span></li>
-                                    <li data-i18n="title"><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Guangzhou, China</span></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.birthday">Birthday:</strong> <span>13 November 1998</span></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.website">Website:</strong> <span><a href="https://faniryrabemananjara.github.io/Portofolio-Faniry-Rabemananjara/">Portfolio</a></span></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.phone">Phone:</strong> <span>+261 34 80 375 94</span></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.city">Location:</strong> <span>Antananarivo, Madagascar</span></li>
                                 </ul>
                             </div>
                             <div class="col-lg-6">
                                 <ul>
-                                    <li data-i18n="title"><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>26</span></li>
-                                    <li data-i18n="title"><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master of Science</span></li>
-                                    <li data-i18n="title"><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>faniry.zo.rabemananjara@gmail.com</span></li>
-                                    <li data-i18n="title"><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.age">Age:</strong> <span>26</span></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.degree">Degree:</strong> <span>Master II - AI & Big Data Management</span></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.email">Email:</strong> <span>faniry.zo.rabemananjara@gmail.com</span></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.status">Status:</strong> <span>Open to Remote & International Roles</span></li>
                                 </ul>
                             </div>
                         </div>
@@ -264,8 +276,8 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="stats-item">
                             <i class="bi bi-emoji-smile"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
-                            <p><strong>Happy Clients</strong> <span>satisfied clients & companies</span></p>
+                            <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
+                            <p><strong data-i18n="stats.happyClients">Happy Clients</strong> <span data-i18n="stats.happyClientsDesc">satisfied clients & companies</span></p>
                         </div>
                     </div>
                     <!-- End Stats Item -->
@@ -273,26 +285,26 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="stats-item">
                             <i class="bi bi-journal-richtext"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
-                            <p><strong>Projects</strong> <span>successful projects</span></p>
+                            <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+                            <p><strong data-i18n="stats.projects">Projects</strong> <span data-i18n="stats.projectsDesc">production-ready applications</span></p>
                         </div>
                     </div>
                     <!-- End Stats Item -->
 
                     <div class="col-lg-3 col-md-6">
                         <div class="stats-item">
-                            <i class="bi bi-headset"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="5000" data-purecounter-duration="1" class="purecounter"></span>
-                            <p><strong>Hours Of Support</strong> <span>hours of development experience</span></p>
+                            <i class="bi bi-calendar-check"></i>
+                            <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
+                            <p><strong data-i18n="stats.yearsExperience">Years Experience</strong> <span data-i18n="stats.yearsExperienceDesc">years of professional development</span></p>
                         </div>
                     </div>
                     <!-- End Stats Item -->
 
                     <div class="col-lg-3 col-md-6">
                         <div class="stats-item">
-                            <i class="bi bi-people"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
-                            <p><strong>Hard Workers</strong> <span>commitment to delivering high-quality solutions</span></p>
+                            <i class="bi bi-rocket-takeoff"></i>
+                            <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
+                            <p><strong data-i18n="stats.productionApps">Production Apps</strong> <span data-i18n="stats.productionAppsDesc">applications deployed & in use</span></p>
                         </div>
                     </div>
                     <!-- End Stats Item -->
@@ -308,72 +320,96 @@
         <section id="skills" class="skills section light-background">
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2>Skills</h2>
-                <p>My expertise in full-stack development, AI, and database management.</p>
+                <h2 data-i18n="skills.title">Skills</h2>
+                <p data-i18n="skills.description">My expertise in full-stack development, AI, and database management.</p>
             </div>
             <!-- End Section Title -->
 
             <div class="container" data-aos="fade-up" data-aos-delay="100">
                 <div class="row skills-content skills-animation">
                     <div class="col-lg-6">
-                        <h3>Technical Skills</h3>
+                        <h3 data-i18n="skills.technicalSkills">Technical Skills</h3>
 
                         <div class="progress">
-                            <span class="skill"><span>Vue3</span> <i class="val">90%</i></span>
+                            <span class="skill"><span>Vue.js (Vue 3)</span> <i class="val">90%</i></span>
                             <div class="progress-bar-wrap">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
 
                         <div class="progress">
-                            <span class="skill"><span>Nestjs</span> <i class="val">90%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="progress">
                             <span class="skill"><span>Nuxt.js</span> <i class="val">90%</i></span>
                             <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill"><span>Next.js</span> <i class="val">90%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill"><span>NestJS</span> <i class="val">90%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill"><span>Symfony</span> <i class="val">85%</i></span>
+                            <div class="progress-bar-wrap">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
 
                         <div class="progress">
-                            <span class="skill"><span>Prisma</span> <i class="val">85%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill"><span>PostgreSQL</span> <i class="val">85%</i></span>
+                            <span class="skill"><span>Laravel</span> <i class="val">85%</i></span>
                             <div class="progress-bar-wrap">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
 
                         <div class="progress">
-                            <span class="skill"><span>Git & Github & Docker</span> <i class="val">85%</i></span>
+                            <span class="skill"><span>PostgreSQL</span> <i class="val">90%</i></span>
                             <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
+
                         <div class="progress">
-                            <span class="skill"><span>Flutterflow</span> <i class="val">80%</i></span>
+                            <span class="skill"><span>Prisma ORM</span> <i class="val">90%</i></span>
                             <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
+
                         <div class="progress">
-                            <span class="skill"><span>AI & Python</span> <i class="val">75%</i></span>
+                            <span class="skill"><span>FlutterFlow</span> <i class="val">85%</i></span>
                             <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill"><span>Firebase</span> <i class="val">85%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill"><span>Docker</span> <i class="val">85%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-6">
-                        <h3>Soft Skills</h3>
+                        <h3 data-i18n="skills.softSkills">Soft Skills</h3>
 
                         <div class="progress">
                             <span class="skill"><span>Problem Solving</span> <i class="val">95%</i></span>
@@ -400,19 +436,19 @@
 
                 <div class="row skills-content skills-animation">
                     <div class="col-lg-6">
-                        <h3>Languages</h3>
+                        <h3 data-i18n="skills.languages">Languages</h3>
 
                         <div class="progress">
-                            <span class="skill"><span>French</span> <i class="val">100%</i></span>
+                            <span class="skill"><span>French</span> <i class="val">Fluent</i></span>
                             <div class="progress-bar-wrap">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
 
                         <div class="progress">
-                            <span class="skill"><span>English</span> <i class="val">75%</i></span>
+                            <span class="skill"><span>English</span> <i class="val">Professional</i></span>
                             <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
@@ -427,9 +463,8 @@
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2>Resume</h2>
-                <p>Passionate Full-Stack Developer with expertise in web and mobile application development. Specialized in Laravel, Flutter, Next.js, and Firebase, delivering high-performance solutions for businesses and enterprises. Strong background in
-                    AI-driven applications and real-time data management.</p>
+                <h2 data-i18n="resume.title">Resume</h2>
+                <p data-i18n="resume.description">Remote Full Stack Web & Mobile Developer with 4+ years of experience delivering production-ready applications used by real users. Strong expertise in Vue.js, Nuxt.js, Next.js, NestJS, Symfony, FlutterFlow, PostgreSQL, Prisma, Docker, and Firebase. Most projects delivered to production environments, with proven ability to manage end-to-end development in fully remote teams.</p>
 
             </div>
             <!-- End Section Title -->
@@ -439,79 +474,86 @@
                 <div class="row">
 
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                        <h3 class="resume-title">Sumary</h3>
+                        <h3 class="resume-title" data-i18n="resume.summary">Summary</h3>
 
                         <div class="container" data-aos="fade-up" data-aos-delay="100">
                             <div class="resume-item pb-0">
                                 <h4>Faniry Rabemananjara</h4>
-                                <p><em>A passionate and skilled Full-Stack Developer with a Master's degree in Artificial Intelligence and Big Data Management from ESTIA Institute of Technology. Specialized in designing, developing, and deploying web and mobile applications. Proficient in modern frameworks like Flutter, Laravel, and Next.js, with experience in real-time database synchronization using Firebase and MySQL. Strong problem-solving skills and a deep understanding of application performance optimization.</em></p>
+                                <p><em>Remote Full Stack Web & Mobile Developer with 4+ years of experience delivering production-ready applications used by real users. Strong expertise in Vue.js, Nuxt.js, Next.js, NestJS, Symfony, FlutterFlow, PostgreSQL, Prisma, Docker, and Firebase. Most projects delivered to production environments, with proven ability to manage end-to-end development in fully remote teams.</em></p>
                                 <ul>
-                                    <li data-i18n="title">Guangzhou, China</li>
-                                    <li data-i18n="title">(+86) 131 6832 8857</li>
+                                    <li data-i18n="title">Antananarivo, Madagascar</li>
+                                    <li data-i18n="title">+261 34 80 375 94</li>
                                     <li data-i18n="title">faniry.zo.rabemananjara@gmail.com</li>
                                 </ul>
                             </div>
                         </div>
                         <!-- Edn Resume Item -->
 
-                        <h3 class="resume-title">Education</h3>
+                        <h3 class="resume-title" data-i18n="resume.education">Education</h3>
                         <div class="resume-item">
-                            <h4>Master's Degree in AI & Big Data Management</h4>
-                            <h5>2023 - 2024</h5>
-                            <p><em>ESTIA Institute of Technology, Bourdeaux, FR</em></p>
-                            <p>Specialized in Artificial Intelligence and Big Data Management, gaining expertise in machine learning, data analysis, and cloud computing. Worked on AI-driven applications and large-scale data processing. Applied Python and
-                                SQL for data manipulation and automation. Conducted a research project on AI-based environmental monitoring systems.</p>
+                            <h4>Master II – Artificial Intelligence & Big Data Management</h4>
+                            <h5>2022 - 2023</h5>
+                            <p><em>ESTIA Institute of Technology</em></p>
+                            <p>Specialized in Artificial Intelligence and Big Data Management, gaining expertise in machine learning, data analysis, and cloud computing. Worked on AI-driven applications and large-scale data processing. Applied Python and SQL for data manipulation and automation. Conducted a research project on AI-based environmental monitoring systems.</p>
                         </div>
-                        <!-- Edn Resume Item -->
+                        <!-- End Resume Item -->
 
                         <div class="resume-item">
-                            <h4>Bachelor's Degree in Web Application Development</h4>
+                            <h4>Master I – Mobile & Web Development</h4>
+                            <h5>2021 - 2022</h5>
+                            <p><em>IT University, Antananarivo, MDG</em></p>
+                            <p>Advanced studies in mobile and web application development, focusing on modern frameworks, responsive design, and cross-platform solutions.</p>
+                        </div>
+                        <!-- End Resume Item -->
+
+                        <div class="resume-item">
+                            <h4>Bachelor – Web Application Development</h4>
                             <h5>2017 - 2020</h5>
                             <p><em>IT University, Antananarivo, MDG</em></p>
-                            <p>
-                                Learned the fundamentals of software engineering, including OOP and design patterns. Developed dynamic and responsive web applications using JavaScript, PHP, and MySQL. Gained knowledge in API development, cloud services, and cybersecurity. Completed
-                                several projects, including an e-commerce website and an ERP system
-                            </p>
+                            <p>Learned the fundamentals of software engineering, including OOP and design patterns. Developed dynamic and responsive web applications using JavaScript, PHP, and MySQL. Gained knowledge in API development, cloud services, and cybersecurity. Completed several projects, including an e-commerce website and an ERP system.</p>
                         </div>
-                        <!-- Edn Resume Item -->
+                        <!-- End Resume Item -->
 
                     </div>
 
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                        <h3 class="resume-title">Professional Experience</h3>
+                        <h3 class="resume-title" data-i18n="resume.professionalExperience">Professional Experience</h3>
                         <div class="resume-item">
-                            <h4>Web developer Consultant</h4>
-                            <h5>04.2025 - Present</h5>
-                            <p><em>L3M-Holding, Freelance</em></p>
+                            <h4>IT Engineer Consultant (Freelance)</h4>
+                            <h5>Apr 2025 – Present</h5>
+                            <p><em>L3M Holding | Remote</em></p>
                             <ul>
-                                <li>Migration of RSE using framework vue3 as the front end, nestjs as the back end and PostgreSQL as the database.</li>
-                                <li>Creation of application neph using framework vue3 as the front end, nestjs as the back end and PostgreSQL as the database.</li>
-                                <li>Development of mydomicil application using framework vue3 as the front end, nestjs as the back end and PostgreSQL as the database.</li>
+                                <li><strong>OIKOS IMPACT</strong> – Impact Management Platform (Production): Production platform currently in use. Frontend: Vue.js (Vue 3), Backend: NestJS, Database: PostgreSQL with Prisma ORM</li>
+                                <li><strong>NEPH</strong> – Administrative Web Platform (In Progress): Ongoing migration of a legacy administrative platform. Frontend: Vue.js, Backend: Symfony. Focus on system stability and long-term maintainability</li>
+                                <li><strong>MyDomiil</strong> – Digital Services Platform (Production): Full-stack digital platform deployed to production. Frontend: Vue.js, Backend: NestJS, Database: PostgreSQL with Prisma ORM, Dockerized services</li>
+                                <li><strong>Crypto P2P Intermediation Platform</strong> (Production): Peer-to-peer crypto intermediation platform live in production. Frontend: Vue.js, Nuxt.js, Database: PostgreSQL with Prisma ORM, Docker-based deployment</li>
+                                <li><strong>Permit Management Platform</strong> (Production): Designed and built a permit management system from scratch. Full stack: Vue.js, NestJS, PostgreSQL, Prisma ORM</li>
                             </ul>
                         </div>
                         <div class="resume-item">
-                            <h4>Web and mobile developer Full remote</h4>
-                            <h5>10.2023 - 03.2025</h5>
-                            <p><em>Synergie Mad, Freelance</em></p>
+                            <h4>Full Stack Web & Mobile Developer (Freelance)</h4>
+                            <h5>Oct 2023 – Mar 2025</h5>
+                            <p><em>Synergie Mad | Full Remote</em></p>
                             <ul>
-                                <li>Application development and project management for Remus, DashTech, Prytane, Health in motion, Donation, Tiresias, Assurance Decennale, Pizza House free and OpenMyst, FidMax with Flutterflow, Next JS, Laravel, Firebase
-                                    and MySQL as database.</li>
+                                <li><strong>Remus</strong> – Evangelization Web Platform (Production): Web platform deployed and actively used for evangelization activities. Frontend: Next.js, Database: PostgreSQL</li>
+                                <li><strong>Prytane</strong> – Community Mobile Platform for Churches (Production): Community mobile application live in production. Mobile: FlutterFlow, Backend & authentication: Firebase</li>
+                                <li><strong>Tiresias</strong> – Crypto Learning & Prediction Platform (Production): Educational platform deployed to production. Enables crypto learning and market prediction simulations</li>
                             </ul>
                         </div>
                         <div class="resume-item">
-                            <h4>Stage Master II</h4>
-                            <h5>05.2023 - 08.2023</h5>
-                            <p><em>Malagasy Ministry of the Environment, Nanisana</em></p>
+                            <h4>Master's Internship – AI-Based Fire Detection System</h4>
+                            <h5>May 2023 – Aug 2023</h5>
+                            <p><em>Ministry of Environment | Madagascar</em></p>
                             <ul>
-                                <li>Fire management and warning system integration using Artificial Intelligence for the French Ministry of the Environment and Sustainable Development. Language: IA Python, Front: JavaScript, MySQL Database.</li>
+                                <li>AI-based system deployed for fire detection and early warning. Frontend: Vue.js, Backend: Python, Database: MySQL</li>
                             </ul>
                         </div>
                         <div class="resume-item">
-                            <h4>FullStack Developer Consultant</h4>
-                            <h5>11.2021 - 01.2023</h5>
-                            <p><em>ONG CID, Anjanahary</em></p>
+                            <h4>Full Stack Developer Consultant</h4>
+                            <h5>Nov 2021 – Jan 2023</h5>
+                            <p><em>ONG CID | Madagascar</em></p>
                             <ul>
-                                <li>Reset of the ONG-CID website with the CMS: WordPress. Project design with Draw.io.</li>
+                                <li>NGO website rebuilt and deployed to production using WordPress</li>
                             </ul>
                         </div>
                     </div>
@@ -528,8 +570,8 @@
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2>Portfolio</h2>
-                <p>Here are some key projects I have developed:</p>
+                <h2 data-i18n="portfolio.title">Portfolio</h2>
+                <p data-i18n="portfolio.description">Here are some key projects I have developed:</p>
             </div>
             <!-- End Section Title -->
 
@@ -538,11 +580,11 @@
                 <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
                     <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-                        <li data-filter="*" class="filter-active">All</li>
-                        <li data-filter=".filter-app">App</li>
-                        <li data-filter=".filter-product">Business & E-commerce Applications</li>
-                        <li data-filter=".filter-branding">AI & Data-Driven Solutions</li>
-                        <li data-filter=".filter-books">Web Development for NGOs & Public Sector</li>
+                        <li data-filter="*" class="filter-active" data-i18n="portfolio.all">All</li>
+                        <li data-filter=".filter-app" data-i18n="portfolio.app">App</li>
+                        <li data-filter=".filter-product" data-i18n="portfolio.product">Business & E-commerce Applications</li>
+                        <li data-filter=".filter-branding" data-i18n="portfolio.branding">AI & Data-Driven Solutions</li>
+                        <li data-filter=".filter-books" data-i18n="portfolio.books">Web Development for NGOs & Public Sector</li>
                     </ul>
                     <!-- End Portfolio Filters -->
 
@@ -738,8 +780,8 @@
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2>Services</h2>
-                <p>Transform your ideas into powerful digital solutions. From concept to deployment, I deliver cutting-edge applications that drive business growth and enhance user experiences.</p>
+                <h2 data-i18n="services.title">Services</h2>
+                <p data-i18n="services.description">Transform your ideas into powerful digital solutions. From concept to deployment, I deliver cutting-edge applications that drive business growth and enhance user experiences.</p>
             </div>
             <!-- End Section Title -->
 
@@ -841,7 +883,7 @@
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2>Contact</h2>
+                <h2 data-i18n="contact.title">Contact</h2>
             </div>
             <!-- End Section Title -->
 
@@ -855,8 +897,8 @@
                             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
                                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                                 <div>
-                                    <h3>Address</h3>
-                                    <p>District de Haizhu, Canton, Guangdong, Chine</p>
+                                    <h3 data-i18n="contact.address">Address</h3>
+                                    <p>Antananarivo, Madagascar</p>
                                 </div>
                             </div>
                             <!-- End Info Item -->
@@ -864,8 +906,8 @@
                             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                                 <i class="bi bi-telephone flex-shrink-0"></i>
                                 <div>
-                                    <h3>Call Us</h3>
-                                    <p>+86 131 6832 8857</p>
+                                    <h3 data-i18n="contact.callUs">Call Us</h3>
+                                    <p>+261 34 80 375 94</p>
                                 </div>
                             </div>
                             <!-- End Info Item -->
@@ -873,14 +915,14 @@
                             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
                                 <i class="bi bi-envelope flex-shrink-0"></i>
                                 <div>
-                                    <h3>Email Us</h3>
+                                    <h3 data-i18n="contact.emailUs">Email Us</h3>
                                     <p>faniry.zo.rabemananjara@gmail.com</p>
                                 </div>
                             </div>
                             <!-- End Info Item -->
 
-                            <a href="https://www.google.com/maps?q=23.101677,113.252523" target="_blank" rel="noopener noreferrer" style="display: block; cursor: pointer;">
-                                <img src="assets/img/portfolio/MAP.png" alt="Location Map - District de Haizhu, Canton, Guangdong, Chine" class="img-fluid" style="width: 100%; height: 270px; object-fit: cover; border-radius: 8px; border: 1px solid #ddd;">
+                            <a href="https://www.google.com/maps?q=Antananarivo,Madagascar" target="_blank" rel="noopener noreferrer" style="display: block; cursor: pointer;">
+                                <img src="assets/img/portfolio/MAP.png" alt="Location Map - Antananarivo, Madagascar" class="img-fluid" style="width: 100%; height: 270px; object-fit: cover; border-radius: 8px; border: 1px solid #ddd;">
                             </a>
                         </div>
                     </div>
@@ -890,22 +932,22 @@
                             <div class="row gy-4">
 
                                 <div class="col-md-6">
-                                    <label for="name-field" class="pb-2">Your Name</label>
+                                    <label for="name-field" class="pb-2" data-i18n="contact.yourName">Your Name</label>
                                     <input type="text" name="name" id="from_name" class="form-control" required="">
                                 </div>
 
                                 <div class="col-md-6">
-                                    <label for="email-field" class="pb-2">Your Email</label>
+                                    <label for="email-field" class="pb-2" data-i18n="contact.yourEmail">Your Email</label>
                                     <input type="email" class="form-control" name="email" id="email" required="">
                                 </div>
 
                                 <div class="col-md-12">
-                                    <label for="subject-field" class="pb-2">Phone</label>
+                                    <label for="subject-field" class="pb-2" data-i18n="contact.phone">Phone</label>
                                     <input type="tel" name="phone" id="phone" class="form-control" name="subject" required="">
                                 </div>
 
                                 <div class="col-md-12">
-                                    <label for="message-field" class="pb-2">Message</label>
+                                    <label for="message-field" class="pb-2" data-i18n="contact.message">Message</label>
                                     <textarea class="form-control" id="message" name="message" rows="10" id="message-field" required=""></textarea>
                                 </div>
 
@@ -914,7 +956,7 @@
                                     <div class="error-message"></div>
                                     <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                                    <button type="submit" value="Send Message" onclick="sendMail()">Send Message</button>
+                                    <button type="submit" value="Send Message" onclick="sendMail()" data-i18n="contact.sendMessage">Send Message</button>
                                 </div>
 
                             </div>
@@ -935,9 +977,9 @@
 
         <div class="container">
             <div class="copyright text-center ">
-                <p>© <span>Copyright</span> <strong class="px-1 sitename">  <script>
+                <p>© <span data-i18n="footer.copyright">Copyright</span> <strong class="px-1 sitename">  <script>
                     document.write(new Date().getFullYear());
-                </script></strong> <span>All Rights Reserved</span></p>
+                </script></strong> <span data-i18n="footer.allRightsReserved">All Rights Reserved</span></p>
             </div>
         </div>
 
@@ -962,7 +1004,8 @@
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
     <!-- Main JS File -->
-    <!-- Inclure le fichier de traduction -->
+    <!-- Internationalization -->
+    <script src="assets/js/i18n.js"></script>
     <script src="assets/js/main.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
@@ -997,13 +1040,13 @@
             <div class="restricted-access-icon">
                 <i class="bi bi-shield-lock-fill"></i>
             </div>
-            <h3 class="restricted-access-title">Accès Restreint</h3>
-            <p class="restricted-access-message">Pour des raisons de confidentialité, l'accès direct à cette application n'est pas autorisé.</p>
-            <p class="restricted-access-submessage">Si vous souhaitez accéder à cette application, veuillez me contacter directement.</p>
+            <h3 class="restricted-access-title" data-i18n="modal.restrictedAccess">Accès Restreint</h3>
+            <p class="restricted-access-message" data-i18n="modal.message">Pour des raisons de confidentialité, l'accès direct à cette application n'est pas autorisé.</p>
+            <p class="restricted-access-submessage" data-i18n="modal.submessage">Si vous souhaitez accéder à cette application, veuillez me contacter directement.</p>
             <div class="restricted-access-actions">
                 <a href="#contact" class="restricted-access-btn" onclick="document.getElementById('customModal').style.display='none'">
                     <i class="bi bi-envelope"></i>
-                    Me Contacter
+                    <span data-i18n="modal.contactMe">Me Contacter</span>
                 </a>
             </div>
         </div>
@@ -1042,76 +1085,6 @@
                 document.body.style.overflow = ''; // Restaurer le scroll
             }
         });
-    </script>
-    
-    <!-- Hero Slider Header Background Color Sync Script -->
-    <script>
-        (function() {
-            const header = document.getElementById('header');
-            if (!header) return;
-            
-            const slides = document.querySelectorAll('.hero-slide');
-            const colors = ['#17242D', '#242B3B']; // hero-bg, vue3
-            
-            // Fonction pour créer un gradient à partir d'une couleur
-            function createGradient(color) {
-                // Convertir hex en RGB pour créer des variations
-                const r = parseInt(color.slice(1, 3), 16);
-                const g = parseInt(color.slice(3, 5), 16);
-                const b = parseInt(color.slice(5, 7), 16);
-                
-                // Créer des variations plus claires et plus foncées
-                const lighterR = Math.min(255, r + 20);
-                const lighterG = Math.min(255, g + 20);
-                const lighterB = Math.min(255, b + 20);
-                
-                const darkerR = Math.max(0, r - 15);
-                const darkerG = Math.max(0, g - 15);
-                const darkerB = Math.max(0, b - 15);
-                
-                const lighterColor = `rgb(${lighterR}, ${lighterG}, ${lighterB})`;
-                const darkerColor = `rgb(${darkerR}, ${darkerG}, ${darkerB})`;
-                
-                // Créer un gradient linéaire vertical
-                return `linear-gradient(135deg, ${darkerColor} 0%, ${color} 50%, ${lighterColor} 100%)`;
-            }
-            
-            // Fonction pour changer la couleur du header avec gradient
-            function updateHeaderColor(color) {
-                if (header && color) {
-                    header.style.background = createGradient(color);
-                }
-            }
-            
-            // Initialiser avec la première couleur
-            updateHeaderColor(colors[0]);
-            
-            // Observer les changements d'opacité pour une synchronisation plus précise
-            const checkActiveSlide = function() {
-                slides.forEach((slide, index) => {
-                    const computedStyle = window.getComputedStyle(slide);
-                    const opacity = parseFloat(computedStyle.opacity);
-                    
-                    // Si l'opacité est proche de 1, c'est l'image active
-                    if (opacity > 0.5) {
-                        const bgColor = slide.getAttribute('data-bg-color');
-                        if (bgColor && header) {
-                            updateHeaderColor(bgColor);
-                        }
-                    }
-                });
-            };
-            
-            // Vérifier toutes les 500ms pour une synchronisation précise
-            setInterval(checkActiveSlide, 500);
-            
-            // Changer la couleur toutes les 5 secondes (synchronisé avec l'animation CSS de 15s)
-            let currentIndex = 0;
-            setInterval(function() {
-                currentIndex = (currentIndex + 1) % colors.length;
-                updateHeaderColor(colors[currentIndex]);
-            }, 5000);
-        })();
     </script>
 </body>
 
