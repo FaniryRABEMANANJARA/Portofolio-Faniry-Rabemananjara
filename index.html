@@ -159,7 +159,7 @@
 <body class="index-page">
 
     <header id="header" class="header dark-background d-flex flex-column">
-        <i class="header-toggle d-xl-none bi bi-list"></i>
+        <button class="header-toggle d-xl-none bi bi-list" aria-label="Toggle navigation menu" type="button"></button>
 
         <div class="profile-img">
             <img src="assets/img/my-profile-img.jpg" alt="Faniry Rabemananjara - Full-Stack Developer Profile Photo" class="img-fluid rounded-circle">
@@ -170,10 +170,10 @@
         </a>
 
         <div class="social-links text-center">
-            <a href="https://x.com/FaniryRabemana2" class="twitter"><i class="bi bi-twitter-x"></i></a>
-            <a href="https://www.facebook.com/faniry.zo.rabemananjara/" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/faniry.___/" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/faniry-zo-rabemananjara/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <a href="https://x.com/FaniryRabemana2" class="twitter" aria-label="Twitter/X Profile" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/faniry.zo.rabemananjara/" class="facebook" aria-label="Facebook Profile" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/faniry.___/" class="instagram" aria-label="Instagram Profile" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/faniry-zo-rabemananjara/" class="linkedin" aria-label="LinkedIn Profile" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
         </div>
         
         <!-- Language Switcher -->
@@ -192,6 +192,14 @@
                 <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span data-i18n="nav.contact">Contact</span></a></li>
             </ul>
         </nav>
+
+        <!-- Theme Toggle Button -->
+        <div class="theme-toggle-container">
+            <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle theme">
+                <i class="bi bi-sun-fill theme-icon" id="themeIcon"></i>
+                <span class="theme-text" data-i18n="theme.light">Light</span>
+            </button>
+        </div>
 
     </header>
 
@@ -216,8 +224,7 @@
             </div>
 
             <div class="container" data-aos="fade-up" data-aos-delay="100">
-                <h2 class="text-center"><span data-i18n="hero.title">I'm</span> <span class="typed" data-typed-items="Full-Stack Developer, Web Developer, Mobile Developer, Freelancer, Développeur Full-Stack, Développeur Web, Développeur Mobile, Freelance">Full-Stack Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink"
-                        aria-hidden="true"></span></h2>
+                <h2 class="text-center"><span data-i18n="hero.title">I'm</span> <span class="typed" data-typed-items="Full-Stack Developer, Web Developer, Mobile Developer, Freelancer, Développeur Full-Stack, Développeur Web, Développeur Mobile, Freelance">Full-Stack Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></h2>
             </div>
 
         </section>
@@ -251,7 +258,7 @@
                             <div class="col-lg-6">
                                 <ul>
                                     <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.age">Age:</strong> <span>26</span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.degree">Degree:</strong> <span>Master II - AI & Big Data Management</span></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.degree">Degree:</strong> <span class="degree-clickable" role="button" tabindex="0" aria-label="View diploma">Master II - AI & Big Data Management</span></li>
                                     <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.email">Email:</strong> <span>faniry.zo.rabemananjara@gmail.com</span></li>
                                     <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.status">Status:</strong> <span>Open to Remote & International Roles</span></li>
                                 </ul>
@@ -331,77 +338,110 @@
                         <h3 data-i18n="skills.technicalSkills">Technical Skills</h3>
 
                         <div class="progress">
-                            <span class="skill"><span>Vue.js (Vue 3)</span> <i class="val">90%</i></span>
+                            <div class="skill-header">
+                                <div class="skill-icon"><i class="bi bi-code-square"></i></div>
+                                <span class="skill"><span>Vue.js (Vue 3)</span> <i class="val">90%</i></span>
+                            </div>
                             <div class="progress-bar-wrap">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
 
                         <div class="progress">
-                            <span class="skill"><span>Nuxt.js</span> <i class="val">90%</i></span>
+                            <div class="skill-header">
+                                <div class="skill-icon"><i class="bi bi-filetype-jsx"></i></div>
+                                <span class="skill"><span>Nuxt.js</span> <i class="val">90%</i></span>
+                            </div>
                             <div class="progress-bar-wrap">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
 
                         <div class="progress">
-                            <span class="skill"><span>Next.js</span> <i class="val">90%</i></span>
+                            <div class="skill-header">
+                                <div class="skill-icon"><i class="bi bi-filetype-js"></i></div>
+                                <span class="skill"><span>Next.js</span> <i class="val">90%</i></span>
+                            </div>
                             <div class="progress-bar-wrap">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
 
                         <div class="progress">
-                            <span class="skill"><span>NestJS</span> <i class="val">90%</i></span>
+                            <div class="skill-header">
+                                <div class="skill-icon"><i class="bi bi-server"></i></div>
+                                <span class="skill"><span>NestJS</span> <i class="val">90%</i></span>
+                            </div>
                             <div class="progress-bar-wrap">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
 
                         <div class="progress">
-                            <span class="skill"><span>Symfony</span> <i class="val">85%</i></span>
+                            <div class="skill-header">
+                                <div class="skill-icon"><i class="bi bi-gear"></i></div>
+                                <span class="skill"><span>Symfony</span> <i class="val">85%</i></span>
+                            </div>
                             <div class="progress-bar-wrap">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
 
                         <div class="progress">
-                            <span class="skill"><span>Laravel</span> <i class="val">85%</i></span>
+                            <div class="skill-header">
+                                <div class="skill-icon"><i class="bi bi-tools"></i></div>
+                                <span class="skill"><span>Laravel</span> <i class="val">85%</i></span>
+                            </div>
                             <div class="progress-bar-wrap">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
 
                         <div class="progress">
-                            <span class="skill"><span>PostgreSQL</span> <i class="val">90%</i></span>
+                            <div class="skill-header">
+                                <div class="skill-icon"><i class="bi bi-database"></i></div>
+                                <span class="skill"><span>PostgreSQL</span> <i class="val">90%</i></span>
+                            </div>
                             <div class="progress-bar-wrap">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
 
                         <div class="progress">
-                            <span class="skill"><span>Prisma ORM</span> <i class="val">90%</i></span>
+                            <div class="skill-header">
+                                <div class="skill-icon"><i class="bi bi-diagram-3"></i></div>
+                                <span class="skill"><span>Prisma ORM</span> <i class="val">90%</i></span>
+                            </div>
                             <div class="progress-bar-wrap">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
 
                         <div class="progress">
-                            <span class="skill"><span>FlutterFlow</span> <i class="val">85%</i></span>
+                            <div class="skill-header">
+                                <div class="skill-icon"><i class="bi bi-phone"></i></div>
+                                <span class="skill"><span>FlutterFlow</span> <i class="val">85%</i></span>
+                            </div>
                             <div class="progress-bar-wrap">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
 
                         <div class="progress">
-                            <span class="skill"><span>Firebase</span> <i class="val">85%</i></span>
+                            <div class="skill-header">
+                                <div class="skill-icon"><i class="bi bi-cloud"></i></div>
+                                <span class="skill"><span>Firebase</span> <i class="val">85%</i></span>
+                            </div>
                             <div class="progress-bar-wrap">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
 
                         <div class="progress">
-                            <span class="skill"><span>Docker</span> <i class="val">85%</i></span>
+                            <div class="skill-header">
+                                <div class="skill-icon"><i class="bi bi-box"></i></div>
+                                <span class="skill"><span>Docker</span> <i class="val">85%</i></span>
+                            </div>
                             <div class="progress-bar-wrap">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
@@ -412,21 +452,30 @@
                         <h3 data-i18n="skills.softSkills">Soft Skills</h3>
 
                         <div class="progress">
+                            <div class="skill-header">
+                                <div class="skill-icon"><i class="bi bi-lightbulb"></i></div>
                             <span class="skill"><span>Problem Solving</span> <i class="val">95%</i></span>
+                            </div>
                             <div class="progress-bar-wrap">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
 
                         <div class="progress">
+                            <div class="skill-header">
+                                <div class="skill-icon"><i class="bi bi-people"></i></div>
                             <span class="skill"><span>Teamwork & Collaboration</span> <i class="val">90%</i></span>
+                            </div>
                             <div class="progress-bar-wrap">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
 
                         <div class="progress">
+                            <div class="skill-header">
+                                <div class="skill-icon"><i class="bi bi-person-check"></i></div>
                             <span class="skill"><span>Autonomy</span> <i class="val">85%</i></span>
+                            </div>
                             <div class="progress-bar-wrap">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
@@ -439,14 +488,20 @@
                         <h3 data-i18n="skills.languages">Languages</h3>
 
                         <div class="progress">
-                            <span class="skill"><span>French</span> <i class="val">Fluent</i></span>
+                            <div class="skill-header">
+                                <div class="skill-icon"><i class="bi bi-translate"></i></div>
+                                <span class="skill"><span>French</span> <i class="val">Fluent</i></span>
+                            </div>
                             <div class="progress-bar-wrap">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
 
                         <div class="progress">
-                            <span class="skill"><span>English</span> <i class="val">Professional</i></span>
+                            <div class="skill-header">
+                                <div class="skill-icon"><i class="bi bi-translate"></i></div>
+                                <span class="skill"><span>English</span> <i class="val">Professional</i></span>
+                            </div>
                             <div class="progress-bar-wrap">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
@@ -479,38 +534,38 @@
                         <div class="container" data-aos="fade-up" data-aos-delay="100">
                             <div class="resume-item pb-0">
                                 <h4>Faniry Rabemananjara</h4>
-                                <p><em>Remote Full Stack Web & Mobile Developer with 4+ years of experience delivering production-ready applications used by real users. Strong expertise in Vue.js, Nuxt.js, Next.js, NestJS, Symfony, FlutterFlow, PostgreSQL, Prisma, Docker, and Firebase. Most projects delivered to production environments, with proven ability to manage end-to-end development in fully remote teams.</em></p>
+                                <p><em data-i18n="resume.summaryDescription">Remote Full Stack Web & Mobile Developer with 4+ years of experience delivering production-ready applications used by real users. Strong expertise in Vue.js, Nuxt.js, Next.js, NestJS, Symfony, FlutterFlow, PostgreSQL, Prisma, Docker, and Firebase. Most projects delivered to production environments, with proven ability to manage end-to-end development in fully remote teams.</em></p>
                                 <ul>
-                                    <li data-i18n="title">Antananarivo, Madagascar</li>
-                                    <li data-i18n="title">+261 34 80 375 94</li>
-                                    <li data-i18n="title">faniry.zo.rabemananjara@gmail.com</li>
+                                    <li>Antananarivo, Madagascar</li>
+                                    <li>+261 34 80 375 94</li>
+                                    <li>faniry.zo.rabemananjara@gmail.com</li>
                                 </ul>
                             </div>
                         </div>
-                        <!-- Edn Resume Item -->
+                        <!-- End Resume Item -->
 
                         <h3 class="resume-title" data-i18n="resume.education">Education</h3>
                         <div class="resume-item">
-                            <h4>Master II – Artificial Intelligence & Big Data Management</h4>
-                            <h5>2022 - 2023</h5>
-                            <p><em>ESTIA Institute of Technology</em></p>
-                            <p>Specialized in Artificial Intelligence and Big Data Management, gaining expertise in machine learning, data analysis, and cloud computing. Worked on AI-driven applications and large-scale data processing. Applied Python and SQL for data manipulation and automation. Conducted a research project on AI-based environmental monitoring systems.</p>
+                            <h4 data-i18n="resume.master2Title">Master II – Artificial Intelligence & Big Data Management</h4>
+                            <h5 data-i18n="resume.master2Period">2022 - 2023</h5>
+                            <p><em data-i18n="resume.master2School">ESTIA Institute of Technology</em></p>
+                            <p data-i18n="resume.master2Description">Specialized in Artificial Intelligence and Big Data Management, gaining expertise in machine learning, data analysis, and cloud computing. Worked on AI-driven applications and large-scale data processing. Applied Python and SQL for data manipulation and automation. Conducted a research project on AI-based environmental monitoring systems.</p>
                         </div>
                         <!-- End Resume Item -->
 
                         <div class="resume-item">
-                            <h4>Master I – Mobile & Web Development</h4>
-                            <h5>2021 - 2022</h5>
-                            <p><em>IT University, Antananarivo, MDG</em></p>
-                            <p>Advanced studies in mobile and web application development, focusing on modern frameworks, responsive design, and cross-platform solutions.</p>
+                            <h4 data-i18n="resume.master1Title">Master I – Mobile & Web Development</h4>
+                            <h5 data-i18n="resume.master1Period">2021 - 2022</h5>
+                            <p><em data-i18n="resume.master1School">IT University, Antananarivo, MDG</em></p>
+                            <p data-i18n="resume.master1Description">Advanced studies in mobile and web application development, focusing on modern frameworks, responsive design, and cross-platform solutions.</p>
                         </div>
                         <!-- End Resume Item -->
 
                         <div class="resume-item">
-                            <h4>Bachelor – Web Application Development</h4>
-                            <h5>2017 - 2020</h5>
-                            <p><em>IT University, Antananarivo, MDG</em></p>
-                            <p>Learned the fundamentals of software engineering, including OOP and design patterns. Developed dynamic and responsive web applications using JavaScript, PHP, and MySQL. Gained knowledge in API development, cloud services, and cybersecurity. Completed several projects, including an e-commerce website and an ERP system.</p>
+                            <h4 data-i18n="resume.bachelorTitle">Bachelor – Web Application Development</h4>
+                            <h5 data-i18n="resume.bachelorPeriod">2017 - 2020</h5>
+                            <p><em data-i18n="resume.bachelorSchool">IT University, Antananarivo, MDG</em></p>
+                            <p data-i18n="resume.bachelorDescription">Learned the fundamentals of software engineering, including OOP and design patterns. Developed dynamic and responsive web applications using JavaScript, PHP, and MySQL. Gained knowledge in API development, cloud services, and cybersecurity. Completed several projects, including an e-commerce website and an ERP system.</p>
                         </div>
                         <!-- End Resume Item -->
 
@@ -519,41 +574,41 @@
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
                         <h3 class="resume-title" data-i18n="resume.professionalExperience">Professional Experience</h3>
                         <div class="resume-item">
-                            <h4>IT Engineer Consultant (Freelance)</h4>
-                            <h5>Apr 2025 – Present</h5>
-                            <p><em>L3M Holding | Remote</em></p>
+                            <h4 data-i18n="resume.job1Title">IT Engineer Consultant (Freelance)</h4>
+                            <h5 data-i18n="resume.job1Period">Apr 2025 – Present</h5>
+                            <p><em data-i18n="resume.job1Company">L3M Holding | Remote</em></p>
                             <ul>
-                                <li><strong>OIKOS IMPACT</strong> – Impact Management Platform (Production): Production platform currently in use. Frontend: Vue.js (Vue 3), Backend: NestJS, Database: PostgreSQL with Prisma ORM</li>
-                                <li><strong>NEPH</strong> – Administrative Web Platform (In Progress): Ongoing migration of a legacy administrative platform. Frontend: Vue.js, Backend: Symfony. Focus on system stability and long-term maintainability</li>
-                                <li><strong>MyDomiil</strong> – Digital Services Platform (Production): Full-stack digital platform deployed to production. Frontend: Vue.js, Backend: NestJS, Database: PostgreSQL with Prisma ORM, Dockerized services</li>
-                                <li><strong>Crypto P2P Intermediation Platform</strong> (Production): Peer-to-peer crypto intermediation platform live in production. Frontend: Vue.js, Nuxt.js, Database: PostgreSQL with Prisma ORM, Docker-based deployment</li>
-                                <li><strong>Permit Management Platform</strong> (Production): Designed and built a permit management system from scratch. Full stack: Vue.js, NestJS, PostgreSQL, Prisma ORM</li>
+                                <li data-i18n="resume.job1Project1"><strong>OIKOS IMPACT</strong> – Impact Management Platform (Production): Production platform currently in use. Frontend: Vue.js (Vue 3), Backend: NestJS, Database: PostgreSQL with Prisma ORM</li>
+                                <li data-i18n="resume.job1Project2"><strong>NEPH</strong> – Administrative Web Platform (In Progress): Ongoing migration of a legacy administrative platform. Frontend: Vue.js, Backend: Symfony. Focus on system stability and long-term maintainability</li>
+                                <li data-i18n="resume.job1Project3"><strong>MyDomiil</strong> – Digital Services Platform (Production): Full-stack digital platform deployed to production. Frontend: Vue.js, Backend: NestJS, Database: PostgreSQL with Prisma ORM, Dockerized services</li>
+                                <li data-i18n="resume.job1Project4"><strong>Crypto P2P Intermediation Platform</strong> (Production): Peer-to-peer crypto intermediation platform live in production. Frontend: Vue.js, Nuxt.js, Database: PostgreSQL with Prisma ORM, Docker-based deployment</li>
+                                <li data-i18n="resume.job1Project5"><strong>Permit Management Platform</strong> (Production): Designed and built a permit management system from scratch. Full stack: Vue.js, NestJS, PostgreSQL, Prisma ORM</li>
                             </ul>
                         </div>
                         <div class="resume-item">
-                            <h4>Full Stack Web & Mobile Developer (Freelance)</h4>
-                            <h5>Oct 2023 – Mar 2025</h5>
-                            <p><em>Synergie Mad | Full Remote</em></p>
+                            <h4 data-i18n="resume.job2Title">Full Stack Web & Mobile Developer (Freelance)</h4>
+                            <h5 data-i18n="resume.job2Period">Oct 2023 – Mar 2025</h5>
+                            <p><em data-i18n="resume.job2Company">Synergie Mad | Full Remote</em></p>
                             <ul>
-                                <li><strong>Remus</strong> – Evangelization Web Platform (Production): Web platform deployed and actively used for evangelization activities. Frontend: Next.js, Database: PostgreSQL</li>
-                                <li><strong>Prytane</strong> – Community Mobile Platform for Churches (Production): Community mobile application live in production. Mobile: FlutterFlow, Backend & authentication: Firebase</li>
-                                <li><strong>Tiresias</strong> – Crypto Learning & Prediction Platform (Production): Educational platform deployed to production. Enables crypto learning and market prediction simulations</li>
+                                <li data-i18n="resume.job2Project1"><strong>Remus</strong> – Evangelization Web Platform (Production): Web platform deployed and actively used for evangelization activities. Frontend: Next.js, Database: PostgreSQL</li>
+                                <li data-i18n="resume.job2Project2"><strong>Prytane</strong> – Community Mobile Platform for Churches (Production): Community mobile application live in production. Mobile: FlutterFlow, Backend & authentication: Firebase</li>
+                                <li data-i18n="resume.job2Project3"><strong>Tiresias</strong> – Crypto Learning & Prediction Platform (Production): Educational platform deployed to production. Enables crypto learning and market prediction simulations</li>
                             </ul>
                         </div>
                         <div class="resume-item">
-                            <h4>Master's Internship – AI-Based Fire Detection System</h4>
-                            <h5>May 2023 – Aug 2023</h5>
-                            <p><em>Ministry of Environment | Madagascar</em></p>
+                            <h4 data-i18n="resume.job3Title">Master's Internship – AI-Based Fire Detection System</h4>
+                            <h5 data-i18n="resume.job3Period">May 2023 – Aug 2023</h5>
+                            <p><em data-i18n="resume.job3Company">Ministry of Environment | Madagascar</em></p>
                             <ul>
-                                <li>AI-based system deployed for fire detection and early warning. Frontend: Vue.js, Backend: Python, Database: MySQL</li>
+                                <li data-i18n="resume.job3Description">AI-based system deployed for fire detection and early warning. Frontend: Vue.js, Backend: Python, Database: MySQL</li>
                             </ul>
                         </div>
                         <div class="resume-item">
-                            <h4>Full Stack Developer Consultant</h4>
-                            <h5>Nov 2021 – Jan 2023</h5>
-                            <p><em>ONG CID | Madagascar</em></p>
+                            <h4 data-i18n="resume.job4Title">Full Stack Developer Consultant</h4>
+                            <h5 data-i18n="resume.job4Period">Nov 2021 – Jan 2023</h5>
+                            <p><em data-i18n="resume.job4Company">ONG CID | Madagascar</em></p>
                             <ul>
-                                <li>NGO website rebuilt and deployed to production using WordPress</li>
+                                <li data-i18n="resume.job4Description">NGO website rebuilt and deployed to production using WordPress</li>
                             </ul>
                         </div>
                     </div>
@@ -593,7 +648,7 @@
                         <!-- Business & E-commerce Applications -->
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
                             <div class="portfolio-content h-100">
-                                <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="FidMax - Loyalty program application for businesses and customers">
+                                <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="FidMax - Loyalty program application for businesses and customers" loading="lazy">
                                 <div class="portfolio-info">
                                     <h4>FidMax</h4>
                                     <p>A loyalty program application for businesses and customers.</p>
@@ -606,7 +661,7 @@
 
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
                             <div class="portfolio-content h-100">
-                                <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="NGOs CID - Dynamic showcase application for NGO projects and initiatives">
+                                <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="NGOs CID - Dynamic showcase application for NGO projects and initiatives" loading="lazy">
                                 <div class="portfolio-info">
                                     <h4>NGOs CID</h4>
                                     <p>This application will serve as a dynamic showcase for the NGO, enabling better interaction with the public and tracking of projects and initiatives.</p>
@@ -617,7 +672,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
                             <div class="portfolio-content h-100">
-                                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="Health in Motion - Application for managing concentration times and yoga for health">
+                                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="Health in Motion - Application for managing concentration times and yoga for health" loading="lazy">
                                 <div class="portfolio-info">
                                     <h4>Health in Motion</h4>
                                     <p>This application consists of managing concentration times and doing yoga to manage health.</p>
@@ -628,7 +683,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
                             <div class="portfolio-content h-100">
-                                <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="Pizza House Free - Showcase website for a pizza restaurant">
+                                <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="Pizza House Free - Showcase website for a pizza restaurant" loading="lazy">
                                 <div class="portfolio-info">
                                     <h4>Pizza House Free</h4>
                                     <p>This application consists of managing a showcase site for a restaurant specializing in pizza.</p>
@@ -639,7 +694,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
                             <div class="portfolio-content h-100">
-                                <img src="assets/img/portfolio/books-4.jpg" class="img-fluid" alt="Assurance decennale - Professional insurance application for Audit, Consulting and Expertise professions">
+                                <img src="assets/img/portfolio/books-4.jpg" class="img-fluid" alt="Assurance decennale - Professional insurance application for Audit, Consulting and Expertise professions" loading="lazy">
                                 <div class="portfolio-info">
                                     <h4>Assurance decennale</h4>
                                     <p>This application consists This application consists in covering your company with professional insurance adapted to the Audit, Consulting and Expertise professions.</p>
@@ -650,7 +705,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
                             <div class="portfolio-content h-100">
-                                <img src="assets/img/portfolio/neph.png" class="img-fluid" alt="NEPH - Démarche Permis Rapide - Web application to help users obtain their NEPH code for driving license exams in France">
+                                <img src="assets/img/portfolio/neph.png" class="img-fluid" alt="NEPH - Démarche Permis Rapide - Web application to help users obtain their NEPH code for driving license exams in France" loading="lazy">
                                 <div class="portfolio-info">
                                     <h4>NEPH - Démarche Permis Rapide</h4>
                                     <p>Web application to help users obtain their NEPH code, an official identifier for driving license exams in France.</p>
@@ -661,7 +716,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
                             <div class="portfolio-content h-100">
-                                <img src="assets/img/portfolio/P2P.png" class="img-fluid" alt="Crypto P2P Club - Learn, understand and practice Web3 and crypto ethically">
+                                <img src="assets/img/portfolio/P2P.png" class="img-fluid" alt="Crypto P2P Club - Learn, understand and practice Web3 and crypto ethically" loading="lazy">
                                 <div class="portfolio-info">
                                     <h4>Crypto P2P Club</h4>
                                     <p>Educational platform to learn, understand and practice Web3 and crypto ethically. Your personalized path to financial freedom through ethical crypto education.</p>
@@ -672,7 +727,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
                             <div class="portfolio-content h-100">
-                                <img src="assets/img/portfolio/mydomii6l.png" class="img-fluid" alt="MyDomii6L - Business domiciliation services platform in Île-de-France with strategic addresses and mail management">
+                                <img src="assets/img/portfolio/mydomii6l.png" class="img-fluid" alt="MyDomii6L - Business domiciliation services platform in Île-de-France with strategic addresses and mail management" loading="lazy">
                                 <div class="portfolio-info">
                                     <h4>MyDomii6L - Business Domiciliation</h4>
                                     <p>Web platform for business domiciliation services in Île-de-France, offering strategic addresses, mail management, and administrative services.</p>
@@ -683,7 +738,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
                             <div class="portfolio-content h-100">
-                                <img src="assets/img/portfolio/product-4.jpg" class="img-fluid" alt="CSR and Impact City - Platform for managing and monitoring company performance and CSR initiatives">
+                                <img src="assets/img/portfolio/product-4.jpg" class="img-fluid" alt="CSR and Impact City - Platform for managing and monitoring company performance and CSR initiatives" loading="lazy">
                                 <div class="portfolio-info">
                                     <h4>CSR and Impact City</h4>
                                     <p>CSR and Impact City is a platform for managing and monitoring the performance of a company.</p>
@@ -695,7 +750,7 @@
                         <!-- End Portfolio Item -->
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
                             <div class="portfolio-content h-100">
-                                <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="Prytane - Mobile application for parish community management">
+                                <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="Prytane - Mobile application for parish community management" loading="lazy">
                                 <div class="portfolio-info">
                                     <h4>Prytane</h4>
                                     <p>Prytane, a mobile application for parish community management.</p>
@@ -706,7 +761,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
                             <div class="portfolio-content h-100">
-                                <img src="assets/img/portfolio/app-4.jpg" class="img-fluid" alt="Tiresias - Mobile application for trading and commerce">
+                                <img src="assets/img/portfolio/app-4.jpg" class="img-fluid" alt="Tiresias - Mobile application for trading and commerce" loading="lazy">
                                 <div class="portfolio-info">
                                     <h4>Tiresias</h4>
                                     <p>Tiresias, a mobile application for trading.</p>
@@ -720,7 +775,7 @@
                         <!-- AI & Data-Driven Solutions -->
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
                             <div class="portfolio-content h-100">
-                                <img src="assets/img/portfolio/wildfire.jpg" class="img-fluid" alt="Wildfire Alert System - AI-powered environmental monitoring system for wildfire prevention">
+                                <img src="assets/img/portfolio/wildfire.jpg" class="img-fluid" alt="Wildfire Alert System - AI-powered environmental monitoring system for wildfire prevention" loading="lazy">
                                 <div class="portfolio-info">
                                     <h4>Wildfire Alert System</h4>
                                     <p>An AI-powered environmental monitoring system for wildfire prevention.</p>
@@ -732,7 +787,7 @@
                         <!-- AI & Data-Driven Solutions -->
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
                             <div class="portfolio-content h-100">
-                                <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="OpenMyst - 3D visualization platform with reliable data on the life of Jesus">
+                                <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="OpenMyst - 3D visualization platform with reliable data on the life of Jesus" loading="lazy">
                                 <div class="portfolio-info">
                                     <h4>OpenMyst</h4>
                                     <p>Open Myst is a 3D visualization platform that brings together the most reliable data available on the life of Jesus.</p>
@@ -743,7 +798,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
                             <div class="portfolio-content h-100">
-                                <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="FidMax - Loyalty program application interface for businesses and customers">
+                                <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="FidMax - Loyalty program application interface for businesses and customers" loading="lazy">
                                 <div class="portfolio-info">
                                     <h4>FidMax</h4>
                                     <p>A loyalty program application for businesses and customers.</p>
@@ -755,7 +810,7 @@
                         <!-- Web & Mobile Development for NGOs & Public Sector -->
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
                             <div class="portfolio-content h-100">
-                                <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="DashTech - Business dashboard application for real-time performance tracking">
+                                <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="DashTech - Business dashboard application for real-time performance tracking" loading="lazy">
                                 <div class="portfolio-info">
                                     <h4>DashTech</h4>
                                     <p>A business dashboard application for real-time performance tracking.
@@ -786,13 +841,13 @@
             <!-- End Section Title -->
 
             <div class="container">
-                <div class="row gy-4">
+                <div class="row gy-4 gx-4">
 
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
                         <div class="icon flex-shrink-0"><i class="bi bi-code-slash"></i></div>
                         <div>
-                            <h4 class="title"><a href="#" class="stretched-link">Custom Web & Mobile Development</a></h4>
-                            <p class="description">Build scalable, high-performance applications tailored to your business needs. From responsive web apps to native mobile solutions using Vue3, NestJS, Flutter, and modern frameworks.</p>
+                            <h4 class="title"><a href="#" class="stretched-link" data-i18n="services.service1Title">Custom Web & Mobile Development</a></h4>
+                            <p class="description" data-i18n="services.service1Desc">Build scalable, high-performance applications tailored to your business needs. From responsive web apps to native mobile solutions using Vue3, NestJS, Flutter, and modern frameworks.</p>
                         </div>
                     </div>
                     <!-- End Service Item -->
@@ -800,8 +855,8 @@
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
                         <div class="icon flex-shrink-0"><i class="bi bi-arrow-repeat"></i></div>
                         <div>
-                            <h4 class="title"><a href="#" class="stretched-link">Application Migration & Modernization</a></h4>
-                            <p class="description">Seamlessly migrate legacy systems to modern architectures. Upgrade your technology stack, improve performance, and reduce maintenance costs with zero downtime.</p>
+                            <h4 class="title"><a href="#" class="stretched-link" data-i18n="services.service2Title">Application Migration & Modernization</a></h4>
+                            <p class="description" data-i18n="services.service2Desc">Seamlessly migrate legacy systems to modern architectures. Upgrade your technology stack, improve performance, and reduce maintenance costs with zero downtime.</p>
                         </div>
                     </div>
                     <!-- End Service Item -->
@@ -809,8 +864,8 @@
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
                         <div class="icon flex-shrink-0"><i class="bi bi-cpu"></i></div>
                         <div>
-                            <h4 class="title"><a href="#" class="stretched-link">AI & Data-Driven Solutions</a></h4>
-                            <p class="description">Leverage artificial intelligence and big data analytics to automate processes, gain insights, and make data-driven decisions that boost your competitive advantage.</p>
+                            <h4 class="title"><a href="#" class="stretched-link" data-i18n="services.service3Title">AI & Data-Driven Solutions</a></h4>
+                            <p class="description" data-i18n="services.service3Desc">Leverage artificial intelligence and big data analytics to automate processes, gain insights, and make data-driven decisions that boost your competitive advantage.</p>
                         </div>
                     </div>
                     <!-- End Service Item -->
@@ -818,8 +873,8 @@
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
                         <div class="icon flex-shrink-0"><i class="bi bi-basket"></i></div>
                         <div>
-                            <h4 class="title"><a href="#" class="stretched-link">E-commerce & Business Platforms</a></h4>
-                            <p class="description">Create powerful online stores and business platforms with secure payment gateways, inventory management, and seamless user experiences that convert visitors into customers.</p>
+                            <h4 class="title"><a href="#" class="stretched-link" data-i18n="services.service4Title">E-commerce & Business Platforms</a></h4>
+                            <p class="description" data-i18n="services.service4Desc">Create powerful online stores and business platforms with secure payment gateways, inventory management, and seamless user experiences that convert visitors into customers.</p>
                         </div>
                     </div>
                     <!-- End Service Item -->
@@ -827,8 +882,8 @@
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
                         <div class="icon flex-shrink-0"><i class="bi bi-database"></i></div>
                         <div>
-                            <h4 class="title"><a href="#" class="stretched-link">Database Design & Optimization</a></h4>
-                            <p class="description">Design robust PostgreSQL and MySQL databases with real-time synchronization. Ensure data integrity, scalability, and optimal performance for your growing business.</p>
+                            <h4 class="title"><a href="#" class="stretched-link" data-i18n="services.service5Title">Database Design & Optimization</a></h4>
+                            <p class="description" data-i18n="services.service5Desc">Design robust PostgreSQL and MySQL databases with real-time synchronization. Ensure data integrity, scalability, and optimal performance for your growing business.</p>
                         </div>
                     </div>
                     <!-- End Service Item -->
@@ -836,8 +891,8 @@
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
                         <div class="icon flex-shrink-0"><i class="bi bi-shield-lock"></i></div>
                         <div>
-                            <h4 class="title"><a href="#" class="stretched-link">Security & Performance Optimization</a></h4>
-                            <p class="description">Protect your applications with enterprise-grade security measures and optimize performance for lightning-fast load times that keep users engaged.</p>
+                            <h4 class="title"><a href="#" class="stretched-link" data-i18n="services.service6Title">Security & Performance Optimization</a></h4>
+                            <p class="description" data-i18n="services.service6Desc">Protect your applications with enterprise-grade security measures and optimize performance for lightning-fast load times that keep users engaged.</p>
                         </div>
                     </div>
                     <!-- End Service Item -->
@@ -845,8 +900,8 @@
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="700">
                         <div class="icon flex-shrink-0"><i class="bi bi-people"></i></div>
                         <div>
-                            <h4 class="title"><a href="#" class="stretched-link">Consulting & Technical Support</a></h4>
-                            <p class="description">Get expert guidance on technology choices, architecture design, and best practices. Ongoing support to ensure your projects succeed and evolve with your needs.</p>
+                            <h4 class="title"><a href="#" class="stretched-link" data-i18n="services.service7Title">Consulting & Technical Support</a></h4>
+                            <p class="description" data-i18n="services.service7Desc">Get expert guidance on technology choices, architecture design, and best practices. Ongoing support to ensure your projects succeed and evolve with your needs.</p>
                         </div>
                     </div>
                     <!-- End Service Item -->
@@ -854,8 +909,8 @@
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="800">
                         <div class="icon flex-shrink-0"><i class="bi bi-cloud-upload"></i></div>
                         <div>
-                            <h4 class="title"><a href="#" class="stretched-link">Cloud Deployment & DevOps</a></h4>
-                            <p class="description">Deploy your applications to the cloud with Docker, CI/CD pipelines, and automated workflows. Ensure reliability, scalability, and seamless updates.</p>
+                            <h4 class="title"><a href="#" class="stretched-link" data-i18n="services.service8Title">Cloud Deployment & DevOps</a></h4>
+                            <p class="description" data-i18n="services.service8Desc">Deploy your applications to the cloud with Docker, CI/CD pipelines, and automated workflows. Ensure reliability, scalability, and seamless updates.</p>
                         </div>
                     </div>
                     <!-- End Service Item -->
@@ -863,8 +918,8 @@
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="900">
                         <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
                         <div>
-                            <h4 class="title"><a href="#" class="stretched-link">Full-Stack API Development</a></h4>
-                            <p class="description">Build RESTful and GraphQL APIs with NestJS backend services. Create seamless integrations between frontend and backend for smooth, efficient data flow.</p>
+                            <h4 class="title"><a href="#" class="stretched-link" data-i18n="services.service9Title">Full-Stack API Development</a></h4>
+                            <p class="description" data-i18n="services.service9Desc">Build RESTful and GraphQL APIs with NestJS backend services. Create seamless integrations between frontend and backend for smooth, efficient data flow.</p>
                         </div>
                     </div>
                     <!-- End Service Item -->
@@ -921,14 +976,14 @@
                             </div>
                             <!-- End Info Item -->
 
-                            <a href="https://www.google.com/maps?q=Antananarivo,Madagascar" target="_blank" rel="noopener noreferrer" style="display: block; cursor: pointer;">
-                                <img src="assets/img/portfolio/MAP.png" alt="Location Map - Antananarivo, Madagascar" class="img-fluid" style="width: 100%; height: 270px; object-fit: cover; border-radius: 8px; border: 1px solid #ddd;">
+                            <a href="https://www.google.com/maps?q=Antananarivo,Madagascar" target="_blank" rel="noopener noreferrer" aria-label="View location on Google Maps">
+                                <img src="assets/img/portfolio/MAP.png" alt="Location Map - Antananarivo, Madagascar" class="img-fluid contact-map-image" loading="lazy">
                             </a>
                         </div>
                     </div>
 
                     <div class="col-lg-7">
-                        <form action="#" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                        <form id="contact-form" action="#" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
                             <div class="row gy-4">
 
                                 <div class="col-md-6">
@@ -942,21 +997,21 @@
                                 </div>
 
                                 <div class="col-md-12">
-                                    <label for="subject-field" class="pb-2" data-i18n="contact.phone">Phone</label>
-                                    <input type="tel" name="phone" id="phone" class="form-control" name="subject" required="">
+                                    <label for="phone" class="pb-2" data-i18n="contact.phone">Phone</label>
+                                    <input type="tel" name="phone" id="phone" class="form-control" required="">
                                 </div>
 
                                 <div class="col-md-12">
-                                    <label for="message-field" class="pb-2" data-i18n="contact.message">Message</label>
-                                    <textarea class="form-control" id="message" name="message" rows="10" id="message-field" required=""></textarea>
+                                    <label for="message" class="pb-2" data-i18n="contact.message">Message</label>
+                                    <textarea class="form-control" id="message" name="message" rows="10" required=""></textarea>
                                 </div>
 
                                 <div class="col-md-12 text-center">
-                                    <div class="loading">Loading</div>
-                                    <div class="error-message"></div>
-                                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                                    <div class="loading" data-i18n="contact.loading">Loading</div>
+                                    <div class="error-message" data-i18n="contact.errorMessage"></div>
+                                    <div class="sent-message" data-i18n="contact.successMessage">Your message has been sent. Thank you!</div>
 
-                                    <button type="submit" value="Send Message" onclick="sendMail()" data-i18n="contact.sendMessage">Send Message</button>
+                                    <button type="submit" value="Send Message" data-i18n="contact.sendMessage">Send Message</button>
                                 </div>
 
                             </div>
@@ -986,7 +1041,7 @@
     </footer>
 
     <!-- Scroll Top -->
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top"><i class="bi bi-arrow-up-short"></i></a>
 
     <!-- Preloader -->
     <div id="preloader"></div>
@@ -1014,19 +1069,45 @@
         })();
 
         function sendMail() {
+            const form = document.getElementById("contact-form");
+            const loadingDiv = form.querySelector(".loading");
+            const errorDiv = form.querySelector(".error-message");
+            const successDiv = form.querySelector(".sent-message");
+            const submitBtn = form.querySelector("button[type='submit']");
+            
+            // Reset messages
+            loadingDiv.style.display = "none";
+            errorDiv.style.display = "none";
+            successDiv.style.display = "none";
+            
+            // Show loading
+            loadingDiv.style.display = "block";
+            submitBtn.disabled = true;
+            
             var params = {
                 object: "Portofolio",
                 from_name: document.getElementById("from_name").value,
                 email: document.getElementById("email").value,
                 phone: document.getElementById("phone").value,
                 message: document.getElementById("message").value
-            }
+            };
+            
             emailjs.send("service_wkqzok4", "template_fyusp1j", params)
                 .then(function(res) {
-                    alert("Email bien envoyé!! " + res.status);
-                    document.getElementById("contact-form").reset(); // Correction de l'ID du formulaire
+                    loadingDiv.style.display = "none";
+                    successDiv.style.display = "block";
+                    form.reset();
+                    submitBtn.disabled = false;
+                    
+                    // Hide success message after 5 seconds
+                    setTimeout(function() {
+                        successDiv.style.display = "none";
+                    }, 5000);
                 })
                 .catch(function(error) {
+                    loadingDiv.style.display = "none";
+                    errorDiv.style.display = "block";
+                    submitBtn.disabled = false;
                     console.log("Erreur lors de l'envoi de l'email:", error);
                 });
         }
@@ -1039,18 +1120,34 @@
             </button>
             <div class="restricted-access-icon">
                 <i class="bi bi-shield-lock-fill"></i>
-            </div>
+        </div>
             <h3 class="restricted-access-title" data-i18n="modal.restrictedAccess">Accès Restreint</h3>
             <p class="restricted-access-message" data-i18n="modal.message">Pour des raisons de confidentialité, l'accès direct à cette application n'est pas autorisé.</p>
             <p class="restricted-access-submessage" data-i18n="modal.submessage">Si vous souhaitez accéder à cette application, veuillez me contacter directement.</p>
             <div class="restricted-access-actions">
-                <a href="#contact" class="restricted-access-btn" onclick="document.getElementById('customModal').style.display='none'">
+                <a href="#contact" class="restricted-access-btn" data-close-modal="true">
                     <i class="bi bi-envelope"></i>
                     <span data-i18n="modal.contactMe">Me Contacter</span>
                 </a>
+    </div>
+        </div>
+    </div>
+
+    <!-- Modal pour le diplôme -->
+    <div id="diplomaModal" class="diploma-modal">
+        <div class="diploma-modal-content">
+            <button id="closeDiplomaModal" class="diploma-modal-close" aria-label="Close modal">
+                <i class="bi bi-x-lg"></i>
+            </button>
+            <div class="diploma-modal-header">
+                <h3 data-i18n="diploma.title">Master of Science - AI & Big Data</h3>
+            </div>
+            <div class="diploma-modal-body">
+                <img src="assets/img/BIHAR AI.jpg" alt="Master II - AI & Big Data Management Diploma" class="diploma-image">
             </div>
         </div>
     </div>
+
     <script>
         const customModal = document.getElementById('customModal');
         const closeModal = document.getElementById('closeModal');
@@ -1083,6 +1180,82 @@
             if (e.key === 'Escape' && customModal.classList.contains('show')) {
                 customModal.classList.remove('show');
                 document.body.style.overflow = ''; // Restaurer le scroll
+            }
+        });
+
+        // Fonction pour ouvrir le modal du diplôme
+        function openDiplomaModal() {
+            const diplomaModal = document.getElementById('diplomaModal');
+            diplomaModal.classList.add('show');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Fermer le modal du diplôme
+        const diplomaModal = document.getElementById('diplomaModal');
+        const closeDiplomaModal = document.getElementById('closeDiplomaModal');
+        
+        closeDiplomaModal.addEventListener('click', function() {
+            diplomaModal.classList.remove('show');
+            document.body.style.overflow = '';
+        });
+        
+        // Fermer le modal en cliquant en dehors
+        diplomaModal.addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.classList.remove('show');
+                document.body.style.overflow = '';
+            }
+        });
+        
+        // Fermer le modal avec la touche Escape
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                if (customModal.classList.contains('show')) {
+                    customModal.classList.remove('show');
+                    document.body.style.overflow = '';
+                }
+                if (diplomaModal.classList.contains('show')) {
+                    diplomaModal.classList.remove('show');
+                    document.body.style.overflow = '';
+                }
+            }
+        });
+
+        // Gestionnaire pour le bouton degree-clickable
+        document.addEventListener('DOMContentLoaded', function() {
+            const degreeClickable = document.querySelector('.degree-clickable');
+            if (degreeClickable) {
+                degreeClickable.addEventListener('click', openDiplomaModal);
+                degreeClickable.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        openDiplomaModal();
+                    }
+                });
+            }
+
+            // Gestionnaire pour fermer le modal via le lien
+            const closeModalLink = document.querySelector('[data-close-modal="true"]');
+            if (closeModalLink) {
+                closeModalLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    customModal.classList.remove('show');
+                    document.body.style.overflow = '';
+                    // Scroll vers la section contact
+                    const contactSection = document.getElementById('contact');
+                    if (contactSection) {
+                        contactSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            }
+
+            // Gestionnaire pour le formulaire de contact
+            const contactForm = document.getElementById('contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    sendMail();
+                });
             }
         });
     </script>

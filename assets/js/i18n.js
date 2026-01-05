@@ -57,8 +57,43 @@ const translations = {
       title: "CV",
       description: "Développeur Full Stack Web & Mobile à distance avec plus de 4 ans d'expérience dans la livraison d'applications prêtes pour la production utilisées par de vrais utilisateurs. Expertise solide en Vue.js, Nuxt.js, Next.js, NestJS, Symfony, FlutterFlow, PostgreSQL, Prisma, Docker et Firebase. La plupart des projets livrés dans des environnements de production, avec une capacité prouvée à gérer le développement de bout en bout dans des équipes entièrement distantes.",
       summary: "Résumé",
+      summaryDescription: "Développeur Full Stack Web & Mobile à distance avec plus de 4 ans d'expérience dans la livraison d'applications prêtes pour la production utilisées par de vrais utilisateurs. Expertise solide en Vue.js, Nuxt.js, Next.js, NestJS, Symfony, FlutterFlow, PostgreSQL, Prisma, Docker et Firebase. La plupart des projets livrés dans des environnements de production, avec une capacité prouvée à gérer le développement de bout en bout dans des équipes entièrement distantes.",
       education: "Formation",
-      professionalExperience: "Expérience professionnelle"
+      master2Title: "Master II – Intelligence Artificielle & Gestion des Big Data",
+      master2Period: "2022 - 2023",
+      master2School: "ESTIA Institute of Technology",
+      master2Description: "Spécialisé en Intelligence Artificielle et Gestion des Big Data, acquérant une expertise en machine learning, analyse de données et cloud computing. Travail sur des applications basées sur l'IA et le traitement de données à grande échelle. Application de Python et SQL pour la manipulation de données et l'automatisation. Réalisation d'un projet de recherche sur les systèmes de surveillance environnementale basés sur l'IA.",
+      master1Title: "Master I – Développement Mobile & Web",
+      master1Period: "2021 - 2022",
+      master1School: "IT University, Antananarivo, MDG",
+      master1Description: "Études avancées en développement d'applications mobiles et web, axées sur les frameworks modernes, le design responsive et les solutions cross-platform.",
+      bachelorTitle: "Licence – Développement d'Applications Web",
+      bachelorPeriod: "2017 - 2020",
+      bachelorSchool: "IT University, Antananarivo, MDG",
+      bachelorDescription: "Apprentissage des fondamentaux de l'ingénierie logicielle, incluant la POO et les design patterns. Développement d'applications web dynamiques et responsives en JavaScript, PHP et MySQL. Acquisition de connaissances en développement d'API, services cloud et cybersécurité. Réalisation de plusieurs projets, incluant un site e-commerce et un système ERP.",
+      professionalExperience: "Expérience professionnelle",
+      job1Title: "Consultant Ingénieur IT (Freelance)",
+      job1Period: "Avr 2025 – Présent",
+      job1Company: "L3M Holding | Remote",
+      job1Project1: "OIKOS IMPACT – Plateforme de Gestion d'Impact (Production) : Plateforme de production actuellement en utilisation. Frontend : Vue.js (Vue 3), Backend : NestJS, Base de données : PostgreSQL avec Prisma ORM",
+      job1Project2: "NEPH – Plateforme Web Administrative (En cours) : Migration en cours d'une plateforme administrative legacy. Frontend : Vue.js, Backend : Symfony. Focus sur la stabilité du système et la maintenabilité à long terme",
+      job1Project3: "MyDomiil – Plateforme de Services Numériques (Production) : Plateforme numérique full-stack déployée en production. Frontend : Vue.js, Backend : NestJS, Base de données : PostgreSQL avec Prisma ORM, Services dockerisés",
+      job1Project4: "Plateforme d'Intermédiation Crypto P2P (Production) : Plateforme d'intermédiation peer-to-peer crypto en production. Frontend : Vue.js, Nuxt.js, Base de données : PostgreSQL avec Prisma ORM, Déploiement basé sur Docker",
+      job1Project5: "Plateforme de Gestion des Permis (Production) : Conception et développement d'un système de gestion des permis depuis zéro. Full stack : Vue.js, NestJS, PostgreSQL, Prisma ORM",
+      job2Title: "Développeur Full Stack Web & Mobile (Freelance)",
+      job2Period: "Oct 2023 – Mar 2025",
+      job2Company: "Synergie Mad | Full Remote",
+      job2Project1: "Remus – Plateforme Web d'Évangélisation (Production) : Plateforme web déployée et activement utilisée pour les activités d'évangélisation. Frontend : Next.js, Base de données : PostgreSQL",
+      job2Project2: "Prytane – Plateforme Mobile Communautaire pour Églises (Production) : Application mobile communautaire en production. Mobile : FlutterFlow, Backend & authentification : Firebase",
+      job2Project3: "Tiresias – Plateforme d'Apprentissage & Prédiction Crypto (Production) : Plateforme éducative déployée en production. Permet l'apprentissage crypto et les simulations de prédiction de marché",
+      job3Title: "Stage Master – Système de Détection d'Incendie basé sur l'IA",
+      job3Period: "Mai 2023 – Août 2023",
+      job3Company: "Ministère de l'Environnement | Madagascar",
+      job3Description: "Système basé sur l'IA déployé pour la détection d'incendie et l'alerte précoce. Frontend : Vue.js, Backend : Python, Base de données : MySQL",
+      job4Title: "Consultant Développeur Full Stack",
+      job4Period: "Nov 2021 – Jan 2023",
+      job4Company: "ONG CID | Madagascar",
+      job4Description: "Site web de l'ONG reconstruit et déployé en production en utilisant WordPress"
     },
     // Portfolio Section
     portfolio: {
@@ -73,7 +108,25 @@ const translations = {
     // Services Section
     services: {
       title: "Services",
-      description: "Transformez vos idées en solutions numériques puissantes. Du concept au déploiement, je livre des applications de pointe qui stimulent la croissance des entreprises et améliorent les expériences utilisateur."
+      description: "Transformez vos idées en solutions numériques puissantes. Du concept au déploiement, je livre des applications de pointe qui stimulent la croissance des entreprises et améliorent les expériences utilisateur.",
+      service1Title: "Développement Web & Mobile Sur Mesure",
+      service1Desc: "Construisez des applications évolutives et performantes adaptées à vos besoins métier. Des applications web responsives aux solutions mobiles natives utilisant Vue3, NestJS, Flutter et des frameworks modernes.",
+      service2Title: "Migration & Modernisation d'Applications",
+      service2Desc: "Migrez en toute transparence les systèmes legacy vers des architectures modernes. Modernisez votre stack technologique, améliorez les performances et réduisez les coûts de maintenance sans interruption de service.",
+      service3Title: "Solutions IA & Pilotées par les Données",
+      service3Desc: "Exploitez l'intelligence artificielle et l'analyse de données volumineuses pour automatiser les processus, obtenir des insights et prendre des décisions basées sur les données qui renforcent votre avantage concurrentiel.",
+      service4Title: "Plateformes E-commerce & Business",
+      service4Desc: "Créez des boutiques en ligne et des plateformes business puissantes avec des passerelles de paiement sécurisées, une gestion d'inventaire et des expériences utilisateur fluides qui transforment les visiteurs en clients.",
+      service5Title: "Conception & Optimisation de Bases de Données",
+      service5Desc: "Concevez des bases de données PostgreSQL et MySQL robustes avec synchronisation en temps réel. Assurez l'intégrité des données, l'évolutivité et des performances optimales pour votre entreprise en croissance.",
+      service6Title: "Sécurité & Optimisation des Performances",
+      service6Desc: "Protégez vos applications avec des mesures de sécurité de niveau entreprise et optimisez les performances pour des temps de chargement ultra-rapides qui maintiennent l'engagement des utilisateurs.",
+      service7Title: "Conseil & Support Technique",
+      service7Desc: "Obtenez des conseils d'experts sur les choix technologiques, la conception d'architecture et les meilleures pratiques. Support continu pour garantir le succès de vos projets et leur évolution selon vos besoins.",
+      service8Title: "Déploiement Cloud & DevOps",
+      service8Desc: "Déployez vos applications dans le cloud avec Docker, des pipelines CI/CD et des workflows automatisés. Assurez la fiabilité, l'évolutivité et des mises à jour transparentes.",
+      service9Title: "Développement API Full-Stack",
+      service9Desc: "Construisez des API RESTful et GraphQL avec des services backend NestJS. Créez des intégrations fluides entre frontend et backend pour un flux de données efficace et harmonieux."
     },
     // Contact Section
     contact: {
@@ -85,7 +138,10 @@ const translations = {
       yourEmail: "Votre email",
       phone: "Téléphone",
       message: "Message",
-      sendMessage: "Envoyer le message"
+      sendMessage: "Envoyer le message",
+      loading: "Chargement...",
+      successMessage: "Votre message a été envoyé. Merci !",
+      errorMessage: "Une erreur s'est produite lors de l'envoi du message."
     },
     // Footer
     footer: {
@@ -98,6 +154,15 @@ const translations = {
       message: "Pour des raisons de confidentialité, l'accès direct à cette application n'est pas autorisé.",
       submessage: "Si vous souhaitez accéder à cette application, veuillez me contacter directement.",
       contactMe: "Me Contacter"
+    },
+    // Diploma Modal
+    diploma: {
+      title: "Master of Science - Intelligence Artificielle & Big Data"
+    },
+    // Theme Toggle
+    theme: {
+      light: "Clair",
+      dark: "Sombre"
     }
   },
   en: {
@@ -153,8 +218,43 @@ const translations = {
       title: "Resume",
       description: "Remote Full Stack Web & Mobile Developer with 4+ years of experience delivering production-ready applications used by real users. Strong expertise in Vue.js, Nuxt.js, Next.js, NestJS, Symfony, FlutterFlow, PostgreSQL, Prisma, Docker, and Firebase. Most projects delivered to production environments, with proven ability to manage end-to-end development in fully remote teams.",
       summary: "Summary",
+      summaryDescription: "Remote Full Stack Web & Mobile Developer with 4+ years of experience delivering production-ready applications used by real users. Strong expertise in Vue.js, Nuxt.js, Next.js, NestJS, Symfony, FlutterFlow, PostgreSQL, Prisma, Docker, and Firebase. Most projects delivered to production environments, with proven ability to manage end-to-end development in fully remote teams.",
       education: "Education",
-      professionalExperience: "Professional Experience"
+      master2Title: "Master II – Artificial Intelligence & Big Data Management",
+      master2Period: "2022 - 2023",
+      master2School: "ESTIA Institute of Technology",
+      master2Description: "Specialized in Artificial Intelligence and Big Data Management, gaining expertise in machine learning, data analysis, and cloud computing. Worked on AI-driven applications and large-scale data processing. Applied Python and SQL for data manipulation and automation. Conducted a research project on AI-based environmental monitoring systems.",
+      master1Title: "Master I – Mobile & Web Development",
+      master1Period: "2021 - 2022",
+      master1School: "IT University, Antananarivo, MDG",
+      master1Description: "Advanced studies in mobile and web application development, focusing on modern frameworks, responsive design, and cross-platform solutions.",
+      bachelorTitle: "Bachelor – Web Application Development",
+      bachelorPeriod: "2017 - 2020",
+      bachelorSchool: "IT University, Antananarivo, MDG",
+      bachelorDescription: "Learned the fundamentals of software engineering, including OOP and design patterns. Developed dynamic and responsive web applications using JavaScript, PHP, and MySQL. Gained knowledge in API development, cloud services, and cybersecurity. Completed several projects, including an e-commerce website and an ERP system.",
+      professionalExperience: "Professional Experience",
+      job1Title: "IT Engineer Consultant (Freelance)",
+      job1Period: "Apr 2025 – Present",
+      job1Company: "L3M Holding | Remote",
+      job1Project1: "OIKOS IMPACT – Impact Management Platform (Production): Production platform currently in use. Frontend: Vue.js (Vue 3), Backend: NestJS, Database: PostgreSQL with Prisma ORM",
+      job1Project2: "NEPH – Administrative Web Platform (In Progress): Ongoing migration of a legacy administrative platform. Frontend: Vue.js, Backend: Symfony. Focus on system stability and long-term maintainability",
+      job1Project3: "MyDomiil – Digital Services Platform (Production): Full-stack digital platform deployed to production. Frontend: Vue.js, Backend: NestJS, Database: PostgreSQL with Prisma ORM, Dockerized services",
+      job1Project4: "Crypto P2P Intermediation Platform (Production): Peer-to-peer crypto intermediation platform live in production. Frontend: Vue.js, Nuxt.js, Database: PostgreSQL with Prisma ORM, Docker-based deployment",
+      job1Project5: "Permit Management Platform (Production): Designed and built a permit management system from scratch. Full stack: Vue.js, NestJS, PostgreSQL, Prisma ORM",
+      job2Title: "Full Stack Web & Mobile Developer (Freelance)",
+      job2Period: "Oct 2023 – Mar 2025",
+      job2Company: "Synergie Mad | Full Remote",
+      job2Project1: "Remus – Evangelization Web Platform (Production): Web platform deployed and actively used for evangelization activities. Frontend: Next.js, Database: PostgreSQL",
+      job2Project2: "Prytane – Community Mobile Platform for Churches (Production): Community mobile application live in production. Mobile: FlutterFlow, Backend & authentication: Firebase",
+      job2Project3: "Tiresias – Crypto Learning & Prediction Platform (Production): Educational platform deployed to production. Enables crypto learning and market prediction simulations",
+      job3Title: "Master's Internship – AI-Based Fire Detection System",
+      job3Period: "May 2023 – Aug 2023",
+      job3Company: "Ministry of Environment | Madagascar",
+      job3Description: "AI-based system deployed for fire detection and early warning. Frontend: Vue.js, Backend: Python, Database: MySQL",
+      job4Title: "Full Stack Developer Consultant",
+      job4Period: "Nov 2021 – Jan 2023",
+      job4Company: "ONG CID | Madagascar",
+      job4Description: "NGO website rebuilt and deployed to production using WordPress"
     },
     // Portfolio Section
     portfolio: {
@@ -169,7 +269,25 @@ const translations = {
     // Services Section
     services: {
       title: "Services",
-      description: "Transform your ideas into powerful digital solutions. From concept to deployment, I deliver cutting-edge applications that drive business growth and enhance user experiences."
+      description: "Transform your ideas into powerful digital solutions. From concept to deployment, I deliver cutting-edge applications that drive business growth and enhance user experiences.",
+      service1Title: "Custom Web & Mobile Development",
+      service1Desc: "Build scalable, high-performance applications tailored to your business needs. From responsive web apps to native mobile solutions using Vue3, NestJS, Flutter, and modern frameworks.",
+      service2Title: "Application Migration & Modernization",
+      service2Desc: "Seamlessly migrate legacy systems to modern architectures. Upgrade your technology stack, improve performance, and reduce maintenance costs with zero downtime.",
+      service3Title: "AI & Data-Driven Solutions",
+      service3Desc: "Leverage artificial intelligence and big data analytics to automate processes, gain insights, and make data-driven decisions that boost your competitive advantage.",
+      service4Title: "E-commerce & Business Platforms",
+      service4Desc: "Create powerful online stores and business platforms with secure payment gateways, inventory management, and seamless user experiences that convert visitors into customers.",
+      service5Title: "Database Design & Optimization",
+      service5Desc: "Design robust PostgreSQL and MySQL databases with real-time synchronization. Ensure data integrity, scalability, and optimal performance for your growing business.",
+      service6Title: "Security & Performance Optimization",
+      service6Desc: "Protect your applications with enterprise-grade security measures and optimize performance for lightning-fast load times that keep users engaged.",
+      service7Title: "Consulting & Technical Support",
+      service7Desc: "Get expert guidance on technology choices, architecture design, and best practices. Ongoing support to ensure your projects succeed and evolve with your needs.",
+      service8Title: "Cloud Deployment & DevOps",
+      service8Desc: "Deploy your applications to the cloud with Docker, CI/CD pipelines, and automated workflows. Ensure reliability, scalability, and seamless updates.",
+      service9Title: "Full-Stack API Development",
+      service9Desc: "Build RESTful and GraphQL APIs with NestJS backend services. Create seamless integrations between frontend and backend for smooth, efficient data flow."
     },
     // Contact Section
     contact: {
@@ -181,7 +299,10 @@ const translations = {
       yourEmail: "Your Email",
       phone: "Phone",
       message: "Message",
-      sendMessage: "Send Message"
+      sendMessage: "Send Message",
+      loading: "Loading...",
+      successMessage: "Your message has been sent. Thank you!",
+      errorMessage: "An error occurred while sending the message."
     },
     // Footer
     footer: {
@@ -194,6 +315,15 @@ const translations = {
       message: "For confidentiality reasons, direct access to this application is not authorized.",
       submessage: "If you wish to access this application, please contact me directly.",
       contactMe: "Contact Me"
+    },
+    // Diploma Modal
+    diploma: {
+      title: "Master of Science - Artificial Intelligence & Big Data"
+    },
+    // Theme Toggle
+    theme: {
+      light: "Light",
+      dark: "Dark"
     }
   }
 };
