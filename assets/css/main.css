@@ -2514,3 +2514,344 @@ section,
     right: 15px;
   }
 }
+
+/*--------------------------------------------------------------
+# Ownership Badge & Business Impact Styles
+--------------------------------------------------------------*/
+.ownership-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(5, 150, 105, 0.15));
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: var(--radius-full);
+  color: #10b981;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+  margin-top: var(--spacing-xs);
+}
+
+.ownership-badge i {
+  font-size: 1rem;
+}
+
+.resume .resume-item ul li strong {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.badge-production,
+.badge-in-progress,
+.badge-senior,
+.badge-ai {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.badge-production {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(5, 150, 105, 0.2));
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.badge-in-progress {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(217, 119, 6, 0.2));
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.badge-senior {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.2), rgba(118, 75, 162, 0.2));
+  color: #667eea;
+  border: 1px solid rgba(102, 126, 234, 0.3);
+}
+
+.badge-ai {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(124, 58, 237, 0.2));
+  color: #8b5cf6;
+  border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+/*--------------------------------------------------------------
+# How I Work Section
+--------------------------------------------------------------*/
+.how-i-work {
+  position: relative;
+}
+
+.work-method-card {
+  background: var(--card-bg);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  height: 100%;
+  text-align: center;
+  transition: all var(--transition-base);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.work-method-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--accent-gradient);
+  transform: scaleX(0);
+  transition: transform var(--transition-base);
+}
+
+.work-method-card:hover::before {
+  transform: scaleX(1);
+}
+
+.work-method-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--accent-color);
+}
+
+.work-method-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto var(--spacing-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-gradient);
+  border-radius: var(--radius-full);
+  font-size: 2rem;
+  color: white;
+  box-shadow: var(--shadow-glow);
+  transition: all var(--transition-base);
+}
+
+.work-method-card:hover .work-method-icon {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 0 30px rgba(102, 126, 234, 0.6);
+}
+
+.work-method-card h4 {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--heading-color);
+  font-weight: 600;
+}
+
+.work-method-card p {
+  color: var(--muted-color);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.work-principles {
+  margin-top: var(--spacing-lg);
+}
+
+.work-principles h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: var(--spacing-md);
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.principles-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+}
+
+.principle-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-full);
+  color: var(--muted-color);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all var(--transition-base);
+}
+
+.principle-badge:hover {
+  background: var(--accent-gradient);
+  color: white;
+  border-color: transparent;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow);
+}
+
+.principle-badge i {
+  font-size: 1.1rem;
+}
+
+/*--------------------------------------------------------------
+# CTA Buttons
+--------------------------------------------------------------*/
+.btn-cta-primary,
+.btn-cta-hero,
+.btn-cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 32px;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all var(--transition-base);
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-cta-primary,
+.btn-cta-hero {
+  background: var(--accent-gradient);
+  color: white;
+  box-shadow: var(--shadow-glow);
+}
+
+.btn-cta-primary:hover,
+.btn-cta-hero:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.5);
+}
+
+.btn-cta-primary i,
+.btn-cta-hero i {
+  transition: transform var(--transition-base);
+}
+
+.btn-cta-primary:hover i,
+.btn-cta-hero:hover i {
+  transform: translateX(5px);
+}
+
+.btn-cta-secondary {
+  background: transparent;
+  color: var(--heading-color);
+  border: 2px solid var(--accent-color);
+}
+
+.btn-cta-secondary:hover {
+  background: var(--accent-color);
+  color: white;
+  transform: translateY(-3px);
+}
+
+.hero-cta {
+  display: flex;
+  gap: var(--spacing-sm);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: var(--spacing-lg);
+}
+
+/*--------------------------------------------------------------
+# Portfolio Badges & Tech Tags
+--------------------------------------------------------------*/
+.portfolio-badges {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-end;
+}
+
+.portfolio-badges .badge-production,
+.portfolio-badges .badge-in-progress,
+.portfolio-badges .badge-senior,
+.portfolio-badges .badge-ai {
+  margin-left: 0;
+  font-size: 0.7rem;
+  padding: 4px 10px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  margin-top: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+}
+
+.tech-tag {
+  display: inline-block;
+  padding: 4px 12px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-full);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 500;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-cta-primary,
+  .btn-cta-hero,
+  .btn-cta-secondary {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+
+  .work-method-card {
+    margin-bottom: var(--spacing-md);
+  }
+
+  .principles-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .principle-badge {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+
+  .portfolio-badges {
+    top: 8px;
+    right: 8px;
+  }
+
+  .portfolio-badges .badge-production,
+  .portfolio-badges .badge-in-progress,
+  .portfolio-badges .badge-senior,
+  .portfolio-badges .badge-ai {
+    font-size: 0.65rem;
+    padding: 3px 8px;
+  }
+}
