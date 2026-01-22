@@ -10,6 +10,7 @@ const translations = {
       home: "Accueil",
       about: "À propos",
       resume: "CV",
+      howIWork: "Comment je travaille",
       portfolio: "Portfolio",
       services: "Services",
       contact: "Contact"
@@ -17,7 +18,9 @@ const translations = {
     // Hero Section
     hero: {
       title: "Je suis",
-      subtitle: "Développeur Full-Stack"
+      subtitle: "Développeur Full-Stack",
+      cta: "Démarrer votre projet",
+      viewWork: "Voir mes réalisations"
     },
     // About Section
     about: {
@@ -105,10 +108,31 @@ const translations = {
       branding: "Solutions IA & Data-Driven",
       books: "Développement Web pour ONG & Secteur Public"
     },
+    // How I Work Section
+    howIWork: {
+      title: "Comment je travaille",
+      description: "Ma méthodologie éprouvée pour livrer des applications prêtes pour la production avec un impact business mesurable",
+      step1Title: "Découverte & Stratégie",
+      step1Desc: "Plongée approfondie dans les besoins métier, les exigences utilisateur et les contraintes techniques. Définition des métriques de succès et KPI en amont.",
+      step2Title: "Architecture & Conception",
+      step2Desc: "Conception d'une architecture évolutive, définition de la stack technique, création des modèles de données. Focus sur la maintenabilité et la croissance future.",
+      step3Title: "Développement & Tests",
+      step3Desc: "Développement avec des principes de code propre, implémentation de tests automatisés, assurance de la qualité du code et des meilleures pratiques de sécurité.",
+      step4Title: "Déploiement & Optimisation",
+      step4Desc: "Déploiement en production sans interruption, surveillance des performances, optimisation pour l'échelle. Support continu.",
+      principlesTitle: "Principes fondamentaux",
+      principle1: "Mentalité Production-First",
+      principle2: "Focus Impact Business",
+      principle3: "Livraison Itérative",
+      principle4: "Communication Claire",
+      principle5: "Meilleures Pratiques",
+      cta: "Construisons quelque chose de grand ensemble"
+    },
     // Services Section
     services: {
       title: "Services",
       description: "Transformez vos idées en solutions numériques puissantes. Du concept au déploiement, je livre des applications de pointe qui stimulent la croissance des entreprises et améliorent les expériences utilisateur.",
+      cta: "Prêt à démarrer votre projet ?",
       service1Title: "Développement Web & Mobile Sur Mesure",
       service1Desc: "Construisez des applications évolutives et performantes adaptées à vos besoins métier. Des applications web responsives aux solutions mobiles natives utilisant Vue3, NestJS, Flutter et des frameworks modernes.",
       service2Title: "Migration & Modernisation d'Applications",
@@ -171,6 +195,7 @@ const translations = {
       home: "Home",
       about: "About",
       resume: "Resume",
+      howIWork: "How I Work",
       portfolio: "Portfolio",
       services: "Services",
       contact: "Contact"
@@ -178,7 +203,9 @@ const translations = {
     // Hero Section
     hero: {
       title: "I'm",
-      subtitle: "Full-Stack Developer"
+      subtitle: "Full-Stack Developer",
+      cta: "Start Your Project",
+      viewWork: "View My Work"
     },
     // About Section
     about: {
@@ -266,10 +293,31 @@ const translations = {
       branding: "AI & Data-Driven Solutions",
       books: "Web Development for NGOs & Public Sector"
     },
+    // How I Work Section
+    howIWork: {
+      title: "How I Work",
+      description: "My proven methodology for delivering production-ready applications with measurable business impact",
+      step1Title: "Discovery & Strategy",
+      step1Desc: "Deep dive into business needs, user requirements, and technical constraints. Define success metrics and KPIs upfront.",
+      step2Title: "Architecture & Design",
+      step2Desc: "Design scalable architecture, define tech stack, create data models. Focus on maintainability and future growth.",
+      step3Title: "Development & Testing",
+      step3Desc: "Build with clean code principles, implement automated testing, ensure code quality and security best practices.",
+      step4Title: "Deployment & Optimization",
+      step4Desc: "Deploy to production with zero downtime, monitor performance, optimize for scale. Provide ongoing support.",
+      principlesTitle: "Core Principles",
+      principle1: "Production-First Mindset",
+      principle2: "Business Impact Focus",
+      principle3: "Iterative Delivery",
+      principle4: "Clear Communication",
+      principle5: "Best Practices",
+      cta: "Let's Build Something Great Together"
+    },
     // Services Section
     services: {
       title: "Services",
       description: "Transform your ideas into powerful digital solutions. From concept to deployment, I deliver cutting-edge applications that drive business growth and enhance user experiences.",
+      cta: "Ready to Start Your Project?",
       service1Title: "Custom Web & Mobile Development",
       service1Desc: "Build scalable, high-performance applications tailored to your business needs. From responsive web apps to native mobile solutions using Vue3, NestJS, Flutter, and modern frameworks.",
       service2Title: "Application Migration & Modernization",
@@ -378,7 +426,7 @@ function translatePage() {
   
   // Translate navigation links (preserve icons)
   const navLinks = document.querySelectorAll('#navmenu a');
-  const navKeys = ['home', 'about', 'resume', 'portfolio', 'services', 'contact'];
+  const navKeys = ['home', 'about', 'resume', 'howIWork', 'portfolio', 'services', 'contact'];
   navLinks.forEach((link, index) => {
     if (t.nav[navKeys[index]]) {
       const icon = link.querySelector('i');
