@@ -110,7 +110,37 @@ const translations = {
       app: "Applications",
       product: "Applications Business & E-commerce",
       branding: "Solutions IA & Data-Driven",
-      books: "Développement Web pour ONG & Secteur Public"
+      books: "Développement Web pour ONG & Secteur Public",
+      discover: "Découvrir",
+      // Projects
+      ngosCidTitle: "NGOs CID",
+      ngosCidDesc: "Cette application servira de vitrine dynamique pour l'ONG, permettant une meilleure interaction avec le public et le suivi des projets et initiatives.",
+      healthInMotionTitle: "Health in Motion",
+      healthInMotionDesc: "Cette application consiste à gérer les temps de concentration et à faire du yoga pour gérer la santé.",
+      pizzaHouseFreeTitle: "Pizza House Free",
+      pizzaHouseFreeDesc: "Cette application consiste à gérer un site vitrine pour un restaurant spécialisé dans la pizza.",
+      assuranceDecennaleTitle: "Assurance decennale",
+      assuranceDecennaleDesc: "Cette application consiste à couvrir votre entreprise avec une assurance professionnelle adaptée aux professions d'Audit, de Conseil et d'Expertise.",
+      nephTitle: "NEPH - Démarche Permis Rapide",
+      nephDesc: "Application web pour aider les utilisateurs à obtenir leur code NEPH, un identifiant officiel pour les examens du permis de conduire en France.",
+      cryptoP2PClubTitle: "Crypto P2P Club",
+      cryptoP2PClubDesc: "Plateforme éducative pour apprendre, comprendre et pratiquer le Web3 et la crypto de manière éthique. Votre chemin personnalisé vers la liberté financière grâce à l'éducation crypto éthique.",
+      myDomii6LTitle: "MyDomii6L - Business Domiciliation",
+      myDomii6LDesc: "Plateforme web de services de domiciliation d'entreprise en Île-de-France, offrant des adresses stratégiques, la gestion du courrier et des services administratifs.",
+      csrImpactCityTitle: "CSR and Impact City",
+      csrImpactCityDesc: "CSR and Impact City est une plateforme de gestion et de suivi de la performance d'une entreprise.",
+      prytaneTitle: "Prytane",
+      prytaneDesc: "Prytane, une application mobile pour la gestion de communauté paroissiale.",
+      tiresiasTitle: "Tiresias",
+      tiresiasDesc: "Tiresias, une application mobile pour le trading.",
+      wildfireAlertTitle: "Wildfire Alert System",
+      wildfireAlertDesc: "Un système de surveillance environnementale basé sur l'IA pour la prévention des incendies de forêt.",
+      openMystTitle: "OpenMyst",
+      openMystDesc: "Open Myst est une plateforme de visualisation 3D qui rassemble les données les plus fiables disponibles sur la vie de Jésus.",
+      fidMaxTitle: "FidMax",
+      fidMaxDesc: "Une application de programme de fidélité pour les entreprises et les clients.",
+      dashTechTitle: "DashTech",
+      dashTechDesc: "Une application de tableau de bord d'entreprise pour le suivi des performances en temps réel."
     },
     // How I Work Section
     howIWork: {
@@ -130,7 +160,9 @@ const translations = {
       principle3: "Livraison Itérative",
       principle4: "Communication Claire",
       principle5: "Meilleures Pratiques",
-      cta: "Construisons quelque chose de grand ensemble"
+      cta: "Construisons quelque chose de grand ensemble",
+      seniorSignalTitle: "Je ne me contente pas d'exécuter des spécifications",
+      seniorSignalDesc: "J'aide à clarifier les exigences, je remets en question les hypothèses et je prends des décisions techniques pragmatiques. Je travaille directement avec les fondateurs, les équipes produit et les clients non-techniques pour livrer des solutions qui génèrent de vrais résultats business."
     },
     // Services Section
     services: {
@@ -174,7 +206,17 @@ const translations = {
     // Footer
     footer: {
       copyright: "© Copyright",
-      allRightsReserved: "Tous droits réservés"
+      allRightsReserved: "Tous droits réservés",
+      available: "Disponible pour du travail freelance",
+      ready: "Prêt à vous aider à construire des applications prêtes pour la production"
+    },
+    // Freelance CTA
+    freelanceCta: {
+      title: "Disponible pour du travail freelance & contractuel",
+      description: "Prêt à vous aider à construire des applications prêtes pour la production qui génèrent de vrais résultats business. Discutons de votre projet.",
+      contactMe: "Me Contacter",
+      linkedin: "LinkedIn",
+      email: "Email"
     },
     // Modal
     modal: {
@@ -299,7 +341,37 @@ const translations = {
       app: "App",
       product: "Business & E-commerce Applications",
       branding: "AI & Data-Driven Solutions",
-      books: "Web Development for NGOs & Public Sector"
+      books: "Web Development for NGOs & Public Sector",
+      discover: "Discover",
+      // Projects
+      ngosCidTitle: "NGOs CID",
+      ngosCidDesc: "This application will serve as a dynamic showcase for the NGO, enabling better interaction with the public and tracking of projects and initiatives.",
+      healthInMotionTitle: "Health in Motion",
+      healthInMotionDesc: "This application consists of managing concentration times and doing yoga to manage health.",
+      pizzaHouseFreeTitle: "Pizza House Free",
+      pizzaHouseFreeDesc: "This application consists of managing a showcase site for a restaurant specializing in pizza.",
+      assuranceDecennaleTitle: "Assurance decennale",
+      assuranceDecennaleDesc: "This application consists in covering your company with professional insurance adapted to the Audit, Consulting and Expertise professions.",
+      nephTitle: "NEPH - Démarche Permis Rapide",
+      nephDesc: "Web application to help users obtain their NEPH code, an official identifier for driving license exams in France.",
+      cryptoP2PClubTitle: "Crypto P2P Club",
+      cryptoP2PClubDesc: "Educational platform to learn, understand and practice Web3 and crypto ethically. Your personalized path to financial freedom through ethical crypto education.",
+      myDomii6LTitle: "MyDomii6L - Business Domiciliation",
+      myDomii6LDesc: "Web platform for business domiciliation services in Île-de-France, offering strategic addresses, mail management, and administrative services.",
+      csrImpactCityTitle: "CSR and Impact City",
+      csrImpactCityDesc: "CSR and Impact City is a platform for managing and monitoring the performance of a company.",
+      prytaneTitle: "Prytane",
+      prytaneDesc: "Prytane, a mobile application for parish community management.",
+      tiresiasTitle: "Tiresias",
+      tiresiasDesc: "Tiresias, a mobile application for trading.",
+      wildfireAlertTitle: "Wildfire Alert System",
+      wildfireAlertDesc: "An AI-powered environmental monitoring system for wildfire prevention.",
+      openMystTitle: "OpenMyst",
+      openMystDesc: "Open Myst is a 3D visualization platform that brings together the most reliable data available on the life of Jesus.",
+      fidMaxTitle: "FidMax",
+      fidMaxDesc: "A loyalty program application for businesses and customers.",
+      dashTechTitle: "DashTech",
+      dashTechDesc: "A business dashboard application for real-time performance tracking."
     },
     // How I Work Section
     howIWork: {
@@ -319,7 +391,9 @@ const translations = {
       principle3: "Iterative Delivery",
       principle4: "Clear Communication",
       principle5: "Best Practices",
-      cta: "Let's Build Something Great Together"
+      cta: "Let's Build Something Great Together",
+      seniorSignalTitle: "I don't just execute specs",
+      seniorSignalDesc: "I help clarify requirements, challenge assumptions, and make pragmatic technical decisions. I work directly with founders, product teams, and non-technical clients to deliver solutions that drive real business results."
     },
     // Services Section
     services: {
@@ -363,7 +437,17 @@ const translations = {
     // Footer
     footer: {
       copyright: "© Copyright",
-      allRightsReserved: "All Rights Reserved"
+      allRightsReserved: "All Rights Reserved",
+      available: "Available for Freelance Work",
+      ready: "Ready to help you build production-ready applications"
+    },
+    // Freelance CTA
+    freelanceCta: {
+      title: "Available for Freelance & Contract Work",
+      description: "Ready to help you build production-ready applications that drive real business results. Let's discuss your project.",
+      contactMe: "Contact Me",
+      linkedin: "LinkedIn",
+      email: "Email"
     },
     // Modal
     modal: {
