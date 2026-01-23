@@ -169,7 +169,7 @@
 }
 
 /* Light Background Override - Keep for backward compatibility */
-.light-background {
+.light-background:not(.work-with-me) {
   --background-color: #f8fafc;
   --surface-color: #ffffff;
   --card-bg: #ffffff;
@@ -1384,6 +1384,15 @@ section,
   transition: all var(--transition-base);
 }
 
+.portfolio .portfolio-content[data-project] {
+  cursor: pointer;
+  transition: transform var(--transition-base);
+}
+
+.portfolio .portfolio-content[data-project]:hover {
+  transform: translateY(-5px);
+}
+
 /* Désactiver l'effet hover pour les projets sans lien */
 .portfolio .portfolio-content:not(:has(.details-link)) {
   cursor: default;
@@ -1401,6 +1410,12 @@ section,
   width: 100%;
   height: 300px;
   object-fit: cover;
+}
+
+.featured-projects .portfolio-content img {
+  height: 100%;
+  min-height: 400px;
+  object-fit: cover;
   transition: all var(--transition-slow);
 }
 
@@ -1416,57 +1431,125 @@ section,
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: var(--spacing-md);
+  padding: var(--spacing-lg) var(--spacing-md);
   opacity: 0;
-  transition: all var(--transition-base);
+  transition: opacity var(--transition-base);
   backdrop-filter: blur(10px);
-  gap: var(--spacing-sm);
+  gap: var(--spacing-md);
+  overflow: hidden;
 }
 
 .portfolio .portfolio-content:hover .portfolio-info {
   opacity: 1;
 }
 
+/* Featured projects - same behavior as other projects (overlay on hover) */
+.featured-projects .portfolio-content {
+  min-height: 400px;
+}
+
+.featured-projects .portfolio-content .portfolio-info {
+  opacity: 0;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.95), rgba(118, 75, 162, 0.95));
+  padding: var(--spacing-lg) var(--spacing-md);
+  justify-content: center;
+  gap: var(--spacing-md);
+}
+
+.featured-projects .portfolio-content:hover .portfolio-info {
+  opacity: 1;
+}
+
+/* Improve visibility for all portfolio items on hover */
+.portfolio .portfolio-content:hover .portfolio-info {
+  opacity: 1 !important;
+  transform: scale(1);
+}
+
+/* Make sure button stands out more and is always visible */
+.portfolio .portfolio-info .details-link {
+  margin-top: var(--spacing-md);
+  order: 999;
+  transform: translateY(0);
+}
+
 .portfolio .portfolio-info h4 {
   color: white;
-  font-size: 1.25rem;
-  margin-bottom: var(--spacing-xs);
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-md);
   text-align: center;
   font-weight: 700;
   line-height: 1.3;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  padding: 0 var(--spacing-sm);
+}
+
+.featured-projects .portfolio-info h4 {
+  font-size: 1.6rem;
+  margin-bottom: var(--spacing-md);
 }
 
 .portfolio .portfolio-info p {
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.98);
   text-align: center;
-  margin-bottom: var(--spacing-sm);
-  font-size: 0.95rem;
-  line-height: 1.6;
+  margin-bottom: var(--spacing-md);
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 90%;
+  padding: 0 var(--spacing-sm);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  flex-shrink: 0;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
 }
+
+.featured-projects .portfolio-info p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  -webkit-line-clamp: 3;
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Removed Problem/Role/Impact styles - keeping simple description only */
 
 .portfolio .portfolio-info .preview-link,
 .portfolio .portfolio-info .details-link {
-  display: inline-flex;
+  display: inline-flex !important;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.25);
+  background: white !important;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: var(--radius-md);
-  color: white;
-  font-size: 0.95rem;
-  font-weight: 600;
-  padding: 12px 28px;
-  margin: var(--spacing-xs) auto 0;
+  color: var(--accent-color) !important;
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 16px 36px;
+  margin: var(--spacing-md) auto 0;
   transition: all var(--transition-base);
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid white;
   text-decoration: none;
   white-space: nowrap;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
   letter-spacing: 0.5px;
-  min-width: 150px;
+  min-width: 180px;
   position: relative;
   overflow: hidden;
+  z-index: 20;
+  flex-shrink: 0;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.featured-projects .portfolio-info .details-link {
+  margin-top: var(--spacing-md);
+  padding: 18px 40px;
+  font-size: 1.1rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
 }
 
 .portfolio .portfolio-info .preview-link::before,
@@ -1490,9 +1573,16 @@ section,
 .portfolio .portfolio-info .details-link:hover {
   background: white;
   color: var(--accent-color);
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35), 0 0 20px rgba(255, 255, 255, 0.4);
+  transform: translateY(-3px) scale(1.08);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4), 0 0 25px rgba(255, 255, 255, 0.5);
   border-color: white;
+}
+
+/* Ensure button is always visible on featured projects */
+.featured-projects .portfolio-info .details-link {
+  background: white;
+  color: var(--accent-color);
+  opacity: 1;
 }
 
 /*--------------------------------------------------------------
@@ -3142,6 +3232,167 @@ section,
   margin-top: var(--spacing-lg);
 }
 
+.hero-subtitle,
+.hero-subtitle-2 {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 400;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-availability {
+  color: var(--accent-color);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Work with me Section */
+.work-with-me {
+  padding: var(--spacing-xl) 0;
+  background: var(--background-color);
+}
+
+/* Override light-background to use theme-aware colors */
+/* Force theme-aware colors for work-with-me section */
+
+/* Default (dark) theme colors for work-with-me when no system preference */
+:root:not([data-theme]) .work-with-me.light-background {
+  --background-color: #0a0e27;
+  --surface-color: #1a1f3a;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --default-color: #e2e8f0;
+  --heading-color: #ffffff;
+  --muted-color: #94a3b8;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Light theme colors for work-with-me */
+:root[data-theme="light"] .work-with-me.light-background {
+  --background-color: #f8fafc;
+  --surface-color: #ffffff;
+  --card-bg: #ffffff;
+  --glass-bg: rgba(255, 255, 255, 0.8);
+  --default-color: #1e293b;
+  --heading-color: #0f172a;
+  --muted-color: #64748b;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) .work-with-me.light-background,
+  :root[data-theme="auto"] .work-with-me.light-background {
+    --background-color: #f8fafc;
+    --surface-color: #ffffff;
+    --card-bg: #ffffff;
+    --glass-bg: rgba(255, 255, 255, 0.8);
+    --default-color: #1e293b;
+    --heading-color: #0f172a;
+    --muted-color: #64748b;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* Dark theme colors for work-with-me */
+:root[data-theme="dark"] .work-with-me.light-background {
+  --background-color: #0a0e27;
+  --surface-color: #1a1f3a;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --default-color: #e2e8f0;
+  --heading-color: #ffffff;
+  --muted-color: #94a3b8;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) .work-with-me.light-background,
+  :root[data-theme="auto"] .work-with-me.light-background {
+    --background-color: #0a0e27;
+    --surface-color: #1a1f3a;
+    --card-bg: rgba(255, 255, 255, 0.05);
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --default-color: #e2e8f0;
+    --heading-color: #ffffff;
+    --muted-color: #94a3b8;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.2);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.work-with-me h2 {
+  color: var(--heading-color);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+}
+
+.work-subtitle {
+  color: var(--accent-color);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.work-description {
+  color: var(--default-color);
+  font-size: 1.1rem;
+}
+
+.work-availability {
+  color: var(--success-color);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.work-interested {
+  color: var(--heading-color);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.work-lets-talk {
+  color: var(--default-color);
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.work-cta-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: var(--spacing-md);
+}
+
+.contact-cta {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
+.email-link {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color var(--transition-base);
+}
+
+.email-link:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
 /*--------------------------------------------------------------
 # Portfolio Badges & Tech Tags
 --------------------------------------------------------------*/
@@ -3149,32 +3400,47 @@ section,
   position: absolute;
   top: 12px;
   right: 12px;
-  z-index: 10;
+  z-index: 20;
   display: flex;
   flex-direction: column;
   gap: 6px;
   align-items: flex-end;
+  max-width: 40%;
+  pointer-events: none;
+}
+
+.portfolio-badges span {
+  pointer-events: auto;
 }
 
 .portfolio-badges .badge-production,
 .portfolio-badges .badge-in-progress,
 .portfolio-badges .badge-senior,
-.portfolio-badges .badge-ai {
+.portfolio-badges .badge-ai,
+.portfolio-badges .badge-flagship {
   margin-left: 0;
   font-size: 0.7rem;
-  padding: 4px 10px;
+  padding: 5px 10px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
 
 .portfolio-tech {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 8px;
   justify-content: center;
-  margin-top: var(--spacing-sm);
-  margin-bottom: var(--spacing-sm);
+  margin: var(--spacing-md) 0;
+  flex-shrink: 0;
+}
+
+.featured-projects .portfolio-tech {
+  margin: var(--spacing-md) 0 var(--spacing-lg);
 }
 
 .tech-tag {

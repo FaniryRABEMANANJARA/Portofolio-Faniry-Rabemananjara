@@ -225,14 +225,17 @@
             </div>
 
             <div class="container" data-aos="fade-up" data-aos-delay="100">
-                <h2 class="text-center"><span data-i18n="hero.title">I'm</span> <span class="typed" data-typed-items="Full-Stack Developer, Web Developer, Mobile Developer, Freelancer, Développeur Full-Stack, Développeur Web, Développeur Mobile, Freelance">Full-Stack Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></h2>
+                <h2 class="text-center" data-i18n="hero.title">Senior Frontend / Full-Stack Engineer</h2>
+                <p class="text-center hero-subtitle mt-3" data-i18n="hero.subtitle">I build reliable business applications and SaaS products — from idea to production.</p>
+                <p class="text-center hero-subtitle-2" data-i18n="hero.subtitle2">Focused on clarity, scalability, and long-term maintainability.</p>
+                <p class="text-center hero-availability mt-3" data-i18n="hero.availability">Available for freelance & contract (remote).</p>
                 <div class="hero-cta text-center mt-4" data-aos="fade-up" data-aos-delay="300">
                     <a href="#contact" class="btn-cta-hero">
-                        <span data-i18n="hero.cta">Start Your Project</span>
+                        <span data-i18n="hero.cta">Contact me</span>
                         <i class="bi bi-arrow-right"></i>
                     </a>
                     <a href="#portfolio" class="btn-cta-secondary">
-                        <span data-i18n="hero.viewWork">View My Work</span>
+                        <span data-i18n="hero.viewWork">View projects</span>
                     </a>
                 </div>
             </div>
@@ -744,10 +747,60 @@
                     </ul>
                     <!-- End Portfolio Filters -->
 
-                    <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+                    <!-- Featured Projects Section -->
+                    <div class="featured-projects mb-5" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="text-center mb-4" style="color: var(--heading-color); font-size: 1.8rem; font-weight: 700;">Featured Projects</h3>
+                        <div class="row gy-4">
+                            <div class="col-lg-6 portfolio-item isotope-item filter-books portfolio-flagship">
+                                <div class="portfolio-content h-100" data-project="neph" style="cursor: pointer;">
+                                    <div class="portfolio-badges">
+                                        <span class="badge-production">🚀 Production</span>
+                                        <span class="badge-senior">⭐ Senior Level</span>
+                                        <span class="badge-flagship">⭐ Flagship Project</span>
+                                    </div>
+                                    <img src="assets/img/portfolio/neph.png" class="img-fluid" alt="NEPH - Démarche Permis Rapide - Web application to help users obtain their NEPH code for driving license exams in France" loading="lazy">
+                                    <div class="portfolio-info">
+                                        <h4 data-i18n="portfolio.nephTitle">NEPH - Démarche Permis Rapide</h4>
+                                        <p data-i18n="portfolio.nephDesc">Web application to help users obtain their NEPH code, an official identifier for driving license exams in France.</p>
+                                        <div class="portfolio-tech">
+                                            <span class="tech-tag">Vue.js</span>
+                                            <span class="tech-tag">Symfony</span>
+                                        </div>
+                                        <a href="https://www.demarchepermisrapide.fr" title="More Details" class="details-link open-popup" data-i18n="portfolio.discover" onclick="event.stopPropagation();">Découvrir</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 portfolio-item isotope-item filter-books portfolio-flagship">
+                                <div class="portfolio-content h-100" data-project="csr-impact" style="cursor: pointer;">
+                                    <div class="portfolio-badges">
+                                        <span class="badge-production">🚀 Production</span>
+                                        <span class="badge-senior">⭐ Senior Level</span>
+                                        <span class="badge-flagship">⭐ Flagship Project</span>
+                                    </div>
+                                    <img src="assets/img/portfolio/product-4.jpg" class="img-fluid" alt="CSR and Impact City - Platform for managing and monitoring company performance and CSR initiatives" loading="lazy">
+                                    <div class="portfolio-info">
+                                        <h4 data-i18n="portfolio.csrImpactCityTitle">CSR and Impact City</h4>
+                                        <p data-i18n="portfolio.csrImpactCityDesc">CSR and Impact City is a platform for managing and monitoring the performance of a company.</p>
+                                        <div class="portfolio-tech">
+                                            <span class="tech-tag">Vue.js</span>
+                                            <span class="tech-tag">NestJS</span>
+                                            <span class="tech-tag">PostgreSQL</span>
+                                        </div>
+                                        <a href="https://recette.monespacerse.com/" title="More Details" class="details-link open-popup" data-i18n="portfolio.discover" onclick="event.stopPropagation();">Découvrir</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Featured Projects -->
+                    
+                    <!-- Other Projects Section -->
+                    <div class="other-projects" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="text-center mb-4" style="color: var(--heading-color); font-size: 1.5rem; font-weight: 600;">Other Projects</h3>
+                        <div class="row gy-4 isotope-container">
 
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-                            <div class="portfolio-content h-100">
+                            <div class="portfolio-content h-100" data-project="ngos-cid" style="cursor: pointer;">
                                 <div class="portfolio-badges">
                                     <span class="badge-production">🚀 Production</span>
                                 </div>
@@ -758,12 +811,12 @@
                                     <div class="portfolio-tech">
                                         <span class="tech-tag">WordPress</span>
                                     </div>
-                                    <a href="https://wearecid.mg/" title="More Details" class="details-link open-popup" data-i18n="portfolio.discover">Découvrir</a>
+                                    <a href="https://wearecid.mg/" title="More Details" class="details-link open-popup" data-i18n="portfolio.discover" onclick="event.stopPropagation();">Découvrir</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-                            <div class="portfolio-content h-100">
+                            <div class="portfolio-content h-100" data-project="health-in-motion" style="cursor: pointer;">
                                 <div class="portfolio-badges">
                                     <span class="badge-production">🚀 Production</span>
                                 </div>
@@ -774,12 +827,12 @@
                                     <div class="portfolio-tech">
                                         <span class="tech-tag">Next.js</span>
                                     </div>
-                                    <a href="https://project-tranquill.vercel.app/" title="More Details" class="details-link open-popup" data-i18n="portfolio.discover">Découvrir</a>
+                                    <a href="https://project-tranquill.vercel.app/" title="More Details" class="details-link open-popup" data-i18n="portfolio.discover" onclick="event.stopPropagation();">Découvrir</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-                            <div class="portfolio-content h-100">
+                            <div class="portfolio-content h-100" data-project="pizza-house" style="cursor: pointer;">
                                 <div class="portfolio-badges">
                                     <span class="badge-production">🚀 Production</span>
                                 </div>
@@ -790,12 +843,12 @@
                                     <div class="portfolio-tech">
                                         <span class="tech-tag">Next.js</span>
                                     </div>
-                                    <a href="https://restauration-pizzahouse.vercel.app/" title="More Details" class="details-link open-popup" data-i18n="portfolio.discover">Découvrir</a>
+                                    <a href="https://restauration-pizzahouse.vercel.app/" title="More Details" class="details-link open-popup" data-i18n="portfolio.discover" onclick="event.stopPropagation();">Découvrir</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-                            <div class="portfolio-content h-100">
+                            <div class="portfolio-content h-100" data-project="assurance-decennale" style="cursor: pointer;">
                                 <div class="portfolio-badges">
                                     <span class="badge-production">🚀 Production</span>
                                 </div>
@@ -806,31 +859,12 @@
                                     <div class="portfolio-tech">
                                         <span class="tech-tag">Next.js</span>
                                     </div>
-                                    <a href="https://assurance-decennale.vercel.app/" title="More Details" class="details-link open-popup" data-i18n="portfolio.discover">Découvrir</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books portfolio-flagship">
-                            <div class="portfolio-content h-100">
-                                <div class="portfolio-badges">
-                                    <span class="badge-production">🚀 Production</span>
-                                    <span class="badge-senior">⭐ Senior Level</span>
-                                    <span class="badge-flagship">⭐ Flagship Project</span>
-                                </div>
-                                <img src="assets/img/portfolio/neph.png" class="img-fluid" alt="NEPH - Démarche Permis Rapide - Web application to help users obtain their NEPH code for driving license exams in France" loading="lazy">
-                                <div class="portfolio-info">
-                                    <h4 data-i18n="portfolio.nephTitle">NEPH - Démarche Permis Rapide</h4>
-                                    <p data-i18n="portfolio.nephDesc">Web application to help users obtain their NEPH code, an official identifier for driving license exams in France.</p>
-                                    <div class="portfolio-tech">
-                                        <span class="tech-tag">Vue.js</span>
-                                        <span class="tech-tag">Symfony</span>
-                                    </div>
-                                    <a href="https://www.demarchepermisrapide.fr" title="More Details" class="details-link open-popup" data-i18n="portfolio.discover">Découvrir</a>
+                                    <a href="https://assurance-decennale.vercel.app/" title="More Details" class="details-link open-popup" data-i18n="portfolio.discover" onclick="event.stopPropagation();">Découvrir</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-                            <div class="portfolio-content h-100">
+                            <div class="portfolio-content h-100" data-project="crypto-p2p" style="cursor: pointer;">
                                 <div class="portfolio-badges">
                                     <span class="badge-production">🚀 Production</span>
                                     <span class="badge-senior">⭐ Senior Level</span>
@@ -844,12 +878,12 @@
                                         <span class="tech-tag">Nuxt.js</span>
                                         <span class="tech-tag">PostgreSQL</span>
                                     </div>
-                                    <a href="https://crypto-p2p-club.com" title="More Details" class="details-link open-popup" data-i18n="portfolio.discover">Découvrir</a>
+                                    <a href="https://crypto-p2p-club.com" title="More Details" class="details-link open-popup" data-i18n="portfolio.discover" onclick="event.stopPropagation();">Découvrir</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-                            <div class="portfolio-content h-100">
+                            <div class="portfolio-content h-100" data-project="mydomii6l" style="cursor: pointer;">
                                 <div class="portfolio-badges">
                                     <span class="badge-production">🚀 Production</span>
                                     <span class="badge-senior">⭐ Senior Level</span>
@@ -863,33 +897,13 @@
                                         <span class="tech-tag">NestJS</span>
                                         <span class="tech-tag">PostgreSQL</span>
                                     </div>
-                                    <a href="https://www.mydomii6l.fr" title="More Details" class="details-link open-popup" data-i18n="portfolio.discover">Découvrir</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books portfolio-flagship">
-                            <div class="portfolio-content h-100">
-                                <div class="portfolio-badges">
-                                    <span class="badge-production">🚀 Production</span>
-                                    <span class="badge-senior">⭐ Senior Level</span>
-                                    <span class="badge-flagship">⭐ Flagship Project</span>
-                                </div>
-                                <img src="assets/img/portfolio/product-4.jpg" class="img-fluid" alt="CSR and Impact City - Platform for managing and monitoring company performance and CSR initiatives" loading="lazy">
-                                <div class="portfolio-info">
-                                    <h4 data-i18n="portfolio.csrImpactCityTitle">CSR and Impact City</h4>
-                                    <p data-i18n="portfolio.csrImpactCityDesc">CSR and Impact City is a platform for managing and monitoring the performance of a company.</p>
-                                    <div class="portfolio-tech">
-                                        <span class="tech-tag">Vue.js</span>
-                                        <span class="tech-tag">NestJS</span>
-                                        <span class="tech-tag">PostgreSQL</span>
-                                    </div>
-                                    <a href="https://recette.monespacerse.com/" title="More Details" class="details-link open-popup" data-i18n="portfolio.discover">Découvrir</a>
+                                    <a href="https://www.mydomii6l.fr" title="More Details" class="details-link open-popup" data-i18n="portfolio.discover" onclick="event.stopPropagation();">Découvrir</a>
                                 </div>
                             </div>
                         </div>
                         <!-- End Portfolio Item -->
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                            <div class="portfolio-content h-100">
+                            <div class="portfolio-content h-100" data-project="prytane" style="cursor: pointer;">
                                 <div class="portfolio-badges">
                                     <span class="badge-production">🚀 Production</span>
                                     <span class="badge-senior">⭐ Senior Level</span>
@@ -902,12 +916,12 @@
                                         <span class="tech-tag">FlutterFlow</span>
                                         <span class="tech-tag">Firebase</span>
                                     </div>
-                                    <a href="https://www.prytane.fr/" title="More Details" class="details-link open-popup" data-i18n="portfolio.discover">Découvrir</a>
+                                    <a href="https://www.prytane.fr/" title="More Details" class="details-link open-popup" data-i18n="portfolio.discover" onclick="event.stopPropagation();">Découvrir</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                            <div class="portfolio-content h-100">
+                            <div class="portfolio-content h-100" data-project="tiresias" style="cursor: pointer;">
                                 <div class="portfolio-badges">
                                     <span class="badge-production">🚀 Production</span>
                                     <span class="badge-senior">⭐ Senior Level</span>
@@ -920,7 +934,7 @@
                                         <span class="tech-tag">Vue.js</span>
                                         <span class="tech-tag">NestJS</span>
                                     </div>
-                                    <a href="https://tiresia.vercel.app/en" title="More Details" class="details-link open-popup" data-i18n="portfolio.discover">Découvrir</a>
+                                    <a href="https://tiresia.vercel.app/en" title="More Details" class="details-link open-popup" data-i18n="portfolio.discover" onclick="event.stopPropagation();">Découvrir</a>
                                 </div>
                             </div>
                         </div>
@@ -928,7 +942,7 @@
 
                         <!-- AI & Data-Driven Solutions -->
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                            <div class="portfolio-content h-100">
+                            <div class="portfolio-content h-100" data-project="wildfire" style="cursor: pointer;">
                                 <div class="portfolio-badges">
                                     <span class="badge-production">🚀 Production</span>
                                     <span class="badge-senior">⭐ Senior Level</span>
@@ -943,7 +957,7 @@
                                         <span class="tech-tag">Python</span>
                                         <span class="tech-tag">AI/ML</span>
                                     </div>
-                                    <a href="https://aroafodata.gov.mg/" title="More Details" class="details-link open-popup" data-i18n="portfolio.discover">Découvrir</a>
+                                    <a href="https://aroafodata.gov.mg/" title="More Details" class="details-link open-popup" data-i18n="portfolio.discover" onclick="event.stopPropagation();">Découvrir</a>
                                 </div>
                             </div>
                         </div>
@@ -1004,8 +1018,9 @@
                             </div>
                         </div>
                     </div>
+                    </div>
+                    <!-- End Other Projects -->
                 </div>
-
 
             </div>
 
@@ -1123,30 +1138,37 @@
 
 
 
-        <!-- Freelance CTA Section -->
-        <!-- <section id="freelance-cta" class="freelance-cta section">
+        <!-- Work with me Section -->
+        <section id="work-with-me" class="work-with-me section light-background">
             <div class="container" data-aos="fade-up">
-                <div class="freelance-cta-content">
-                    <h2 data-i18n="freelanceCta.title">Available for Freelance & Contract Work</h2>
-                    <p data-i18n="freelanceCta.description">Ready to help you build production-ready applications that drive real business results. Let's discuss your project.</p>
-                    <div class="freelance-cta-actions">
-                        <a href="#contact" class="btn-cta-primary">
-                            <span data-i18n="freelanceCta.contactMe">Contact Me</span>
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/faniry-zo-rabemananjara/" target="_blank" rel="noopener noreferrer" class="btn-cta-secondary">
-                            <i class="bi bi-linkedin"></i>
-                            <span data-i18n="freelanceCta.linkedin">LinkedIn</span>
-                        </a>
-                        <a href="mailto:faniry.zo.rabemananjara@gmail.com" class="btn-cta-secondary">
-                            <i class="bi bi-envelope"></i>
-                            <span data-i18n="freelanceCta.email">Email</span>
-                        </a>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 data-i18n="freelanceCta.title">Work with me</h2>
+                        <p class="work-subtitle mt-3" data-i18n="freelanceCta.subtitle">Freelance / contract / remote</p>
+                        <p class="work-description mt-3" data-i18n="freelanceCta.description">Business apps, SaaS, dashboards, automation</p>
+                        <p class="work-description" data-i18n="freelanceCta.description2">End-to-end ownership</p>
+                        <p class="work-availability mt-3 mb-4" data-i18n="freelanceCta.availability">Available for new projects</p>
+                        <p class="work-interested mt-4 mb-3" data-i18n="freelanceCta.interested">Interested in working together?</p>
+                        <p class="work-lets-talk mb-4" data-i18n="freelanceCta.letsTalk">Let's talk.</p>
+                        <div class="work-cta-actions">
+                            <a href="#contact" class="btn-cta-primary me-3">
+                                <span data-i18n="freelanceCta.contactMe">Contact me</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/faniry-zo-rabemananjara/" target="_blank" rel="noopener noreferrer" class="btn-cta-secondary me-3">
+                                <i class="bi bi-linkedin"></i>
+                                <span data-i18n="freelanceCta.linkedin">LinkedIn</span>
+                            </a>
+                            <a href="mailto:faniry.zo.rabemananjara@gmail.com" class="btn-cta-secondary">
+                                <i class="bi bi-envelope"></i>
+                                <span data-i18n="freelanceCta.email">Email</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section> -->
-        <!-- /Freelance CTA Section -->
+        </section>
+        <!-- /Work with me Section -->
 
         <!-- Contact Section -->
         <section id="contact" class="contact section">
@@ -1186,10 +1208,21 @@
                                 <i class="bi bi-envelope flex-shrink-0"></i>
                                 <div>
                                     <h3 data-i18n="contact.emailUs">Email Us</h3>
-                                    <p>faniry.zo.rabemananjara@gmail.com</p>
+                                    <p><a href="mailto:faniry.zo.rabemananjara@gmail.com" class="email-link">faniry.zo.rabemananjara@gmail.com</a></p>
                                 </div>
                             </div>
                             <!-- End Info Item -->
+                            
+                            <div class="contact-cta mt-4" data-aos="fade-up" data-aos-delay="500">
+                                <a href="mailto:faniry.zo.rabemananjara@gmail.com" class="btn-cta-primary">
+                                    <i class="bi bi-envelope"></i>
+                                    <span>Send Email</span>
+                                </a>
+                                <a href="https://www.linkedin.com/in/faniry-zo-rabemananjara/" target="_blank" rel="noopener noreferrer" class="btn-cta-secondary ms-3">
+                                    <i class="bi bi-linkedin"></i>
+                                    <span>Connect on LinkedIn</span>
+                                </a>
+                            </div>
 
                             <a href="https://www.google.com/maps?q=Antananarivo,Madagascar" target="_blank" rel="noopener noreferrer" aria-label="View location on Google Maps">
                                 <img src="assets/img/portfolio/MAP.png" alt="Location Map - Antananarivo, Madagascar" class="img-fluid contact-map-image" loading="lazy">
@@ -1495,12 +1528,12 @@
             },
             'neph': {
                 title: 'NEPH - Démarche Permis Rapide',
-                description: 'Web application to help users obtain their NEPH code, an official identifier for driving license exams in France.',
+                description: 'Migration complète d\'un système legacy vers une architecture moderne. Réduction de 60% du temps de traitement et amélioration de la stabilité système.',
                 image: 'assets/img/portfolio/neph.png',
-                badges: ['🚀 Production', '⭐ Senior Level'],
+                badges: ['🚀 Production', '⭐ Senior Level', '⭐ Flagship Project'],
                 tech: ['Vue.js', 'Symfony'],
                 link: 'https://www.demarchepermisrapide.fr',
-                client: 'Built under production constraints with tight deadlines, used daily by thousands of users',
+                client: 'Migration complète d\'un système legacy vers une architecture moderne. Propriété complète de A à Z.',
                 context: 'Pour les candidats au permis de conduire en France qui doivent obtenir leur code NEPH. Le problème : processus administratif complexe, manque de guidance, erreurs fréquentes dans les démarches, perte de temps.',
                 objective: 'Automatiser et simplifier l\'obtention du code NEPH, guider les utilisateurs étape par étape, réduire les erreurs, et accélérer le processus administratif.',
                 solution: 'Migration complète d\'un système legacy vers une architecture moderne Vue.js + Symfony. Mise en place d\'un assistant intelligent, validation en temps réel des données, intégration avec les services administratifs, et suivi des démarches.',
@@ -1716,6 +1749,7 @@
         document.querySelectorAll('.open-popup').forEach(function(link) {
             link.addEventListener('click', function(e) {
                 e.preventDefault();
+                e.stopPropagation();
                 const portfolioItem = this.closest('.portfolio-item');
                 if (portfolioItem) {
                     const titleElement = portfolioItem.querySelector('h4');
@@ -1730,6 +1764,20 @@
                 } else {
                     customModal.classList.add('show');
                     document.body.style.overflow = 'hidden';
+                }
+            });
+        });
+
+        // Ouvrir le modal au clic sur la carte du projet (portfolio-content)
+        document.querySelectorAll('.portfolio-content[data-project]').forEach(function(card) {
+            card.addEventListener('click', function(e) {
+                // Ne pas ouvrir si on clique sur le bouton ou un lien
+                if (e.target.closest('.details-link') || e.target.closest('a')) {
+                    return;
+                }
+                const projectKey = this.getAttribute('data-project');
+                if (projectKey) {
+                    openPortfolioModal(projectKey);
                 }
             });
         });

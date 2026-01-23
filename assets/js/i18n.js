@@ -17,10 +17,12 @@ const translations = {
     },
     // Hero Section
     hero: {
-      title: "Je suis",
-      subtitle: "Développeur Full-Stack",
-      cta: "Démarrer votre projet",
-      viewWork: "Voir mes réalisations"
+      title: "Ingénieur Full-Stack Senior",
+      subtitle: "Je construis des applications métier et produits SaaS fiables — de l'idée à la production.",
+      subtitle2: "Axé sur la clarté, l'évolutivité et la maintenabilité à long terme.",
+      availability: "Disponible pour freelance & contract (remote).",
+      cta: "Me Contacter",
+      viewWork: "Voir mes projets"
     },
     // About Section
     about: {
@@ -122,13 +124,19 @@ const translations = {
       assuranceDecennaleTitle: "Assurance decennale",
       assuranceDecennaleDesc: "Cette application consiste à couvrir votre entreprise avec une assurance professionnelle adaptée aux professions d'Audit, de Conseil et d'Expertise.",
       nephTitle: "NEPH - Démarche Permis Rapide",
-      nephDesc: "Application web pour aider les utilisateurs à obtenir leur code NEPH, un identifiant officiel pour les examens du permis de conduire en France.",
+      nephDesc: "Migration complète d'un système legacy vers une architecture moderne. Réduction de 60% du temps de traitement et amélioration de la stabilité système.",
+      nephProblem: "Problème: processus administratifs manuels et système legacy instable ralentissaient les démarches des utilisateurs.",
+      nephRole: "Mon rôle: migration complète du système legacy vers une architecture moderne, conception du modèle de données, développement frontend et backend, déploiement en production.",
+      nephImpact: "Impact: réduction de 60% du temps de traitement des demandes, amélioration de la stabilité du système, réduction des coûts de maintenance de 40%.",
       cryptoP2PClubTitle: "Crypto P2P Club",
       cryptoP2PClubDesc: "Plateforme éducative pour apprendre, comprendre et pratiquer le Web3 et la crypto de manière éthique. Votre chemin personnalisé vers la liberté financière grâce à l'éducation crypto éthique.",
       myDomii6LTitle: "MyDomii6L - Business Domiciliation",
       myDomii6LDesc: "Plateforme web de services de domiciliation d'entreprise en Île-de-France, offrant des adresses stratégiques, la gestion du courrier et des services administratifs.",
       csrImpactCityTitle: "CSR and Impact City",
-      csrImpactCityDesc: "CSR and Impact City est une plateforme de gestion et de suivi de la performance d'une entreprise.",
+      csrImpactCityDesc: "Plateforme complète de gestion RSE et d'impact business. Utilisée par plusieurs organisations pour le suivi de performance et la conformité réglementaire.",
+      csrProblem: "Problème: suivi RSE et d'impact dispersé, manque de visibilité sur les performances et difficultés de conformité réglementaire.",
+      csrRole: "Mon rôle: propriété complète de A à Z - conception de l'architecture, développement frontend et backend, modélisation de la base de données, déploiement en production.",
+      csrImpact: "Impact: plateforme utilisée activement par plusieurs organisations pour le suivi d'impact RSE, permettant la prise de décision basée sur les données et la conformité réglementaire.",
       prytaneTitle: "Prytane",
       prytaneDesc: "Prytane, une application mobile pour la gestion de communauté paroissiale.",
       tiresiasTitle: "Tiresias",
@@ -210,11 +218,16 @@ const translations = {
       available: "Disponible pour du travail freelance",
       ready: "Prêt à vous aider à construire des applications prêtes pour la production"
     },
-    // Freelance CTA
+    // Freelance CTA / Work with me
     freelanceCta: {
-      title: "Disponible pour du travail freelance & contractuel",
-      description: "Prêt à vous aider à construire des applications prêtes pour la production qui génèrent de vrais résultats business. Discutons de votre projet.",
-      contactMe: "Me Contacter",
+      title: "Work with me",
+      subtitle: "Freelance / contract / remote",
+      description: "Apps métiers, SaaS, dashboards, automation",
+      description2: "End-to-end ownership",
+      availability: "Available for new projects",
+      interested: "Interested in working together?",
+      letsTalk: "Let's talk.",
+      contactMe: "Contact me",
       linkedin: "LinkedIn",
       email: "Email"
     },
@@ -248,10 +261,12 @@ const translations = {
     },
     // Hero Section
     hero: {
-      title: "I'm",
-      subtitle: "Full-Stack Developer",
-      cta: "Start Your Project",
-      viewWork: "View My Work"
+      title: "Senior Frontend / Full-Stack Engineer",
+      subtitle: "I build reliable business applications and SaaS products — from idea to production.",
+      subtitle2: "Focused on clarity, scalability, and long-term maintainability.",
+      availability: "Available for freelance & contract (remote).",
+      cta: "Contact me",
+      viewWork: "View projects"
     },
     // About Section
     about: {
@@ -353,13 +368,19 @@ const translations = {
       assuranceDecennaleTitle: "Assurance decennale",
       assuranceDecennaleDesc: "This application consists in covering your company with professional insurance adapted to the Audit, Consulting and Expertise professions.",
       nephTitle: "NEPH - Démarche Permis Rapide",
-      nephDesc: "Web application to help users obtain their NEPH code, an official identifier for driving license exams in France.",
+      nephDesc: "Complete migration from legacy system to modern architecture. 60% reduction in processing time and improved system stability.",
+      nephProblem: "Problem: manual administrative processes and unstable legacy system slowed down user applications.",
+      nephRole: "My role: complete migration from legacy system to modern architecture, data model design, frontend and backend development, production deployment.",
+      nephImpact: "Impact: 60% reduction in processing time for applications, improved system stability, 40% reduction in maintenance costs.",
       cryptoP2PClubTitle: "Crypto P2P Club",
       cryptoP2PClubDesc: "Educational platform to learn, understand and practice Web3 and crypto ethically. Your personalized path to financial freedom through ethical crypto education.",
       myDomii6LTitle: "MyDomii6L - Business Domiciliation",
       myDomii6LDesc: "Web platform for business domiciliation services in Île-de-France, offering strategic addresses, mail management, and administrative services.",
       csrImpactCityTitle: "CSR and Impact City",
-      csrImpactCityDesc: "CSR and Impact City is a platform for managing and monitoring the performance of a company.",
+      csrImpactCityDesc: "Complete CSR and business impact management platform. Used by multiple organizations for performance tracking and regulatory compliance.",
+      csrProblem: "Problem: scattered CSR and impact tracking, lack of visibility on performance and regulatory compliance difficulties.",
+      csrRole: "My role: full ownership A to Z - architecture design, frontend and backend development, database modeling, production deployment.",
+      csrImpact: "Impact: platform actively used by multiple organizations for CSR impact tracking, enabling data-driven decision making and regulatory compliance.",
       prytaneTitle: "Prytane",
       prytaneDesc: "Prytane, a mobile application for parish community management.",
       tiresiasTitle: "Tiresias",
@@ -441,11 +462,16 @@ const translations = {
       available: "Available for Freelance Work",
       ready: "Ready to help you build production-ready applications"
     },
-    // Freelance CTA
+    // Freelance CTA / Work with me
     freelanceCta: {
-      title: "Available for Freelance & Contract Work",
-      description: "Ready to help you build production-ready applications that drive real business results. Let's discuss your project.",
-      contactMe: "Contact Me",
+      title: "Work with me",
+      subtitle: "Freelance / contract / remote",
+      description: "Business apps, SaaS, dashboards, automation",
+      description2: "End-to-end ownership",
+      availability: "Available for new projects",
+      interested: "Interested in working together?",
+      letsTalk: "Let's talk.",
+      contactMe: "Contact me",
       linkedin: "LinkedIn",
       email: "Email"
     },

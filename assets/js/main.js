@@ -414,4 +414,190 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+  /**
+   * URL Validation and Security Restrictions
+   * Validates and restricts external URLs for security
+   */
+  function isValidURL(url) {
+    try {
+      const urlObj = new URL(url, window.location.origin);
+      return urlObj.protocol === 'http:' || urlObj.protocol === 'https:' || urlObj.protocol === 'mailto:';
+    } catch (e) {
+      // Check if it's a relative URL (starts with # or /)
+      if (url.startsWith('#') || url.startsWith('/') || url.startsWith('./')) {
+        return true;
+      }
+      return false;
+    }
+  }
+
+  function isAllowedDomain(url) {
+    try {
+      // Allow relative URLs and hash links
+      if (url.startsWith('#') || url.startsWith('/') || url.startsWith('./') || !url.includes('://')) {
+        return true;
+      }
+      
+      const urlObj = new URL(url, window.location.origin);
+      const hostname = urlObj.hostname.toLowerCase();
+      
+      // List of allowed domains
+      const allowedDomains = [
+        'linkedin.com',
+        'www.linkedin.com',
+        'x.com',
+        'twitter.com',
+        'www.twitter.com',
+        'facebook.com',
+        'www.facebook.com',
+        'instagram.com',
+        'www.instagram.com',
+        'github.com',
+        'github.io',
+        'faniryrabemananjara.github.io',
+        'demarchepermisrapide.fr',
+        'www.demarchepermisrapide.fr',
+        'recette.monespacerse.com',
+        'wearecid.mg',
+        'vercel.app',
+        'project-tranquill.vercel.app',
+        'restauration-pizzahouse.vercel.app',
+        'assurance-decennale.vercel.app',
+        'open-myst-web-app.vercel.app',
+        'crypto-p2p-club.com',
+        'www.crypto-p2p-club.com',
+        'mydomii6l.fr',
+        'www.mydomii6l.fr',
+        'prytane.fr',
+        'www.prytane.fr',
+        'tiresia.vercel.app',
+        'aroafodata.gov.mg',
+        'gmail.com',
+        'mail.google.com',
+        'google.com',
+        'www.google.com',
+        'maps.google.com',
+        'fonts.googleapis.com',
+        'fonts.gstatic.com',
+        'bootstrapmade.com',
+        'cdn.jsdelivr.net',
+        'jsdelivr.net',
+        'fidmax.infy.uk',
+        'infy.uk'
+      ];
+      
+      // Check if hostname matches any allowed domain or is a subdomain
+      return allowedDomains.some(domain => {
+        return hostname === domain || hostname.endsWith('.' + domain);
+      });
+    } catch (e) {
+      // If URL parsing fails, allow relative URLs
+      return url.startsWith('#') || url.startsWith('/') || url.startsWith('./');
+    }
+  }
+
+  function handleLinkClick(e) {
+    const link = e.currentTarget;
+    const href = link.getAttribute('href');
+    
+    if (!href) {
+      e.preventDefault();
+      console.warn('Link has no href attribute');
+      return false;
+    }
+    
+    // Allow hash links and relative URLs without restriction
+    if (href.startsWith('#') || href.startsWith('/') || href.startsWith('./')) {
+      return true;
+    }
+    
+    // Validate URL format
+    if (!isValidURL(href)) {
+      e.preventDefault();
+      console.error('Invalid URL format:', href);
+      alert('URL invalide ou non sécurisée. Veuillez contacter l\'administrateur.');
+      return false;
+    }
+    
+    // Check if domain is allowed
+    if (!isAllowedDomain(href)) {
+      e.preventDefault();
+      console.error('Domain not allowed:', href);
+      alert('Ce domaine n\'est pas autorisé pour des raisons de sécurité.');
+      return false;
+    }
+    
+    // Additional security: prevent javascript: and data: URLs
+    if (href.toLowerCase().startsWith('javascript:') || href.toLowerCase().startsWith('data:')) {
+      e.preventDefault();
+      console.error('Dangerous URL protocol detected:', href);
+      alert('URL non autorisée pour des raisons de sécurité.');
+      return false;
+    }
+    
+    return true;
+  }
+
+  // Apply restrictions to all external links
+  function initLinkSecurity() {
+    document.querySelectorAll('a[href]').forEach(link => {
+      const href = link.getAttribute('href');
+      
+      // Only apply restrictions to external links (not hash links or relative paths)
+      if (href && !href.startsWith('#') && !href.startsWith('/') && !href.startsWith('./') && href.includes('://')) {
+        link.addEventListener('click', handleLinkClick);
+        
+        // Add security attributes if not already present
+        if (href.includes('://') && !link.hasAttribute('rel')) {
+          link.setAttribute('rel', 'noopener noreferrer');
+        }
+        
+        // Ensure target="_blank" links have security attributes
+        if (link.getAttribute('target') === '_blank') {
+          if (!link.hasAttribute('rel')) {
+            link.setAttribute('rel', 'noopener noreferrer');
+          }
+        }
+      }
+    });
+  }
+
+  // Initialize link security when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initLinkSecurity);
+  } else {
+    initLinkSecurity();
+  }
+
+  // Re-initialize when new content is added dynamically
+  const originalQuerySelectorAll = document.querySelectorAll;
+  const observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+      if (mutation.addedNodes.length > 0) {
+        mutation.addedNodes.forEach(function(node) {
+          if (node.nodeType === 1) { // Element node
+            const links = node.querySelectorAll ? node.querySelectorAll('a[href]') : [];
+            links.forEach(link => {
+              const href = link.getAttribute('href');
+              if (href && !href.startsWith('#') && !href.startsWith('/') && !href.startsWith('./') && href.includes('://')) {
+                if (!link.hasAttribute('data-security-initialized')) {
+                  link.addEventListener('click', handleLinkClick);
+                  link.setAttribute('data-security-initialized', 'true');
+                  if (!link.hasAttribute('rel')) {
+                    link.setAttribute('rel', 'noopener noreferrer');
+                  }
+                }
+              }
+            });
+          }
+        });
+      }
+    });
+  });
+
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+
 })();
