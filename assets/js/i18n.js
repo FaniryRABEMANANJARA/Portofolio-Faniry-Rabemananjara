@@ -89,6 +89,8 @@ const translations = {
       job1Project3: "MyDomiil – Plateforme de Services Numériques (Production) : Propriété de bout en bout - Conçu, développé et déployé une plateforme full-stack depuis zéro. Impact Business : Plateforme servant les entreprises en Île-de-France avec des services de domiciliation, générant des revenus récurrents. Frontend : Vue.js, Backend : NestJS, Base de données : PostgreSQL avec Prisma ORM, Services dockerisés",
       job1Project4: "Plateforme d'Intermédiation Crypto P2P (Production) : Propriété complète - Construit et déployé une plateforme crypto peer-to-peer gérant des transactions réelles. Impact Business : Plateforme facilitant les transactions crypto sécurisées avec une base d'utilisateurs active, générant des revenus basés sur les transactions. Frontend : Vue.js, Nuxt.js, Base de données : PostgreSQL avec Prisma ORM, Déploiement basé sur Docker",
       job1Project5: "Plateforme de Gestion des Permis (Production) : Propriété complète de A à Z - Conçu et construit un système complet de gestion des permis du concept à la production. Impact Business : Rationalisation des processus administratifs, réduction du temps de traitement de 60% pour les demandes de permis. Full stack : Vue.js, NestJS, PostgreSQL, Prisma ORM",
+      job1Project6: "L3M Holding Corporate Platform (Production) : Propriété de bout en bout - Conception et maintenance de l'ecosysteme digital du groupe, incluant les pages de positionnement de marque et des parcours utilisateurs orientés conversion. Impact Business : Amelioration de la visibilite en ligne, renforcement du tunnel d'acquisition de partenariats et soutien de la strategie de croissance multi-marques. Stack : Vue.js, NestJS, PostgreSQL",
+      job1Project7: "L3M Green Cottage (Production) : Propriété complète de A à Z - Livraison d'une experience de reservation hôtelière, de la conception UX au deploiement avec des services backend scalables. Impact Business : Activation des reservations en ligne et amelioration de la conversion client pour les offres d'eco-sejour. Stack : Vue.js, NestJS, PostgreSQL",
       job2Title: "Développeur Full Stack Web & Mobile (Freelance)",
       job2Period: "Oct 2023 – Mar 2025",
       job2Company: "Synergie Mad | Full Remote",
@@ -148,7 +150,13 @@ const translations = {
       fidMaxTitle: "FidMax",
       fidMaxDesc: "Une application de programme de fidélité pour les entreprises et les clients.",
       dashTechTitle: "DashTech",
-      dashTechDesc: "Une application de tableau de bord d'entreprise pour le suivi des performances en temps réel."
+      dashTechDesc: "Une application de tableau de bord d'entreprise pour le suivi des performances en temps réel.",
+      l3mHoldingTitle: "L3M Holding",
+      l3mHoldingDesc: "Plateforme corporate d'ecosysteme digital axee sur la croissance, les partenariats et la transformation business.",
+      globalWorkHubTitle: "Global Work Hub",
+      globalWorkHubDesc: "Plateforme internationale de recrutement et de workforce reliant les entreprises à des talents qualifies.",
+      greenCottageTitle: "L3M Green Cottage",
+      greenCottageDesc: "Plateforme de reservation ecoresponsable avec recherche de sejours, reservation et parcours utilisateur simplifie."
     },
     // How I Work Section
     howIWork: {
@@ -333,6 +341,8 @@ const translations = {
       job1Project3: "MyDomiil – Digital Services Platform (Production): End-to-End Ownership - Designed, developed and deployed full-stack platform from scratch. Business Impact: Platform serving businesses in Île-de-France with domiciliation services, generating recurring revenue. Frontend: Vue.js, Backend: NestJS, Database: PostgreSQL with Prisma ORM, Dockerized services",
       job1Project4: "Crypto P2P Intermediation Platform (Production): Complete Ownership - Built and deployed peer-to-peer crypto platform handling real transactions. Business Impact: Platform facilitating secure crypto transactions with active user base, generating transaction-based revenue. Frontend: Vue.js, Nuxt.js, Database: PostgreSQL with Prisma ORM, Docker-based deployment",
       job1Project5: "Permit Management Platform (Production): Full Ownership A to Z - Designed and built complete permit management system from concept to production. Business Impact: Streamlining administrative processes, reducing processing time by 60% for permit applications. Full stack: Vue.js, NestJS, PostgreSQL, Prisma ORM",
+      job1Project6: "L3M Holding Corporate Platform (Production): End-to-End Ownership - Built and maintained the group's digital ecosystem, including brand positioning pages and conversion-focused user journeys. Business Impact: Improved online visibility, strengthened partnership acquisition funnel, and supported multi-brand growth strategy. Stack: Vue.js, NestJS, PostgreSQL",
+      job1Project7: "L3M Green Cottage (Production): Full Ownership A to Z - Delivered a hospitality booking experience from UX conception to deployment with scalable backend services. Business Impact: Enabled online reservations and improved customer conversion for eco-stay offerings. Stack: Vue.js, NestJS, PostgreSQL",
       job2Title: "Full Stack Web & Mobile Developer (Freelance)",
       job2Period: "Oct 2023 – Mar 2025",
       job2Company: "Synergie Mad | Full Remote",
@@ -392,7 +402,13 @@ const translations = {
       fidMaxTitle: "FidMax",
       fidMaxDesc: "A loyalty program application for businesses and customers.",
       dashTechTitle: "DashTech",
-      dashTechDesc: "A business dashboard application for real-time performance tracking."
+      dashTechDesc: "A business dashboard application for real-time performance tracking.",
+      l3mHoldingTitle: "L3M Holding",
+      l3mHoldingDesc: "Corporate digital ecosystem platform focused on growth, partnerships, and business transformation.",
+      globalWorkHubTitle: "Global Work Hub",
+      globalWorkHubDesc: "International workforce and recruitment platform connecting companies with qualified global talents.",
+      greenCottageTitle: "L3M Green Cottage",
+      greenCottageDesc: "Eco-friendly hospitality booking platform with stay search, reservation, and a user-friendly discovery journey."
     },
     // How I Work Section
     howIWork: {

@@ -1342,6 +1342,31 @@ section,
   font-weight: bold;
 }
 
+/* Improve readability for long project descriptions in L3M section */
+.resume .resume-item .project-highlights {
+  display: grid;
+  gap: 10px;
+  margin-top: var(--spacing-sm);
+}
+
+.resume .resume-item .project-highlights li {
+  padding: 12px 14px 12px 38px;
+  margin: 0;
+  background: var(--glass-bg);
+  border: 1px solid rgba(102, 126, 234, 0.18);
+  border-radius: var(--radius-md);
+  line-height: 1.65;
+}
+
+.resume .resume-item .project-highlights li::before {
+  left: 14px;
+  top: 12px;
+}
+
+.resume .resume-item .project-highlights li strong {
+  color: var(--heading-color);
+}
+
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
