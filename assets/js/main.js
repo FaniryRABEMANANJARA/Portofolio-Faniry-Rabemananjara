@@ -483,7 +483,13 @@
         'cdn.jsdelivr.net',
         'jsdelivr.net',
         'fidmax.infy.uk',
-        'infy.uk'
+        'infy.uk',
+        'global-work-hub.com',
+        'www.global-work-hub.com',
+        'l3m-greencottage.fr',
+        'www.l3m-greencottage.fr',
+        'l3m-holding.fr',
+        'www.l3m-holding.fr'
       ];
       
       // Check if hostname matches any allowed domain or is a subdomain
