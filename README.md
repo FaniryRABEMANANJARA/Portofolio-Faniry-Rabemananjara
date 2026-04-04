@@ -1,103 +1,151 @@
-# Portfolio – Faniry Rabemananjara
+<h1 align="center">Faniry Rabemananjara</h1>
+<h3 align="center">Full-Stack Developer • SaaS Engineer • Freelance</h3>
 
-Welcome to the portfolio of **Faniry Rabemananjara**, a passionate Full-Stack Web & Mobile Developer dedicated to building innovative solutions for businesses, NGOs, and the public sector.
+<p align="center">
+  <a href="mailto:faniry.zo.rabemananjara@gmail.com">
+    <img src="https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail">
+  </a>
+  <a href="https://www.linkedin.com/in/faniry-zo-rabemananjara/">
+    <img src="https://img.shields.io/badge/LinkedIn-Profile-blue?style=for-the-badge&logo=linkedin">
+  </a>
+  <a href="https://faniryrabemananjara.github.io/Portofolio-Faniry-Rabemananjara/">
+    <img src="https://img.shields.io/badge/Portfolio-Visit-black?style=for-the-badge&logo=vercel">
+  </a>
+</p>
 
-## 🚀 About
-
-Holder of a Master of Science in Artificial Intelligence and Big Data (ESTIA, Bordeaux), I design, develop, and deploy high-performance web and mobile applications. My expertise covers full-stack development (Flutter, Laravel, Next.js, Firebase, MySQL, PostgreSQL), AI, project management, and application performance optimization.
-
-- **Location**: Antananarivo, Madagascar
-- **Phone**: +261 34 80 375 94
-- **Email**: faniry.zo.rabemananjara@gmail.com
-- **Website**: [www.mywebsite.mg](https://faniryrabemananjara.github.io/Portofolio-Faniry-Rabemananjara/)
-- **LinkedIn**: [faniry-zo-rabemananjara](https://www.linkedin.com/in/faniry-zo-rabemananjara/)
-- **Twitter**: [@FaniryRabemana2](https://x.com/FaniryRabemana2)
-
----
-
-## 🛠️ Skills
-
-### Technical
-- **Frameworks**: Flutter, Laravel, Next.js, NestJS, Vue3
-- **Databases**: MySQL, PostgreSQL, Firebase
-- **Languages**: Python (AI), JavaScript, PHP
-- **Tools**: GitHub, Draw.io
-
-### Soft Skills
-- Problem solving, autonomy, teamwork, project management
-
-### Languages
-- French (fluent), English (professional)
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=faniry-dev&label=Profile%20views&color=0e75b6&style=flat" />
+</p>
 
 ---
 
-## 👨‍💻 Professional Experience
+## 🚀 About Me
 
-- **Web developer Consultant**  
-  *L3M-Holding, Remote*  
-  04.2025 – Present  
-  _Migration of an OIKOS IMPACT intermediation platform using Vue3 (frontend), NestJS (backend), and PostgreSQL (database)._  
+Full-Stack Developer specialized in building **production-ready SaaS platforms**, web applications, and scalable backend systems.
 
-- **Web and mobile developer (Full remote)**  
-  *Synergie Mad, Remote*  
-  10.2023 – 03.2025  
-  _Application development and project management for Remus, DashTech, Prytane, Health in Motion, Donation, Tiresias, Assurance Decennale, Pizza House Free, OpenMyst, FidMax (Flutterflow, Next.js, Laravel, Firebase, MySQL)._  
+I help businesses, startups, and organizations **turn ideas into reliable digital products** — from architecture design to deployment.
 
-- **Master's Internship**  
-  *Malagasy Ministry of the Environment, Nanisana*  
-  05.2023 – 08.2023  
-  _Fire management and warning system integration using Artificial Intelligence for the French Ministry of the Environment and Sustainable Development. Technologies: Python (AI), JavaScript (frontend), MySQL (database)._  
-
-- **FullStack Developer Consultant**  
-  *ONG CID, Anjanahary*  
-  11.2021 – 01.2023  
-  _Redesign of the ONG-CID website with WordPress CMS. Project design with Draw.io._  
+🎓 Master’s Degree in AI & Big Data (ESTIA, Bordeaux)
 
 ---
 
-## 📂 Key Projects
+## 🧠 What I Do Best
 
-- **FidMax**: Multi-platform loyalty application ([details](http://fidmax.infy.uk/))
-- **Health in Motion**: Focus time & yoga management ([details](https://project-tranquill.vercel.app/))
-- **Pizza House Free**: Restaurant showcase website ([details](https://restauration-pizzahouse.vercel.app/))
-- **Assurance Decennale**: B2B insurance solution ([details](https://assurance-decennale.vercel.app/))
-- **Prytane**: Mobile app for parish community management ([details](https://www.prytane.fr/))
-- **Remus**: Connecting educators and social workers ([details](https://play.google.com/store/apps/details?id=com.mycompany.appremuseducateur&pcampaignid=web_share))
-- **OpenMyst**: 3D data visualization platform ([details](https://open-myst-web-app.vercel.app/))
-- **Wildfire Alert System**: AI-powered wildfire prevention ([details](https://aroafodata.gov.mg/))
+- 🚀 Build full SaaS platforms (frontend + backend + DB)
+- ⚙️ Design scalable backend architectures
+- 📊 Optimize performance & user experience
+- 🔐 Implement secure APIs and authentication systems
+- 📦 Deliver production-ready applications
+- 🧩 Translate business needs into technical solutions
 
 ---
 
-## 💼 Services
+## 🛠️ Tech Stack
 
-- Custom web & mobile app development (Flutter, Laravel, Next.js, Firebase, etc.)
-- AI & Big Data integration
-- E-commerce solutions and payment gateway integration
-- Real-time database synchronization (Firebase, MySQL, PostgreSQL)
-- Application performance optimization & security
-- Consulting, project management, software architecture design
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=vue,nextjs,ts,nodejs,nestjs,laravel,flutter,postgres,mysql,firebase,docker,nginx,git" />
+</p>
 
 ---
 
-## 📦 Installation & Usage
+## 📊 GitHub Stats
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/FaniryRABEMANANJARA/Portofolio-Faniry-Rabemananjara.git
-   ```
-2. Open `index.html` in your browser.
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=faniry-dev&show_icons=true&theme=tokyonight&hide_border=true" />
+</p>
 
-> No backend required — everything runs client-side.
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=faniry-dev&theme=tokyonight&hide_border=true" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=faniry-dev&layout=compact&theme=tokyonight&hide_border=true" />
+</p>
 
 ---
 
-## 🤝 Contact
+## 💼 Featured Projects
 
-For any collaboration, freelance mission, or question:
+### 🏡 Green Cottage  
+Full-stack platform with admin dashboard, media management, and production deployment  
+**Stack:** Vue 3 • NestJS • Prisma • PostgreSQL • Docker  
+
+---
+
+### 🚗 Démarche Permis Rapide  
+Conversion-focused booking & lead generation platform  
+**Stack:** Vue 3 • NestJS • PostgreSQL • Analytics  
+
+---
+
+### 🌍 Global Work Hub  
+Business-oriented SaaS platform with scalable backend architecture  
+**Stack:** Vue • NestJS • Prisma • PostgreSQL  
+
+---
+
+### 📊 Scrumizy  
+Collaborative project management SaaS  
+**Stack:** Vue • NestJS • PostgreSQL  
+
+---
+
+## 🧑‍💻 Professional Experience
+
+### Full-Stack Developer — L3M Holding  
+**2025 – Present**
+- SaaS development and platform migration
+- Architecture design and optimization
+- Production deployment
+
+---
+
+### Web & Mobile Developer — Synergie Mad  
+**2023 – 2025**
+- Built multiple production applications
+- Managed full lifecycle (design → deployment)
+- Multi-stack expertise (Flutter, Laravel, Next.js)
+
+---
+
+### AI Engineer — Ministry of Environment  
+**2023**
+- AI-based wildfire monitoring system
+- Python + data processing + visualization
+
+---
+
+## 💼 Freelance Services
+
+I work with startups, businesses, and organizations to deliver:
+
+- 🚀 SaaS platform development
+- 📱 Web & mobile applications
+- ⚙️ Backend architecture & APIs
+- 📊 Data & AI integration
+- 🔐 Secure and scalable systems
+- 🎯 Performance optimization
+
+---
+
+## 📈 Why Work With Me
+
+- ✔️ Production mindset (not just demos)
+- ✔️ Full-stack autonomy
+- ✔️ Strong architecture thinking
+- ✔️ Business-oriented approach
+- ✔️ Fast and reliable delivery
+
+---
+
+## 📬 Contact
 
 📧 faniry.zo.rabemananjara@gmail.com  
-📞 +261 34 80 375 94
+📞 +261 34 80 375 94  
+🌍 Madagascar  
 
 ---
 
-© Faniry Rabemananjara. All rights reserved.
+## 🔥 Motto
+
+> Build real products. Solve real problems. Ship clean code.
