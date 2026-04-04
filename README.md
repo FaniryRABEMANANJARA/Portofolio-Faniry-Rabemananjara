@@ -11,6 +11,9 @@
   <a href="https://faniryrabemananjara.github.io/Portofolio-Faniry-Rabemananjara/">
     <img src="https://img.shields.io/badge/Portfolio-Visit-black?style=for-the-badge&logo=vercel">
   </a>
+  <a href="https://x.com/FaniryRabemana2">
+    <img src="https://img.shields.io/badge/Twitter-Follow-blue?style=for-the-badge&logo=twitter">
+  </a>
 </p>
 
 <p align="center">
@@ -21,11 +24,12 @@
 
 ## 🚀 About Me
 
-Full-Stack Developer specialized in building **production-ready SaaS platforms**, web applications, and scalable backend systems.
+Full-Stack Developer specialized in building **production-ready SaaS platforms**, web & mobile applications, and scalable backend systems.
 
 I help businesses, startups, and organizations **turn ideas into reliable digital products** — from architecture design to deployment.
 
-🎓 Master’s Degree in AI & Big Data (ESTIA, Bordeaux)
+🎓 Master’s Degree in AI & Big Data (ESTIA, Bordeaux)  
+🌍 Based in Antananarivo, Madagascar
 
 ---
 
@@ -69,24 +73,44 @@ I help businesses, startups, and organizations **turn ideas into reliable digita
 ### 🏡 Green Cottage  
 Full-stack platform with admin dashboard, media management, and production deployment  
 **Stack:** Vue 3 • NestJS • Prisma • PostgreSQL • Docker  
-
----
+🔗 [Live Demo](https://l3m-greencottage.fr)
 
 ### 🚗 Démarche Permis Rapide  
 Conversion-focused booking & lead generation platform  
 **Stack:** Vue 3 • NestJS • PostgreSQL • Analytics  
-
----
+🔗 [Live Demo](https://www.cpermisformation.fr)
 
 ### 🌍 Global Work Hub  
 Business-oriented SaaS platform with scalable backend architecture  
 **Stack:** Vue • NestJS • Prisma • PostgreSQL  
 
----
-
 ### 📊 Scrumizy  
 Collaborative project management SaaS  
 **Stack:** Vue • NestJS • PostgreSQL  
+
+### 📱 FidMax  
+Multi-platform loyalty application  
+🔗 [Live Demo](http://fidmax.infy.uk/)
+
+### 🧘 Health in Motion  
+Time & yoga management platform  
+🔗 [Live Demo](https://project-tranquill.vercel.app/)
+
+### 🍕 Pizza House Free  
+Restaurant showcase website  
+🔗 [Live Demo](https://restauration-pizzahouse.vercel.app/)
+
+### 🏛️ Assurance Decennale  
+B2B insurance solution  
+🔗 [Live Demo](https://assurance-decennale.vercel.app/)
+
+### 🏫 Prytane  
+Parish community management mobile app  
+🔗 [Live Demo](https://www.prytane.fr/)
+
+### 🌲 Wildfire Alert System  
+AI-powered wildfire prevention  
+🔗 [Live Demo](https://aroafodata.gov.mg/)
 
 ---
 
@@ -98,20 +122,21 @@ Collaborative project management SaaS
 - Architecture design and optimization
 - Production deployment
 
----
-
 ### Web & Mobile Developer — Synergie Mad  
 **2023 – 2025**
-- Built multiple production applications
+- Delivered multiple production applications
 - Managed full lifecycle (design → deployment)
 - Multi-stack expertise (Flutter, Laravel, Next.js)
-
----
 
 ### AI Engineer — Ministry of Environment  
 **2023**
 - AI-based wildfire monitoring system
 - Python + data processing + visualization
+
+### FullStack Developer Consultant — ONG CID  
+**2021 – 2023**
+- Website redesign and CMS (WordPress)
+- Project architecture and Draw.io planning
 
 ---
 
@@ -140,9 +165,9 @@ I work with startups, businesses, and organizations to deliver:
 
 ## 📬 Contact
 
-📧 faniry.zo.rabemananjara@gmail.com  
-📞 +261 34 80 375 94  
-🌍 Madagascar  
+- 📧 faniry.zo.rabemananjara@gmail.com  
+- 📞 +261 34 80 375 94  
+- 🌍 Madagascar  
 
 ---
 
